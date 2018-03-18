@@ -120,10 +120,13 @@
 
 /// Responsive
 @mixin breakpoint($point) {
-  @if $point == x-large {
+  @if $point == xx-large {
+    @media (min-width: 1920px) { @content; }
+  }
+  @else if $point == x-large {
     @media (min-width: 1300px) { @content; }
   }
-  @if $point == large {
+  @else if $point == large {
     @media (min-width: 1240px) { @content; }
   }
   @else if $point == medium {

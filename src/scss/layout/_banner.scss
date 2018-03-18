@@ -1,0 +1,42 @@
+.banner-image,.bg-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 400px;
+	position: relative;
+
+	.banner-content{
+		h2{
+			margin-bottom: 30px;
+		}
+		height: 100%;
+		background: rgba($white,.8);
+		padding: 30px;
+		@include breakpoint(small){
+		width: 450px;
+		float: right;
+		margin-right: 75px;
+		background: $white;
+		}
+	}
+	.container{
+		padding:45px 15px;
+		@include breakpoint(small){
+			padding:0 15px;
+		}
+	}
+}
+.bg-img.bg-overlay{
+	&:after{
+		background-color:rgba($theme-color,.8);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom:0;
+	}
+	.container,.container-medium, .container-small{
+		position: relative;
+		z-index: 1;
+	}
+}

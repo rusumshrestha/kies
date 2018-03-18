@@ -1,0 +1,41 @@
+.link-list{
+	li{
+		display: block;
+		@include border(top,1px, solid,rgba($white,.25));
+		p{
+			padding:15px 0 15px 30px;
+		}
+		a{
+			padding: 20px 30px;
+			display: block;
+			font-size: 16px;
+		}
+		&:first-child{
+			border-top:none;
+		}
+	}
+}
+.bg-widget{
+	.col{
+		position: relative;
+		width: calc(43% - 30px);
+		&:before{
+			background: url(../images/car.svg) no-repeat left top/100%;
+			position: absolute;
+			width: 150px;
+			height: 95px;
+			content: "";
+			right: -50px;
+			top:-50px;
+		}
+		&:last-child{
+			margin-left: 12%;
+			&:before{
+			background: url(../images/car-2.svg) no-repeat right bottom/100%;
+			right: -75px;
+			bottom:-30px;
+			height: auto;
+		}
+		}
+	}
+}

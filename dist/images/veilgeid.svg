@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5976.333 1910.5 273.235 326">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff4500;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <g id="Group_365" data-name="Group 365" transform="translate(5976.332 1910.5)">
+    <path id="Path_387" data-name="Path 387" class="cls-1" d="M118.973,0h33.832l65.536,298.889h17.252v14.34h37.641V326H0V313.9H33.832V296.649H51.2Z"/>
+    <path id="Path_388" data-name="Path 388" class="cls-2" d="M96.268,51h59.487l15.908,72.37H79.8" transform="translate(9.598 6.134)"/>
+    <path id="Path_389" data-name="Path 389" class="cls-2" d="M68.928,171.2H188.574l16.356,74.61H51.9Z" transform="translate(6.242 20.591)"/>
+    <path id="Path_390" data-name="Path 390" class="cls-3" d="M118.973,0H137.01l-.336,326H0V313.9H33.832V296.649H51.2Z"/>
+  </g>
+</svg>

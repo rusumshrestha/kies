@@ -1,0 +1,61 @@
+.campiagn-block{
+	text-align: center;
+
+	.col{
+		color:$white;
+		position: relative;
+		z-index: 1;
+		@include border-radius(7px);
+		h1,h2,h3,h4,h5,h6,p,a{
+			color:$white;
+		}
+		h1,h2,h3,h4,h5,h6{
+			padding:30px 30px 0;
+			font-size: 20px;
+			line-height: 24px;
+		}
+		img,svg{
+			height: 150px;
+		}
+		a{
+			margin-top: 60px;
+			text-align: left;
+			padding:25px 30px;
+			display: block;
+			@include border(top,1px,solid,rgba($white,.25));
+		}
+		&.bg-blue,&.bg-green,&.bg-orange,&.bg-maroon{
+			&:before{
+			    position: absolute;
+			    content: "";
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    border-radius: 7px 0 0 7px;
+			    -webkit-border-radius: 7px 0 0 7px;
+			    -moz-border-radius: 7px 0 0 7px;
+			    z-index: -1;
+			}
+		}
+		&.bg-blue{
+			&:before{
+				background: url(../images/poly-small-1@2x.png) no-repeat left top/81%;
+			}
+		}
+		&.bg-green{
+			&:before{
+				background: url(../images/poly-small-2@2x.png) no-repeat left top/81%;
+			}
+		}
+		&.bg-orange{
+			&:before{
+				background: url(../images/poly-small-3@2x.png) no-repeat left top/81%;
+			}
+		}
+		&.bg-maroon{
+			&:before{
+				background: url(../images/poly-small-4@2x.png) no-repeat left top/81%;
+			}
+		}
+	}
+}

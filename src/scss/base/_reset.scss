@@ -6,9 +6,7 @@ html {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  &:before, &::after{
-    box-sizing: inherit;
-  }
+
   &:after{
     clear: both;
     display: block;
@@ -20,16 +18,16 @@ html {
   padding: 0;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba($grey-dark,.5);
+  color: rgba($text-color,.5);
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: rgba($grey-dark,.5);
+  color: rgba($text-color,.5);
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: rgba($grey-dark,.5);
+  color: rgba($text-color,.5);
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: rgba($grey-dark,.5);
+  color: rgba($text-color,.5);
 }
 
 // adaptive images
@@ -145,7 +143,7 @@ em{
 }
 body{
   font: $regular 16px/20px $text;
-  color:$grey-dark;
+  color:$text-color;
   @include transition_hover(1s);
 }
 h1,h2,h3,h4,h5,h6{
@@ -185,15 +183,15 @@ h6{
   }
 }
 p{
-  font: $regular 16px/30px $text;
-  color:$grey-dark;
+  font: $regular 16px/24px $text;
+  color:$text-color;
   margin-bottom: 30px;
   &:last-child{
     margin-bottom: 0;
   }
   a{
     font-size: 16px;
-    color:$primary-color;
+    color:$text-color;
     text-decoration: underline;
     @include transition_hover();
     &:hover{
@@ -207,7 +205,7 @@ p{
 }
 a{
   font:$regular 15px $text;
-  color:$grey-dark;
+  color:$text-color;
   @include transition_hover;
   &:hover{
     color:$theme-color;
@@ -222,50 +220,4 @@ a{
 }
 .text-center{
   text-align: center;
-}
-.title-block{
-  h2{
-    line-height: 1;
-    margin-bottom: 20px;
-  }
-  h3{
-    font-size: 16px;
-    line-height: 1;
-    margin-bottom: 20px;
-    font-weight: $bold;
-  }
-}
-.result_hover:after{
-  @include breakpoint(medium){
-  position: absolute;
-  top:0;
-  right: 0;
-  bottom:-100%;
-  left:0;
-  background: rgba($primary-color,.3);
-  z-index: 9;
-  @include transition_hover(.2s);
-  }
-}
-
-
-.custom-margin{
-  margin:0 0 50px 0;
-  @include breakpoint(medium) {
-    margin:0 0 100px 200px
-  }
-}
-.content-sidebar-left,.content-sidebar-right{
-  .custom-margin{
-    margin:0 0 50px 0; 
-  }
-}
-.mb-40{
-  margin-bottom: 40px;
-}
-
-.pl-block{
-  @include breakpoint(small){
-    padding-left: 95px;
-  }
 }

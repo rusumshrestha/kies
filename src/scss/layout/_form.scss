@@ -1,0 +1,55 @@
+.form-wrapper {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="number"],
+	input[type="color"],
+	input[type="date"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="range"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="url"],
+	input[type="week"],
+	select,
+	textarea {
+		background-color: #FFF;
+		@include border(all,1px, solid, $border-color);
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;
+		padding:10px 15px;
+		font-size: 14px;
+		@include border-radius(3px);
+	}
+
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="color"]:focus,
+	input[type="date"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="month"]:focus,
+	input[type="range"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="url"]:focus,
+	input[type="week"]:focus,
+	select:focus,
+	textarea:focus {
+		@include border(all,1px, solid, $text-color);
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		outline:none;
+	}
+
+}
