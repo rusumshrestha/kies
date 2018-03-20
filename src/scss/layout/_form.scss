@@ -74,7 +74,37 @@
 	background: $text-color;
 	color:$white;
 }
+.btn-small{
+	font-size: 10px;
+	font-weight: $bold;
+	min-width: 71px;
+	line-height: 21px;
+	padding:0 5px;
+	text-align: center;
+	color:$white;
+	@include border-radius(5px);
+}
+.btn-sky-blue{
+	background: $btn-color;
+	color:$text-color
+}
 
+.btn-maroon{
+	background: $theme-light-color;
+}
+.btn-orange{
+	background: $orange;
+}
+.btn-yellow{
+	background: $yellow;
+	color:$text-color;
+}
+.btn-green{
+	background: $dark-green-1;
+}
+.btn-dark-blue{
+	background: $text-color;
+}
 
 .button-element, .form-element.button-element {
 		width: 100%;

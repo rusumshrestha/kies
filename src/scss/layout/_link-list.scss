@@ -22,11 +22,7 @@
 	.col{
 		position: relative;
 		width: calc(43% - 30px);
-		a{
-			i{
-				float: right;
-			}
-		}
+		
 		&:before{
 			background: url(../images/car.svg) no-repeat left top/100%;
 			position: absolute;
