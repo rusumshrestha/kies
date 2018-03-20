@@ -9,6 +9,9 @@
 			padding: 20px 30px;
 			display: block;
 			font-size: 16px;
+			i{
+				float: right;
+			}
 		}
 		&:first-child{
 			border-top:none;
@@ -19,6 +22,11 @@
 	.col{
 		position: relative;
 		width: calc(43% - 30px);
+		a{
+			i{
+				float: right;
+			}
+		}
 		&:before{
 			background: url(../images/car.svg) no-repeat left top/100%;
 			position: absolute;

@@ -1,21 +1,7 @@
 .form-wrapper {
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="number"],
-	input[type="color"],
-	input[type="date"],
-	input[type="datetime-local"],
-	input[type="month"],
-	input[type="range"],
-	input[type="search"],
-	input[type="tel"],
-	input[type="url"],
-	input[type="week"],
-	select,
-	textarea {
+	input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="month"], input[type="range"], input[type="search"], input[type="tel"], input[type="url"], input[type="week"], select, textarea {
 		background-color: #FFF;
-		@include border(all,1px, solid, $border-color);
+		@include border(all, 1px, solid, $border-color);
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
@@ -25,31 +11,122 @@
 		-ms-transition: all .3s ease;
 		-o-transition: all .3s ease;
 		transition: all .3s ease;
-		padding:10px 15px;
+		padding: 10px 15px;
 		font-size: 14px;
 		@include border-radius(3px);
 	}
 
-	input[type="text"]:focus,
-	input[type="password"]:focus,
-	input[type="email"]:focus,
-	input[type="number"]:focus,
-	input[type="color"]:focus,
-	input[type="date"]:focus,
-	input[type="datetime-local"]:focus,
-	input[type="month"]:focus,
-	input[type="range"]:focus,
-	input[type="search"]:focus,
-	input[type="tel"]:focus,
-	input[type="url"]:focus,
-	input[type="week"]:focus,
-	select:focus,
-	textarea:focus {
-		@include border(all,1px, solid, $text-color);
+	input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="range"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus {
+		@include border(all, 1px, solid, $text-color);
 		box-shadow: none;
 		-moz-box-shadow: none;
 		-webkit-box-shadow: none;
-		outline:none;
+		outline: none;
 	}
 
 }
+
+
+.form-wrapper {
+	h3 {
+		color: $white;
+		margin-bottom: 20px;
+
+		@include breakpoint(small) {
+			float: left;
+			width: 175px;
+		}
+
+	}
+
+	.form-element {
+		margin: 0 0 10px 0px;
+		position: relative;
+		width: 100%;
+
+		@include breakpoint(small) {
+			float: left;
+			max-width: 280px;
+			margin-left: 30px;
+		}
+
+	}
+
+	
+
+}
+
+
+.btn{
+	display: inline-block;
+	font-size: 14px;
+	padding:0 20px;
+	line-height: 40px;
+	font-weight: $bold;
+	background:$white;
+	color:$text-color;
+	min-width: 250px;
+}
+.bg-block a.btn-white-shadow{
+	color:$text-color;
+}
+.btn-blue{
+	background: $text-color;
+	color:$white;
+}
+
+
+.button-element, .form-element.button-element {
+		width: 100%;
+		position: relative;
+
+		@include breakpoint(small) {
+			max-width: 205px;
+		}
+		.btn{
+			min-width: auto;
+		}
+
+	}
+.btn-white-shadow {
+	width: 100%;
+	display: block;
+	padding: 0 20px;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	background-color: rgba($text-color, 0.5);
+	line-height: 40px;
+	color: $text-color;
+	font-weight: bold;
+	background: $white;
+
+	&:after, &:before {
+		position: absolute;
+		content: '';
+		-webkit-transition: all .5s;
+		transition: all .5s;
+	}
+
+	&:before {
+		bottom: -9px;
+		height: 9px;
+		width: 100%;
+		left: 5px;
+		-webkit-transform: skewX(45deg);
+		transform: skewX(45deg);
+		background-color: rgba($text-color, 0.5);
+	}
+
+	&:after {
+		right: -9px;
+		height: 100%;
+		width: 9px;
+		bottom: -5px;
+		-webkit-transform: skewY(45deg);
+		transform: skewY(45deg);
+		background-color: rgba($text-color, 0.5);
+	}
+
+}
+
+

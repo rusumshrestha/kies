@@ -8,8 +8,13 @@
 	.banner-content{
 		h2{
 			margin-bottom: 30px;
+			font-size:26px;
+			font-weight: black;
+			span{
+				font-weight: bold;
+			}
 		}
-		height: 100%;
+		height: 400px;
 		background: rgba($white,.8);
 		padding: 30px;
 		@include breakpoint(small){

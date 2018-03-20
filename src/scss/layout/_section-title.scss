@@ -1,6 +1,16 @@
 .section-title{
 	margin-bottom: 50px;
+	width: 100%;
 	p{
 		margin-top: 30px;
+	}
+}
+.section-link{
+	margin-top: 40px;
+	width: 100%;
+}
+.bg-green.bg-block{
+	.btn{
+		color:$green;
 	}
 }
