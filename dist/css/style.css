@@ -464,6 +464,27 @@ a:hover {
   text-align: center;
 }
 
+/* line 235, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+a.normal-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* line 240, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+.margin-tb-block {
+  margin: 30px 0;
+}
+
+/* line 244, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+.margin-t-block {
+  margin-top: 30px;
+}
+
+/* line 248, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+.margin-b-block {
+  margin-bottom: 30px;
+}
+
 /**
  * Description: Container Sizes
  * Version: 1.0.0
@@ -1724,17 +1745,24 @@ footer h3 {
 }
 
 /* line 4, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
-.section-title p {
-  margin-top: 30px;
+.section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
+  margin-bottom: 30px;
 }
 
-/* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
+/* line 7, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
+.section-title p {
+  margin-top: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-link {
   margin-top: 40px;
   width: 100%;
 }
 
-/* line 13, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
+/* line 18, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .bg-green.bg-block .btn {
   color: #469500;
 }
@@ -1911,19 +1939,24 @@ footer h3 {
 }
 
 /* line 9, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.news-list h3 {
+  min-height: 60px;
+}
+
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list h3, .news-list h3 a {
   font-size: 15px;
   line-height: 20px;
   font-weight: 700;
 }
 
-/* line 14, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 17, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list p {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 18, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 21, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col, .news-list li {
   background: #FFF;
   -webkit-border-radius: 7px;
@@ -1935,30 +1968,30 @@ footer h3 {
   padding: 30px;
 }
 
-/* line 24, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .img-block img, .news-list li .img-block img {
   width: 100%;
 }
 
-/* line 29, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 32, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .news-info .date, .news-list .col .news-info .file-format, .news-list li .news-info .date, .news-list li .news-info .file-format {
   float: right;
   font-size: 12px;
 }
 
-/* line 33, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 36, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .news-info .file-format, .news-list li .news-info .file-format {
   float: left;
   font-weight: 700;
 }
 
-/* line 38, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 41, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .btn, .news-list li .btn {
   margin-bottom: 20px;
   display: inline-block;
 }
 
-/* line 43, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 46, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .download-block a, .news-list li .download-block a {
   color: #469500;
   font-size: 12px;
@@ -1966,14 +1999,14 @@ footer h3 {
   line-height: 24px;
 }
 
-/* line 48, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 51, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .download-block a i.ico-download, .news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-download, .news-list li .download-block a i.ico-eye {
   font-size: 30px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 53, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+/* line 56, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-eye {
   color: #001C4E;
 }

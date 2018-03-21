@@ -231,3 +231,20 @@ a{
 .text-center{
   text-align: center;
 }
+
+a.normal-link{
+  font-size: 14px;
+  font-weight: $bold;
+}
+
+.margin-tb-block{
+  margin:30px 0;
+}
+
+.margin-t-block{
+  margin-top:30px;
+}
+
+.margin-b-block{
+  margin-bottom:30px;
+}
