@@ -1,0 +1,42 @@
+.news-list{
+	color:$text-color;
+	h3,p,a{
+		color:$text-color;
+	}
+	h3,p{
+		margin:20px 0;
+	}
+	h3,h3 a{
+		font-size: 15px;
+		line-height: 20px;
+	}
+	p{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.col,li{
+		background: $white;
+		// @include border(all,1px,solid,$border-color);
+		@include border-radius(7px);
+		padding: 30px;
+		.news-info{
+			.date,.file-format{
+				float: right;
+				font-size: 12px;
+			}
+			.file-format{
+				float: left;
+			}
+		}
+		.btn{
+			margin-bottom: 20px;
+			display: inline-block;
+		}
+		.download-block{
+			a{
+				color:$green;
+				font-size: 12px;
+			}
+		}
+	}
+}

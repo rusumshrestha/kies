@@ -1,0 +1,323 @@
+.top-header {
+	padding: 15px 0;
+
+	@include breakpoint(x-large) {
+		padding: 7px 0;
+	}
+
+	.top-nav {
+		text-align: center;
+
+		@include breakpoint(x-large) {
+			float: left;
+			padding-left: 210px;
+		}
+
+		li {
+			line-height: 40px;
+			display: inline-block;
+
+			@include breakpoint(x-large) {
+				float: left;
+				display: inherit;
+			}
+
+			&:after {
+				content: "|";
+				display: inline-block;
+				clear: inherit;
+				margin: 0 10px;
+				color: rgba($text-color, .5);
+				line-height: 40px;
+			}
+
+			&:last-child:after {
+				display: none;
+			}
+
+			a {
+				display: block;
+				line-height: 40px;
+				color: rgba($text-color, .5);
+
+				&:hover {
+					color: rgba($text-color, 1);
+				}
+
+			}
+
+		}
+
+	}
+
+	.search {
+		width: 282px;
+		margin: 5px auto 0;
+
+		@include breakpoint(x-large) {
+			float: right;
+		}
+
+		input[type="text"] {
+			width: 100%;
+		}
+
+	}
+
+}
+
+.main-header {
+	background: $theme-color;
+	position: relative;
+	height: 100px;
+	@include border(bottom, 50px, solid, $theme-light-color);
+}
+
+.logo {
+	position: absolute;
+	margin-top: -25px;
+	z-index: 11;
+
+	img, svg {
+		height: 150px;
+	}
+
+}
+
+.nav {
+	float: right;
+}
+
+#primary-nav-button {
+	background: #000;
+	display: none;
+	border: none;
+	position: absolute;	/*bottom: 5px;*/
+	right: 15px;
+	padding: 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 0;
+	top: 25px;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+	text-align: center;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+	&:focus {
+		outline: none;
+		border: none;
+	}
+
+}
+
+#primary-nav-button:hover, #primary-nav-button.selected {
+	background: #792103
+}
+
+#primary-nav-button:before {
+	content: '\2261';
+	display: block;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 40px;
+	color: inherit;
+	speak: none;
+	color: $white;
+}
+
+.menu {
+	position: relative;
+}
+
+.menu li {
+	float: left;
+	margin-left: 25px;
+	// position: relative;
+
+	a {
+		position: relative;
+
+		&:after {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 10px 10px 10px;
+			border-color: transparent transparent $theme-light-color transparent;
+			position: absolute;
+			left: 50%;
+			margin-left: -10px;
+			bottom: 0;
+			display: none;
+		}
+
+		@media (min-width:1070px) {
+			&:hover:after {
+				display: block;
+			}
+
+		}
+
+	}
+
+}
+
+.menu li:last-child {
+	margin-right: 0;
+}
+
+.menu .sub-menu li {
+	width: 100%;
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: $black;
+	font-size: 14px;
+}
+
+@media (min-width:1070px) {
+	.menu li a {
+		padding: 0;
+		display: inline-block;
+		line-height: 50px;
+		color: $white;
+	}
+
+	.nav ul li ul {
+		margin-top: 0;
+	}
+
+}
+
+@media (min-width:1200px) {
+	.menu li:after {
+		margin: 0 8px;
+	}
+
+}
+
+.menu li.active > a, .menu li > a:hover, .menu li.selected > a {
+	color: $black;
+}
+
+.menu .sub-menu {
+	display: none;
+	position: absolute;
+	left: -5px !important;
+	max-height: 1000px;
+	margin: 0;
+}
+
+.menu .sub-menu.hide {
+	display: none;
+}
+
+#primary-nav .sub-menu {
+	// min-width: 150px;
+	z-index: 200;
+}
+
+#primary-nav.mobile {
+	display: none;
+	position: absolute;
+	top: 85px;
+	background: $white;
+	width: 100%;
+	z-index: 111;
+	margin: 0;
+	left: 0;
+	@include border(top, 1px, solid, rgba($black, .2));
+}
+
+#primary-nav.mobile li {
+	width: 100%;
+	margin: 0;
+	border-bottom: 1px solid #CCC;
+}
+
+#primary-nav.mobile li.selected > a {
+	border-bottom: 1px solid #CCC;
+}
+
+#primary-nav.mobile li a {
+	padding: 15px;
+}
+
+#primary-nav.mobile .sub-menu li a {
+	padding-left: 25px;
+}
+
+#primary-nav.mobile .sub-menu .submenu li a {
+	padding-left: 25px;
+}
+
+#primary-nav.mobile .sub-menu .sub-menu .sub-menu li a {
+	padding-left: 25px;
+}
+
+#primary-nav.mobile .sub-menu {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.mobile .downarrow, .mobile .sub-menu .downarrow {
+	position: absolute;
+	right: 0;
+	padding-right: 5%;
+}
+
+#primary-nav.mobile .sub-menu .downarrow:before {
+	content: '\25be';
+}
+
+#primary-nav-button.mobile {
+	display: inline-block;
+}
+
+.nav ul li ul {
+	margin-left: 0;
+}
+
+.nav ul li, .nav ul li ul li {
+	padding: 0;
+}
+
+.nav ul li ul li {
+	text-align: left;
+	margin: 0;
+}
+
+.nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
+	border: none;
+}
+
+@media (min-width:1070px) {
+	.nav 
+	.nav ul li ul li {
+		border: none;
+	}
+
+	.menu .sub-menu {
+		width: 950px !important;
+	}
+
+	.menu .sub-menu li {
+		display: inline-block;
+		width: auto;
+		margin-left: 30px;
+	}
+
+	.nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
+		border: none;
+	}
+
+}

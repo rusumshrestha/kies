@@ -1,0 +1,219 @@
+.bg-blue {
+	background: #354467;
+	background: -moz-linear-gradient(45deg, #354467 0%, #191936 100%);
+	background: -webkit-linear-gradient(45deg, #354467 0%, #191936 100%);
+	background: linear-gradient(135deg, #354467 0%, #191936 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#354467', endColorstr='#191936', GradientType=1);
+	position: relative;
+
+	.icon-block {
+		svg, img {
+			height: 375px;
+		}
+
+	}
+
+}
+
+.bg-green {
+	background: #418A00;
+	background: -moz-linear-gradient(45deg, #418A00 0%, #2A5A00 100%);
+	background: -webkit-linear-gradient(45deg, #418A00 0%, #2A5A00 100%);
+	background: linear-gradient(135deg, #418A00 0%, #2A5A00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#418A00', endColorstr='#2A5A00', GradientType=1);
+	position: relative;
+
+	.icon-block {
+		svg, img {
+			height: 350px;
+		}
+
+	}
+
+}
+
+.bg-orange {
+	background: #FC6A00;
+	background: -moz-linear-gradient(45deg, #FC6A00 0%, #E45B00 100%);
+	background: -webkit-linear-gradient(45deg, #FC6A00 0%, #E45B00 100%);
+	background: linear-gradient(135deg, #FC6A00 0%, #E45B00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FC6A00', endColorstr='#E45B00', GradientType=1);
+	position: relative;
+
+	.icon-block {
+		svg, img {
+			height: 325px;
+		}
+
+	}
+
+}
+
+.bg-maroon {
+	background: #901E42;
+	background: -moz-linear-gradient(45deg, #901E42 0%, #5F132E 100%);
+	background: -webkit-linear-gradient(45deg, #901E42 0%, #5F132E 100%);
+	background: linear-gradient(135deg, #901E42 0%, #5F132E 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#901E42', endColorstr='#5F132E', GradientType=1);
+	position: relative;
+
+	.icon-block {
+		svg, img {
+			height: 385px;
+		}
+
+	}
+
+}
+
+.bg-block.bg-blue, .bg-block.bg-green, .bg-block.bg-orange, .bg-block.bg-maroon, .bg-block.bg-overlay {
+	h1, h2, h3, h4, h5, h6, p, a {
+		color: $white;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.icon-block {
+			text-align: center;
+			width: 100%;
+
+			@include breakpoint(small) {
+				width: 30%;
+			}
+
+			@include breakpoint(medium) {
+				width: 45%;
+			}
+
+			@include breakpoint(x-large) {
+				width: 525px;
+			}
+
+		}
+
+		.content-wrapper {
+			@include breakpoint(small) {
+				width: 65%;
+				margin-left: 5%;
+			}
+
+			@include breakpoint(medium) {
+				width: 50%;
+			}
+
+			@include breakpoint(x-large) {
+				width: 590px;
+				margin-left: 105px;
+			}
+
+			a.btn {
+				margin: 40px 0 110px;
+				display: inline-block;
+			}
+
+		}
+
+	}
+
+}
+
+.bg-block.bg-blue, .bg-block.bg-green, .bg-block.bg-orange, .bg-block.bg-maroon, .bg-block.bg-overlay {
+	.news-list {
+		h1, h2, h3, h4, h5, h6, p, a {
+			color: $text-color;
+		}
+
+	}
+
+}
+
+.bg-block.bg-blue, .bg-block.bg-green, .bg-block.bg-orange, .bg-block.bg-maroon {
+	.container{
+
+		padding: 75px 15px;
+	}
+	&:before {
+		@include breakpoint(small) {
+			position: absolute;
+			right: 0;
+			content: "";
+			left: 0;
+			display: block;
+			top: 0;
+			bottom: 0%;
+			width: 18%;
+		}
+
+		@include breakpoint(xx-large) {
+			width: 30%;
+		}
+
+	}
+
+}
+
+.bg-block.bg-blue {
+	.container {
+		background: url('../images/poly-img-1.svg') no-repeat left top/contain;
+	}
+
+	&:before {
+		@include breakpoint(small) {
+			background: $sky-blue;
+		}
+
+	}
+
+}
+
+.bg-block.bg-green {
+	.container {
+		background: url('../images/poly-img-2.svg') no-repeat left top/contain;
+	}
+
+	&:before {
+		@include breakpoint(small) {
+			background: $green;
+		}
+
+	}
+
+}
+
+.bg-block.bg-orange {
+	.container {
+		background: url('../images/poly-img-3.svg') no-repeat left top/contain;
+	}
+
+	&:before {
+		@include breakpoint(small) {
+			background: $orange;
+		}
+
+	}
+
+}
+
+.bg-block.bg-maroon {
+	.container {
+		background: url('../images/poly-img-4.svg') no-repeat left top/contain;
+	}
+
+	&:before {
+		@include breakpoint(small) {
+			background: $maroon;
+		}
+
+	}
+
+}
+
+.bg-widget {
+	h3, p {
+		padding-left: 30px;
+	}
+
+}

@@ -1,0 +1,495 @@
+.fontItalic {
+  font-style: italic;
+}
+
+/**
+return rem with respect to base
+**/
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*:before, *::after {
+  box-sizing: inherit;
+}
+
+*:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(87, 101, 108, 0.5);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(87, 101, 108, 0.5);
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(87, 101, 108, 0.5);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(87, 101, 108, 0.5);
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover, a:active, a:focus,
+object, embed,
+input::-moz-focus-inner, button {
+  outline: 0;
+}
+
+input[type="reset"], input[type="submit"], input[type="button"], button {
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-offset: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong:after, em:after, b:after, em:after {
+  display: none;
+}
+
+strong, b {
+  font-weight: 700;
+  clear: both;
+  display: block;
+}
+
+em {
+  font-style: italic;
+}
+
+body {
+  font: 400 16px/20px "Open Sans", sans-serif;
+  color: #57656C;
+  -webkit-transition: 1s 0.3s linear;
+  -moz-transition: 1s 0.3s linear;
+  -ms-transition: 1s 0.3s linear;
+  -o-transition: 1s 0.3s linear;
+  transition: 1s 0.3s linear;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #001C4E;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 30px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 26px;
+  }
+}
+
+h6 {
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 24px;
+  }
+}
+
+p {
+  font: 400 16px/30px "Open Sans", sans-serif;
+  color: #57656C;
+  margin-bottom: 30px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p a {
+  font-size: 16px;
+  color: #80A8CC;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+p a:hover {
+  text-decoration: underline;
+  color: #711737;
+}
+
+p a:after {
+  display: none;
+}
+
+a {
+  font: 400 15px "Open Sans", sans-serif;
+  color: #57656C;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  color: #711737;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title-block h2 {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.title-block h3 {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .result_hover:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -100%;
+    left: 0;
+    background: rgba(128, 168, 204, 0.3);
+    z-index: 9;
+    -webkit-transition: 0.2s 0.3s linear;
+    -moz-transition: 0.2s 0.3s linear;
+    -ms-transition: 0.2s 0.3s linear;
+    -o-transition: 0.2s 0.3s linear;
+    transition: 0.2s 0.3s linear;
+  }
+}
+
+.custom-margin {
+  margin: 0 0 50px 0;
+}
+
+@media (min-width: 992px) {
+  .custom-margin {
+    margin: 0 0 100px 200px;
+  }
+}
+
+.content-sidebar-left .custom-margin, .content-sidebar-right .custom-margin {
+  margin: 0 0 50px 0;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .pl-block {
+    padding-left: 95px;
+  }
+}
+
+/**
+ * Description: Container Sizes
+ * Version: 1.0.0
+ * Last update: 2018/01
+ * Author: Gledpan
+ *
+ * Summary:
+ *
+ * 1. CONTAINER SIZES
+ *    - 1.1. CONTAINER SMALL
+ *    - 1.2. CONTAINER MEDIUM
+ *    - 1.3. CONTAINER LARGE
+ *    - 1.4. ROW
+ * 2. TWO COL, THREE COL, FOUR COL
+ *    - 2.1. TWO COL
+ *    - 2.2. THREE COL
+ *    - 2.3. FOUR COL
+ */
+/* ==========================================================================
+   1. CONTAINER SIZES
+   ========================================================================== */
+.container-small, .container-medium, .container-large {
+  position: relative;
+  padding: 0 15px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* 1.1. CONTAINER SMALL
+   ========================================================================== */
+@media (min-width: 992px) {
+  .container-small {
+    width: 890px;
+    padding: 0 15px;
+  }
+}
+
+/* 1.2. CONTAINER MEDIUM
+   ========================================================================== */
+@media (min-width: 1240px) {
+  .container-medium {
+    width: 1070px;
+  }
+}
+
+/* 1.3. CONTAINER LARGE
+   ========================================================================== */
+@media (min-width: 1300px) {
+  .container-large {
+    width: 1270px;
+  }
+}
+
+/* 1.4. ROW
+   ========================================================================== */
+.row {
+  margin: 0 -15px;
+}
+
+/* ==========================================================================
+   TWO COL , THREE COL, FOUR COL
+   ========================================================================== */
+.two-col, .three-col, .four-col {
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+@media (min-width: 768px) {
+  .two-col, .three-col, .four-col {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.two-col .col, .three-col .col, .four-col .col {
+  margin-top: 30px;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.two-col .col:last-child, .three-col .col:last-child, .four-col .col:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .two-col .col, .three-col .col, .four-col .col {
+    margin-bottom: 0;
+  }
+}
+
+/* TWO COL
+   ========================================================================== */
+@media (min-width: 640px) {
+  .two-col .col, .two-col li {
+    width: calc(50% - 30px);
+    float: left;
+    margin-bottom: 0;
+  }
+}
+
+/* THREE COL
+   ========================================================================== */
+@media (min-width: 640px) {
+  .three-col .col, .three-col li {
+    width: calc(33.33% - 30px);
+    margin-left: 30px;
+    float: left;
+  }
+}
+
+/* 
+FOUR COL
+========================================================================== */
+@media (min-width: 640px) {
+  .four-col .col, .four-col li {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    float: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .four-col .col, .four-col li {
+    width: calc(25% - 30px);
+  }
+}
+
+.four-col, .three-col, .two-col {
+  margin-top: -30px;
+}
+
+.four-col li, .three-col li, .two-col li {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.common-block {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
