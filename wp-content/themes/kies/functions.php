@@ -219,7 +219,7 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
+add_image_size( 'thumb-444x250', 444, 250, true );
 function pr($data){
 	echo '<pre>';
 	print_r($data);
@@ -255,3 +255,30 @@ function kies_svg_thumb_display() {
   </style>';
 }
 add_action('admin_head', 'kies_svg_thumb_display');
+
+function content($my_content, $limit) {
+  $content = explode(' ', $my_content, $limit);
+  if (count($content)>=$limit) {
+    array_pop($content);
+    $content = implode(" ",$content).'';
+  } else {
+    $content = implode(" ",$content);
+  }	
+  $content = preg_replace('/\[.+\]/','', $content);
+  $content = apply_filters('the_content', $content); 
+  $content = str_replace(']]>', ']]&gt;', $content);
+  return $content;
+}
+
+function get_latest_post($postType, $postPerPage) {
+	global $paged;
+	$args = array(
+		'post_type' => $postType,
+		'orderby' => 'post_date',
+		'order' => 'ASC',
+		'post_status' => 'publish',
+		'posts_per_page' => $postPerPage,
+		);
+	$query = new WP_Query( $args );
+	return $query->posts;
+}
