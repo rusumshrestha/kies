@@ -679,6 +679,38 @@ footer.common-block {
   margin-bottom: 0;
 }
 
+/* line 193, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+.center-content .form-wrapper .form-element {
+  margin: 0 auto;
+  float: none;
+}
+
+/* line 197, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+.space-area {
+  margin-top: 70px;
+}
+
+/* line 200, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+.negative-space-area {
+  margin-top: -70px;
+}
+
+/* line 205, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+.centered-list {
+  margin-bottom: 30px;
+}
+
+/* line 207, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+.centered-list ul {
+  text-align: center;
+}
+
+/* line 209, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+.centered-list ul li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
 /* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header {
   padding: 15px 0;
@@ -1107,7 +1139,7 @@ footer h3 {
 }
 
 /* line 33, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
-.footer-menu .foot-menu a {
+.footer-menu .foot-menu .mneu a {
   font-size: 16px;
 }
 
@@ -1317,47 +1349,53 @@ footer h3 {
   height: 385px;
 }
 
-/* line 70, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 68, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.bg-block {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 73, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue h1, .bg-block.bg-blue h2, .bg-block.bg-blue h3, .bg-block.bg-blue h4, .bg-block.bg-blue h5, .bg-block.bg-blue h6, .bg-block.bg-blue p, .bg-block.bg-blue a, .bg-block.bg-green h1, .bg-block.bg-green h2, .bg-block.bg-green h3, .bg-block.bg-green h4, .bg-block.bg-green h5, .bg-block.bg-green h6, .bg-block.bg-green p, .bg-block.bg-green a, .bg-block.bg-orange h1, .bg-block.bg-orange h2, .bg-block.bg-orange h3, .bg-block.bg-orange h4, .bg-block.bg-orange h5, .bg-block.bg-orange h6, .bg-block.bg-orange p, .bg-block.bg-orange a, .bg-block.bg-maroon h1, .bg-block.bg-maroon h2, .bg-block.bg-maroon h3, .bg-block.bg-maroon h4, .bg-block.bg-maroon h5, .bg-block.bg-maroon h6, .bg-block.bg-maroon p, .bg-block.bg-maroon a, .bg-block.bg-overlay h1, .bg-block.bg-overlay h2, .bg-block.bg-overlay h3, .bg-block.bg-overlay h4, .bg-block.bg-overlay h5, .bg-block.bg-overlay h6, .bg-block.bg-overlay p, .bg-block.bg-overlay a {
   color: #FFF;
 }
 
-/* line 74, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 77, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container, .bg-block.bg-green .container, .bg-block.bg-orange .container, .bg-block.bg-maroon .container, .bg-block.bg-overlay .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-/* line 79, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
   text-align: center;
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  /* line 79, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
     width: 30%;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 79, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
     width: 45%;
   }
 }
 
 @media (min-width: 1300px) {
-  /* line 79, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
     width: 525px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 97, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
     width: 65%;
     margin-left: 5%;
@@ -1365,21 +1403,21 @@ footer h3 {
 }
 
 @media (min-width: 992px) {
-  /* line 97, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
     width: 50%;
   }
 }
 
 @media (min-width: 1300px) {
-  /* line 97, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
     width: 590px;
     margin-left: 105px;
   }
 }
 
-/* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .content-wrapper .button-element, .bg-block.bg-green .container .content-wrapper .button-element, .bg-block.bg-orange .container .content-wrapper .button-element, .bg-block.bg-maroon .container .content-wrapper .button-element, .bg-block.bg-overlay .container .content-wrapper .button-element {
   margin: 40px 0 110px;
   max-width: inherit;
@@ -1387,23 +1425,23 @@ footer h3 {
   display: inline-block;
 }
 
-/* line 117, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 120, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .content-wrapper .button-element a, .bg-block.bg-green .container .content-wrapper .button-element a, .bg-block.bg-orange .container .content-wrapper .button-element a, .bg-block.bg-maroon .container .content-wrapper .button-element a, .bg-block.bg-overlay .container .content-wrapper .button-element a {
   display: inline-block;
 }
 
-/* line 130, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 133, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .news-list h1, .bg-block.bg-blue .news-list h2, .bg-block.bg-blue .news-list h3, .bg-block.bg-blue .news-list h4, .bg-block.bg-blue .news-list h5, .bg-block.bg-blue .news-list h6, .bg-block.bg-blue .news-list p, .bg-block.bg-blue .news-list a, .bg-block.bg-green .news-list h1, .bg-block.bg-green .news-list h2, .bg-block.bg-green .news-list h3, .bg-block.bg-green .news-list h4, .bg-block.bg-green .news-list h5, .bg-block.bg-green .news-list h6, .bg-block.bg-green .news-list p, .bg-block.bg-green .news-list a, .bg-block.bg-orange .news-list h1, .bg-block.bg-orange .news-list h2, .bg-block.bg-orange .news-list h3, .bg-block.bg-orange .news-list h4, .bg-block.bg-orange .news-list h5, .bg-block.bg-orange .news-list h6, .bg-block.bg-orange .news-list p, .bg-block.bg-orange .news-list a, .bg-block.bg-maroon .news-list h1, .bg-block.bg-maroon .news-list h2, .bg-block.bg-maroon .news-list h3, .bg-block.bg-maroon .news-list h4, .bg-block.bg-maroon .news-list h5, .bg-block.bg-maroon .news-list h6, .bg-block.bg-maroon .news-list p, .bg-block.bg-maroon .news-list a, .bg-block.bg-overlay .news-list h1, .bg-block.bg-overlay .news-list h2, .bg-block.bg-overlay .news-list h3, .bg-block.bg-overlay .news-list h4, .bg-block.bg-overlay .news-list h5, .bg-block.bg-overlay .news-list h6, .bg-block.bg-overlay .news-list p, .bg-block.bg-overlay .news-list a {
   color: #001C4E;
 }
 
-/* line 139, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 142, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container, .bg-block.bg-green .container, .bg-block.bg-orange .container, .bg-block.bg-maroon .container {
   padding: 75px 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 143, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue:before, .bg-block.bg-green:before, .bg-block.bg-orange:before, .bg-block.bg-maroon:before {
     position: absolute;
     right: 0;
@@ -1417,63 +1455,60 @@ footer h3 {
 }
 
 @media (min-width: 1920px) {
-  /* line 143, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue:before, .bg-block.bg-green:before, .bg-block.bg-orange:before, .bg-block.bg-maroon:before {
     width: 30%;
   }
 }
 
-/* line 164, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-.bg-block.bg-blue .container {
-  background: url("../images/poly-img-1.svg") no-repeat -100px top/contain;
+/* line 251, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.single .svg-img {
+  max-height: 1200px;
 }
 
-@media (min-width: 768px) {
-  /* line 168, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-  .bg-block.bg-blue:before {
-    background: #00B9E6;
-  }
+/* line 256, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.svg-img {
+  position: absolute;
+  width: 662px;
 }
 
-/* line 178, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-.bg-block.bg-green .container {
-  background: url("../images/poly-img-2.svg") no-repeat -100px top/contain;
-}
-
-@media (min-width: 768px) {
-  /* line 182, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-  .bg-block.bg-green:before {
-    background: #469500;
-  }
-}
-
-/* line 192, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-.bg-block.bg-orange .container {
-  background: url("../images/poly-img-3.svg") no-repeat -100px top/contain;
-}
-
-@media (min-width: 768px) {
-  /* line 196, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-  .bg-block.bg-orange:before {
-    background: #FF6C00;
-  }
-}
-
-/* line 206, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-.bg-block.bg-maroon .container {
-  background: url("../images/poly-img-4.svg") no-repeat -100px top/contain;
-}
-
-@media (min-width: 768px) {
-  /* line 210, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-  .bg-block.bg-maroon:before {
-    background: #9D2248;
-  }
-}
-
-/* line 220, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 261, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-widget h3, .bg-widget p {
   padding-left: 30px;
+}
+
+/* line 267, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.disabled-block {
+  opacity: .3;
+}
+
+/* line 270, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.single .icon-block img, .single .icon-block svg {
+  width: 500px;
+}
+
+/* line 274, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.bg-maroon #Path_393, .bg-maroon #Path_434 {
+  fill: #9D2248;
+  opacity: 1;
+}
+
+/* line 279, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.bg-orange #Path_393, .bg-orange #Path_430 {
+  fill: #FF7F00;
+  opacity: 1;
+}
+
+/* line 284, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.bg-green #Path_393, .bg-green #Path_431 {
+  fill: #469500;
+  opacity: 1;
+}
+
+/* line 289, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.bg-blue #Path_393, .bg-blue #Path_433 {
+  fill: #00B9E6;
+  opacity: 1;
 }
 
 /* line 2, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
@@ -1591,7 +1626,7 @@ footer h3 {
 
 /* line 95, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-orange {
-  background: #FF6C00;
+  background: #FF7F00;
 }
 
 /* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
@@ -1749,20 +1784,28 @@ footer h3 {
   margin-bottom: 30px;
 }
 
-/* line 7, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
+/* line 6, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
+.section-title h1 span, .section-title h2 span, .section-title h3 span, .section-title h4 span, .section-title h5 span, .section-title h6 span {
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-title p {
   margin-top: 30px;
   max-width: 700px;
   margin: 0 auto;
 }
 
-/* line 13, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
+/* line 19, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-link {
   margin-top: 40px;
   width: 100%;
 }
 
-/* line 18, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
+/* line 24, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .bg-green.bg-block .btn {
   color: #469500;
 }
