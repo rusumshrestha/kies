@@ -57,13 +57,13 @@
             <h3>PARTNERS</h3>
             <?php
 			$parter_logo_1 = get_field( 'add_partners_logo_1', 'option' );
-			/*if( is_array( $parter_logo_1 ) && ! empty( $parter_logo_1 ) ){
+			if( is_array( $parter_logo_1 ) && ! empty( $parter_logo_1 ) ){
 				foreach( $parter_logo_1 as $parter_1 ){
 					?>
                     <img src="<?php echo esc_url($parter_1['_site_upload_logo_1']['url']); ?>" alt="<?php bloginfo( 'name' ); ?>">
                     <?php
 				}
-			}*/
+			}
 			?>
         </div>
         <?php } ?>
@@ -75,12 +75,11 @@
 				<h3>PARTNERS</h3>
 				<?php
 				$parter_logo_2 = get_field( 'add_partners_logo_2', 'option' );
-				/*
+					foreach( $parter_logo_2 as $parter_2 ){
 						?>
 						<img src="<?php echo esc_url($parter_2['upload_image']['url']); ?>" alt="<?php bloginfo( 'name' ); ?>">
 						<?php
 					}
-				}*/
 				?>
 			</div>
 			<?php } ?>

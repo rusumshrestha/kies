@@ -33,7 +33,7 @@ get_header();
     </div>
 </div>
 <main>
-    <div class="bg-block bg-blue">
+    <div class="bg-block bg-blue margin-tb-block">
         <div class="container">
         	<?php
 			if( get_field('image_subContentSection') ){
@@ -78,9 +78,11 @@ get_header();
 							$more_target = '';
 						}
 					?>
-                    <a href="<?php echo esc_url($more_url);?>" class="btn btn-white" <?php echo esc_attr($more_target); ?> title="<?php echo esc_attr($more_title); ?>">
+                    <div class="button-element"><
+                    <a href="<?php echo esc_url($more_url);?>" class="btn btn-white-shadow" <?php echo esc_attr($more_target); ?> title="<?php echo esc_attr($more_title); ?>">
                     	<?php echo esc_html($more_title); ?>
                     </a>
+                    </div>
                     <?php } ?>
                 </div>
                 <div class="bg-widget two-col">
@@ -116,7 +118,7 @@ get_header();
 		}
 	}
 	?>
-	<div class="common-block bg-block bg-img bg-overlay" style="background-image: url('<?php echo esc_url($col3_bg_img);?>'); ">
+	<div class="common-block bg-block bg-img bg-overlay margin-tb-block" style="background-image: url('<?php echo esc_url($col3_bg_img);?>'); ">
         <div class="container-medium">
             <div class="section-title">
             	<?php if( get_field('sectionTitle_3col_section') ){?>
@@ -238,8 +240,8 @@ get_header();
 					$more_target = '';
 				}
 			?>
-            <div class="section-link">
-			<a href="<?php echo esc_url($more_url);?>" class="btn btn-dark-blue btn-large" <?php echo esc_attr($more_target); ?> title="<?php echo esc_attr($more_title); ?>">
+            <div class="section-link text-center">
+			<a href="<?php echo esc_url($more_url);?>" class="btn btn-white btn-large" <?php echo esc_attr($more_target); ?> title="<?php echo esc_attr($more_title); ?>">
 				<?php echo esc_html($more_title); ?>
 			</a>
             </div>
@@ -346,7 +348,7 @@ get_header();
 					$more_target = '';
 				}
 			?>
-            <div class="section-link">
+            <div class="section-link text-center">
                 <a href="<?php echo esc_url($more_url);?>" class="btn btn-blue" <?php echo esc_attr($more_target); ?> title="<?php echo esc_attr($more_title); ?>">
 				<?php echo esc_html($more_title); ?>
 			</a>
@@ -354,27 +356,108 @@ get_header();
             <?php } ?>
         </div>
     </div>
+    
+    <div class="common-block bg-block campiagn-block" style="background-color: rgba(0,185,230,.3);">
+				<div class="container">
+                	<?php
+					if( get_field( 'section_title_campaign' ) ){
+					?>
+					<div class="section-title text-center">
+						<h2><?php the_field( 'section_title_campaign' ); ?></h2>
+					</div>
+					<?php } ?>
+                    <?php
+					$get_campaign = get_terms( array(
+						'taxonomy' => 'campaign',
+						'hide_empty' => false,
+					) );
+					if( is_array( $get_campaign ) ){
+					?>
+                        <div class="four-col campiagn-list">
+                        	<?php
+							foreach( $get_campaign as $campaign ){
+								$campaign_img = get_field('image_campaign', $campaign->taxonomy . '_' . $campaign->term_id);
+							?>
+                                <div class="col <?php the_field( 'chooseColor_campaign', $campaign->taxonomy . '_' . $campaign->term_id ); ?>">
+                                    <div class="section-title">
+                                        <h3><?php echo $campaign->name; ?></h3>
+                                        <p><?php the_field( 'subTitle_campaign', $campaign->taxonomy . '_' . $campaign->term_id ); ?></p>
+                                    </div>
+                                    <div class="img-block">
+                                    	<?php
+										if( is_array( $campaign_img ) ){
+										?>
+                                        <img src="<?php echo $campaign_img['url'];?>" alt="<?php echo $campaign->name; ?>">
+                                        <?php } ?>
+                                    </div>
+                                    <div class="link-block">
+                                        <a href="<?php echo get_term_link( $campaign ); ?>" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                            
+                            <?php /*?><div class="col bg-green">
+                                <div class="section-title">
+                                    <h3>ZOMERBANDEN CAMPAGNE</h3>
+                                    <p>maart — september</p>
+                                </div>
+                                <div class="img-block">
+                                    <img src="<?php echo get_template_directory_uri();?>/dist/images/zomerbanden.svg" alt="">
+                                </div>
+                                <div class="link-block">
+                                    <a href="#" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col bg-orange">
+                                <div class="section-title">
+                                    <h3>VEILIGHEID CAMPAGNE</h3>
+                                    <p>doorlopende campagne</p>
+                                </div>
+                                <div class="img-block">
+                                    <img src="<?php echo get_template_directory_uri();?>/dist/images/veilgeid.svg" alt="">
+                                </div>
+                                <div class="link-block">
+                                    <a href="#" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col bg-maroon">
+                                <div class="section-title">
+                                    <h3>BANDENSPANNING CAMPAGNE</h3>
+                                    <p>doorlopende campagne</p>
+                                </div>
+                                <div class="img-block">
+                                    <img src="<?php echo get_template_directory_uri();?>/dist/images/bandenspanning.svg" alt="">
+                                </div>
+                                <div class="link-block">
+                                    <a href="#" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
+                                </div>
+                            </div><?php */?>
+                            
+                        </div>
+                    <?php } ?>
+				</div>
+			</div>
+
+			<div class="common-block bg-block subscribe" style="background: #9D2248;">
+				<div class="container-medium">
+					<div class="form-wrapper">
+						<h3>ONTVANG DE NIEUWSBRIEF!</h3>
+						<form action="#">
+							<div class="form-element">
+								<input type="text" placeholder="Naam">
+							</div>
+							<div class="form-element">
+								<input type="email" placeholder="E-mailadres">
+							</div>
+							<div class="form-element button-element">
+								<button type="submit" class="btn btn-white btn-white-shadow">AANMELDEN</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 </main>
 
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php
-		
-
-			//get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		 // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 <?php
 }
 ?>
