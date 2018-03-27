@@ -139,7 +139,7 @@ strong,b{
   display: block;
 }
 em{
-  font-style: $italic;
+  // font-style: $italic;
 }
 body{
   font: $regular 16px/20px $text;
@@ -147,11 +147,11 @@ body{
   @include transition_hover(1s);
 }
 h1,h2,h3,h4,h5,h6{
-  font-weight: $semi;
+  font-weight: $black;
   font-family: $text;
   color:$text-color;
   line-height: 1;
-  word-break:break-all;
+  word-break:word-break;
 }
 h1{
   font-size: 35px;
@@ -160,7 +160,10 @@ h1{
   }
 }
 h2{
-  font-size: 26px;
+  font-size: 35px;
+  @include breakpoint(small) {
+    font-size: 60px;
+  }
 }
 h3{
   font-size: 20px;
@@ -212,7 +215,13 @@ a{
     color:$theme-color;
   }
 }
+.pull-left{
+  float: left;
+}
 
+.pull-right{
+  float: right;
+}
 .text-left{
   text-align: left;
 }
@@ -221,4 +230,21 @@ a{
 }
 .text-center{
   text-align: center;
+}
+
+a.normal-link{
+  font-size: 14px;
+  font-weight: $bold;
+}
+
+.margin-tb-block{
+  margin:30px 0;
+}
+
+.margin-t-block{
+  margin-top:30px;
+}
+
+.margin-b-block{
+  margin-bottom:30px;
 }

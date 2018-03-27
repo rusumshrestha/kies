@@ -78,6 +78,7 @@
    .col {
       margin-top: 30px;
       margin-left: 30px;
+      width: 100%;
 
       &:last-child {
          margin-bottom: 0;
@@ -119,7 +120,7 @@ ul.two-col{
 .three-col{
    
    .col {
-      @include breakpoint(x-small) {
+      @include breakpoint(small) {
          width: calc(33.33% - 30px);
          margin-left: 30px;
       }
@@ -129,7 +130,7 @@ ul.two-col{
 }
 ul.three-col{ 
    li {
-      @include breakpoint(x-small) {
+      @include breakpoint(small) {
          width: calc(33.33% - 30px);
          margin-left: 30px;
       }
@@ -183,3 +184,31 @@ ul.four-col,ul.three-col,ul.two-col{
 footer.common-block{
       padding: 50px 0;
    }
+.common-block.subscribe{
+   padding:30px 0;
+   h1,h2,h3,h4,h5,h6{
+      margin-bottom:0;
+   }
+}
+.center-content .form-wrapper .form-element{
+   margin: 0 auto;
+   float: none;
+}
+.space-area{
+   margin-top: 70px;
+}
+.negative-space-area{
+   margin-top: -70px;
+}
+
+
+.centered-list{
+   margin-bottom: 30px;
+   ul {
+      text-align: center;
+      li{
+         display: inline-block;
+         margin: 0 3px;
+      }
+   }
+}

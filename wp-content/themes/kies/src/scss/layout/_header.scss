@@ -234,7 +234,7 @@
 	z-index: 111;
 	margin: 0;
 	left: 0;
-	@include border(top, 1px, solid, rgba($black, .2));
+	@include border(top,1px,solid,rgba($green, .2));
 }
 
 #primary-nav.mobile li {

@@ -190,3 +190,25 @@ footer.common-block{
       margin-bottom:0;
    }
 }
+.center-content .form-wrapper .form-element{
+   margin: 0 auto;
+   float: none;
+}
+.space-area{
+   margin-top: 70px;
+}
+.negative-space-area{
+   margin-top: -70px;
+}
+
+
+.centered-list{
+   margin-bottom: 30px;
+   ul {
+      text-align: center;
+      li{
+         display: inline-block;
+         margin: 0 3px;
+      }
+   }
+}

@@ -30,7 +30,7 @@ footer{
 		@include breakpoint(x-large) {
 			width: calc(14.285714285714286% - 50px);
 		}
-		a{
+		.mneu a{
 			font-size: 16px;
 		}
 	}
