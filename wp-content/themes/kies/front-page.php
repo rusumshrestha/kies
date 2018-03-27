@@ -164,18 +164,18 @@ get_header();
     
 	<div class="bg-block bg-green">
         <div class="container">
-        	<?php
-			if( get_field('section_title_newsSection') ){
-			?>
-            <div class="section-title">
-                <h2><?php the_field('section_title_newsSection'); ?></h2>
+        	<div class="section-title">
+				<?php
+                if( get_field('section_title_newsSection') ){
+                ?>
+                    <h2><?php the_field('section_title_newsSection'); ?></h2>
+                <?php } ?>
+                <?php 
+                if( get_field('section_desc_newsSection') ){
+                    the_field('section_desc_newsSection');
+                } 
+                ?>
             </div>
-            <?php } ?>
-            <?php 
-			if( get_field('section_desc_newsSection') ){
-				the_field('section_desc_newsSection');
-			} 
-			?>
             <div class="four-col news-list">
             	<?php
 				if( get_field('postToShow_newsSection') == 'latest' ){
@@ -244,6 +244,114 @@ get_header();
 			</a>
             </div>
 			<?php } ?>
+        </div>
+    </div>
+    <?php
+	$download_bg_img = '';
+	if( get_field('bgImg_downloadSection') ){
+		$get_download_bg_img = get_field('bgImg_downloadSection');
+		if( is_array($get_download_bg_img) && ! empty($get_download_bg_img['url']) ){
+			$download_bg_img = $get_download_bg_img['url'];
+		}
+	}
+	?>
+	<div class="common-block bg-block bg-img"   style="background-image: url('<?php echo esc_url( $download_bg_img ); ?>'); background-color: rgba(0,185,230,.15);">
+        <div class="container">
+            <div class="section-title">
+                <?php
+                if( get_field('section_title_downloadSection') ){
+                ?>
+                    <h2><?php the_field('section_title_downloadSection'); ?></h2>
+                <?php } ?>
+                <?php 
+                if( get_field('section_desc_downloadSection') ){
+                    the_field('section_desc_downloadSection');
+                } 
+                ?>
+            </div>
+            <div class="four-col news-list">
+            	<?php
+				if( get_field('postToShow_downloadSection') == 'latest' ){
+					$get_download = get_latest_post('download', 4);
+				} else {
+					$get_download = get_field('choosePost_downloadSection');
+				}
+				if( is_array($get_download) ){
+					foreach( $get_download as $post ){
+						setup_postdata( $post ); 
+						if( get_field('download_typ_download') == 'Video' ){
+							$file_type = 'video';
+						} else{
+							$file_detail = get_field('upload_file_download');
+							$file_url = $file_detail['url'];
+							$file_name = $file_detail['filename'];
+							$file_ext = explode( '.', $file_name );
+							$file_ext = '.'.$file_ext[1];
+							$file_size = filesize( get_attached_file( $file_detail['ID'] ) );
+							$file_sizes = file_size_convert($file_size);
+						}
+				?>
+                        <div class="col">
+                            <div class="news-info">
+                                <div class="file-format">FILETYPE (<?php echo $file_ext; ?>)</div>
+                                <div class="date"><?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date;?></div>
+                            </div>
+                            <div class="news-content">
+                                <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+                                <?php
+								$get_download_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumb-444x250' );
+								if( is_array($get_download_image) && ! empty($get_download_image[0]) ){
+									$download_img = $get_download_image[0];
+								} else {
+									$download_img = get_template_directory_uri() . '/dist/images/blank-img.png';
+								}
+								?>
+								<div class="img-block"><img src="<?php echo esc_url($download_img); ?>" alt="<?php the_title(); ?>"></div>
+                                <?php
+                                if ( ! has_excerpt() ) {
+									  echo content( get_the_content(), 20 );
+								} else { 
+									  echo content( get_the_excerpt(), 20 );
+								}
+								?>
+								<a href="<?php the_permalink(); ?>" class="btn btn-small btn-sky-blue" title="<?php the_title(); ?>">BESTE BAND</a>
+                            </div>
+                            <div class="download-block">
+                                <a href="<?php echo $file_url;?>" target="_blank" class="pull-left"><i class="ico ico-download"></i>DOWNLOAD <?php echo $file_ext; ?> (<?php echo $file_sizes;?>)</a>
+                                <a href="#" title="View" class="pull-right"><i class="ico ico-eye"></i></a>
+                            </div>
+                        </div>
+                <?php
+					}
+					wp_reset_postdata();
+				}
+				?>
+            </div>
+            <?php
+			if( get_field('more_downloadSection') ){
+				$news_more = get_field('more_downloadSection');
+				if( array_key_exists('title', $news_more) && ! empty($news_more['title']) ){
+					$more_title = $news_more['title'];
+				} else{
+					$more_title = 'ALLE DOWNLOADS';
+				}
+				if( array_key_exists('url', $news_more) && ! empty($news_more['url']) ){
+					$more_url = $news_more['url'];
+				} else{
+					$more_url = '#';
+				}
+				if( array_key_exists('target', $news_more) && ! empty($news_more['target']) ){
+					$more_target = 'target="'.$news_more['target'].'"';
+				} else{
+					$more_target = '';
+				}
+			?>
+            <div class="section-link">
+                <a href="<?php echo esc_url($more_url);?>" class="btn btn-blue" <?php echo esc_attr($more_target); ?> title="<?php echo esc_attr($more_title); ?>">
+				<?php echo esc_html($more_title); ?>
+			</a>
+            </div>
+            <?php } ?>
         </div>
     </div>
 </main>

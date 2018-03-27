@@ -212,7 +212,7 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
+require get_template_directory() . '/inc/cpt.php';
 /**
  * Load Jetpack compatibility file.
  */
@@ -281,4 +281,44 @@ function get_latest_post($postType, $postPerPage) {
 		);
 	$query = new WP_Query( $args );
 	return $query->posts;
+}
+
+function file_size_convert($bytes){
+    $bytes = floatval($bytes);
+        $arBytes = array(
+            0 => array(
+                "UNIT" => "TB",
+                "VALUE" => pow(1024, 4)
+            ),
+            1 => array(
+                "UNIT" => "GB",
+                "VALUE" => pow(1024, 3)
+            ),
+            2 => array(
+                "UNIT" => "MB",
+                "VALUE" => pow(1024, 2)
+            ),
+            3 => array(
+                "UNIT" => "KB",
+                "VALUE" => 1024
+            ),
+            4 => array(
+                "UNIT" => "B",
+                "VALUE" => 1
+            ),
+        );
+
+    foreach($arBytes as $arItem)
+    {
+        if($bytes >= $arItem["VALUE"])
+        {
+			
+             $result =$bytes / $arItem["VALUE"];
+			$result =round($result, 2).' '.$arItem["UNIT"];
+            //$result = str_replace(".", "," , strval(round($result, 2)))." ".$arItem["UNIT"];
+			//pr($result);
+            break;
+        }
+    }
+    return $result;
 }
