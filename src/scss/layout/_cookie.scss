@@ -1,8 +1,48 @@
 .cookie{
 	.cookie-container{
 		max-width: 680px;
+		padding: 0 15px;
 		margin: 50px auto;
 		text-align: center;
 		line-height: 24px;
+	}
+	.cookie-bg{
+		background:$green;
+		padding: 15px;
+		.cookie-bg-container{
+			max-width: 1220px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap:wrap;
+			align-items:center;
+			.cookie-content{
+				@include breakpoint(medium){
+					width: 85%;
+				}
+			}
+			.cookie-btn-group{
+				margin-top: 30px;
+				@include breakpoint(medium){
+					margin-top: 0;
+					width: 15%;
+				}
+				ul{
+					margin-left: -10px;
+					@include breakpoint(medium){
+						float: right;
+					}
+					li{
+						float: left;
+						margin-left: 10px;
+					}
+				}
+			}
+			.btn-white{
+				color:$green;
+			}
+		}
+		p{
+			color:$white;
+		}
 	}
 }

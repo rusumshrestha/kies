@@ -1628,29 +1628,34 @@ footer h3 {
 }
 
 /* line 105, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+.btn-dark-green {
+  background: #2A5A00;
+}
+
+/* line 108, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-dark-blue {
   background: #001C4E;
 }
 
-/* line 109, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element, .form-element.button-element {
   width: 100%;
   position: relative;
 }
 
 @media (min-width: 768px) {
-  /* line 109, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+  /* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .button-element, .form-element.button-element {
     max-width: 205px;
   }
 }
 
-/* line 116, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 119, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element .btn, .form-element.button-element .btn {
   min-width: auto;
 }
 
-/* line 121, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 124, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow {
   width: 100%;
   display: block;
@@ -1664,7 +1669,7 @@ footer h3 {
   background: #FFF;
 }
 
-/* line 133, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 136, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after, .btn-white-shadow:before {
   position: absolute;
   content: '';
@@ -1672,7 +1677,7 @@ footer h3 {
   transition: all .5s;
 }
 
-/* line 140, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 143, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:before {
   bottom: -9px;
   height: 9px;
@@ -1683,7 +1688,7 @@ footer h3 {
   background-color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 150, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 153, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after {
   right: -9px;
   height: 100%;
@@ -2022,32 +2027,148 @@ footer h3 {
   display: inline-block;
 }
 
-/* line 46, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
-.news-list .col .download-block a, .news-list li .download-block a {
+/* line 50, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.download-block a {
   color: #469500;
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
 }
 
-/* line 51, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
-.news-list .col .download-block a i.ico-download, .news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-download, .news-list li .download-block a i.ico-eye {
+/* line 55, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.download-block a i.ico-download, .download-block a i.ico-eye {
   font-size: 30px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 56, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
-.news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-eye {
+/* line 60, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.download-block a i.ico-eye {
   color: #001C4E;
 }
 
 /* line 2, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
 .cookie .cookie-container {
   max-width: 680px;
+  padding: 0 15px;
   margin: 50px auto;
   text-align: center;
   line-height: 24px;
+}
+
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg {
+  background: #469500;
+  padding: 15px;
+}
+
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  /* line 18, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+  .cookie .cookie-bg .cookie-bg-container .cookie-content {
+    width: 85%;
+  }
+}
+
+/* line 23, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .cookie-btn-group {
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  /* line 23, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+  .cookie .cookie-bg .cookie-bg-container .cookie-btn-group {
+    margin-top: 0;
+    width: 15%;
+  }
+}
+
+/* line 29, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul {
+  margin-left: -10px;
+}
+
+@media (min-width: 992px) {
+  /* line 29, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+  .cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul {
+    float: right;
+  }
+}
+
+/* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 40, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .btn-white {
+  color: #469500;
+}
+
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg p {
+  color: #FFF;
+}
+
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-skin {
+  padding: 0 !important;
+}
+
+/* line 4, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-detail {
+  display: none;
+  max-width: 1220px;
+  padding: 30px;
+}
+
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-detail h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-detail .fancybox-content {
+  height: 566px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  background: rgba(0, 185, 230, 0.2);
+  border: 1px solid #00B9E6;
+  padding: 20px 5px 20px 20px;
+}
+
+/* line 22, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.mCSB_scrollTools .mCSB_draggerRail {
+  background: none;
+}
+
+/* line 26, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #A2A2A2;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  width: 7px;
+}
+
+/* line 32, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background: #A2A2A2;
 }
 
 /*# sourceMappingURL=../../dist/css/style.map */
