@@ -2,15 +2,20 @@
 	li{
 		display: block;
 		@include border(top,1px, solid,rgba($white,.25));
-		p{
 			padding:15px 0 15px 30px;
-		}
+			color:#FFF;
+
 		a{
-			padding: 20px 30px;
+			// padding: 20px 30px;
 			display: block;
 			font-size: 16px;
-			i{
-				float: right;
+			position: relative;
+			&:after{
+				position: absolute;
+				font-family: 'icomoon' !important;
+				content: "\e900";
+				right: 15px;
+				top:2px;
 			}
 		}
 		&:first-child{

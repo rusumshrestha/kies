@@ -22,7 +22,7 @@
 				display: inherit;
 			}
 
-			&:after {
+			 a:after {
 				content: "|";
 				display: inline-block;
 				clear: inherit;
@@ -31,12 +31,13 @@
 				line-height: 40px;
 			}
 
-			&:last-child:after {
+			&:last-child a:after{
 				display: none;
 			}
 
 			a {
 				display: block;
+				text-decoration: underline;
 				line-height: 40px;
 				color: rgba($text-color, .5);
 
@@ -132,11 +133,11 @@
 	color: $white;
 }
 
-.menu {
+header .menu {
 	position: relative;
 }
 
-.menu li {
+header .menu li {
 	float: left;
 	margin-left: 25px;
 	// position: relative;
@@ -168,15 +169,15 @@
 
 }
 
-.menu li:last-child {
+header .menu li:last-child {
 	margin-right: 0;
 }
 
-.menu .sub-menu li {
+header .menu .sub-menu li {
 	width: 100%;
 }
 
-.menu li a {
+header .menu li a {
 	display: block;
 	text-decoration: none;
 	color: $black;
@@ -184,7 +185,7 @@
 }
 
 @media (min-width:1070px) {
-	.menu li a {
+	header .menu li a {
 		padding: 0;
 		display: inline-block;
 		line-height: 50px;
@@ -198,17 +199,17 @@
 }
 
 @media (min-width:1200px) {
-	.menu li:after {
+	header .menu li:after {
 		margin: 0 8px;
 	}
 
 }
 
-.menu li.active > a, .menu li > a:hover, .menu li.selected > a {
+header .menu li.active > a, header .menu li > a:hover, header .menu li.selected > a {
 	color: $black;
 }
 
-.menu .sub-menu {
+header .menu .sub-menu {
 	display: none;
 	position: absolute;
 	left: -5px !important;
@@ -216,7 +217,7 @@
 	margin: 0;
 }
 
-.menu .sub-menu.hide {
+header .menu .sub-menu.hide {
 	display: none;
 }
 
@@ -306,11 +307,11 @@
 		border: none;
 	}
 
-	.menu .sub-menu {
+	header .menu .sub-menu {
 		width: 950px !important;
 	}
 
-	.menu .sub-menu li {
+	header .menu .sub-menu li {
 		display: inline-block;
 		width: auto;
 		margin-left: 30px;
