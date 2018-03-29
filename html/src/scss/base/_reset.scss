@@ -17,6 +17,11 @@ html {
   margin:0;
   padding: 0;
 }
+#wpadminbar{
+  &:after{
+    display: none;
+  }
+}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba($text-color,.5);
 }

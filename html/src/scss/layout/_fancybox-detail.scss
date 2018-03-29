@@ -1,0 +1,36 @@
+.fancybox-skin{
+	padding: 0 !important;
+}
+.fancybox-detail{
+	display: none;
+	max-width: 1220px;
+	padding:30px;
+	h3{
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.fancybox-content{
+		height: 566px;
+		margin-bottom: 20px;
+		overflow-y:scroll;
+		background: rgba($sky-blue,.2);
+		@include border(all,1px ,solid, $sky-blue);
+		padding: 20px 5px 20px 20px;
+	}
+}
+
+.mCSB_scrollTools .mCSB_draggerRail{
+	background: none;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	background: #A2A2A2;
+	@include border-radius(5px);
+	width: 7px;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+	background: #A2A2A2;
+}

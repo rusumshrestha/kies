@@ -83,9 +83,7 @@
 			text-align: center;
 			width: 100%;
 
-			@include breakpoint(small) {
-				width: 30%;
-			}
+			
 
 			@include breakpoint(medium) {
 				width: 45%;
@@ -98,13 +96,10 @@
 		}
 
 		.content-wrapper {
-			@include breakpoint(small) {
-				width: 65%;
-				margin-left: 5%;
-			}
 
 			@include breakpoint(medium) {
 				width: 50%;
+				margin-left: 5%;
 			}
 
 			@include breakpoint(x-large) {
@@ -267,9 +262,9 @@
 .disabled-block{
 	opacity: .3;
 }
-.single .icon-block img, .single .icon-block svg{
-	width: 500px;
-}
+// .single .icon-block img, .single .icon-block svg{
+// 	width: 500px;
+// }
 
 .bg-maroon #Path_393, .bg-maroon #Path_434{
 	fill:$maroon;

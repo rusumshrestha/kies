@@ -55,32 +55,42 @@
 		?>
         <div class="partner-logo">
             <h3>PARTNERS</h3>
+           	<ul class="partner-list">
             <?php
-			$parter_logo_1 = get_field( 'add_partners_logo_1', 'option' );
-			if( is_array( $parter_logo_1 ) && ! empty( $parter_logo_1 ) ){
-				foreach( $parter_logo_1 as $parter_1 ){
+			$partner_logo_1 = get_field( 'add_partners_logo_1', 'option' );
+			if( is_array( $partner_logo_1 ) ){
+				foreach( $partner_logo_1 as $partner_1 ){
 					?>
-                    <img src="<?php echo esc_url($parter_1['_site_upload_logo_1']['url']); ?>" alt="<?php bloginfo( 'name' ); ?>">
+                    <li>
+                    	<img src="<?php echo $partner_1['_site_upload_logo_1']['url']; ?>" alt="<?php bloginfo( 'name' ); ?>">
+                    </li>
                     <?php
 				}
 			}
 			?>
+            </ul>
         </div>
         <?php } ?>
         <div class="bottom-footer">
-             <?php
+            <?php
 			if( get_field( 'add_partners_logo_2', 'option' ) ){
 			?>
 			<div class="partner-logo">
 				<h3>PARTNERS</h3>
+                <ul class="partner-list">
 				<?php
-				$parter_logo_2 = get_field( 'add_partners_logo_2', 'option' );
-					foreach( $parter_logo_2 as $parter_2 ){
+				$partner_logo_2 = get_field( 'add_partners_logo_2', 'option' );
+				if( is_array( $partner_logo_2 ) ){
+					foreach( $partner_logo_2 as $partner_2 ){
 						?>
-						<img src="<?php echo esc_url($parter_2['upload_image']['url']); ?>" alt="<?php bloginfo( 'name' ); ?>">
+                        <li>
+							<img src="<?php echo esc_url( $partner_2['upload_image']['url'] ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+                        </li>
 						<?php
 					}
+				}
 				?>
+                </ul>
 			</div>
 			<?php } ?>
             <div class="bottom-footer-right">

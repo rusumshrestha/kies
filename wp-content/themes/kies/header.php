@@ -34,6 +34,13 @@
             <div class="top-nav">
                 <ul>
                 	<?php
+					if( get_field( 'header_text', 'option' ) ){
+					?>
+                		<li><?php the_field( 'header_text', 'option' ); ?></li>
+                    <?php
+					}
+					?>
+                	<?php
 					wp_nav_menu( array(
 						'theme_location' => 'nav-top',
 						'container' => false,
@@ -45,7 +52,8 @@
             <div class="search">
                 <div class="form-wrapper">
                     <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <div class="form-element"><input type="search" name="s" placeholder="Waar ben je naar op zoek?"></div>
+                        <div class="form-element"><input type="text" placeholder="Waar ben je naar op zoek?"></div>
+                        <button type="submit" class="search-btn"><i class="ico ico-search"></i></button>
                     </form>
                 </div>
             </div>

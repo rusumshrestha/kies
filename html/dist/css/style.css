@@ -135,36 +135,41 @@ html {
   padding: 0;
 }
 
-/* line 20, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 21, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+#wpadminbar:after {
+  display: none;
+}
+
+/* line 25, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 23, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 28, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 26, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 31, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 :-ms-input-placeholder {
   /* IE 10+ */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 29, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 39, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 img {
   max-width: 100%;
 }
 
-/* line 38, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 43, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a,
 a:hover, a:active, a:focus,
 object, embed,
@@ -172,7 +177,7 @@ input::-moz-focus-inner, button {
   outline: 0;
 }
 
-/* line 44, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 49, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 input[type="reset"], input[type="submit"], input[type="button"], button {
   border: none;
   cursor: pointer;
@@ -183,21 +188,21 @@ input[type="reset"], input[type="submit"], input[type="button"], button {
   transition: all 0.3s linear;
 }
 
-/* line 49, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 54, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a {
   text-decoration: none;
   outline: none;
   border: none;
 }
 
-/* line 53, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 58, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
   outline-offset: 0;
 }
 
-/* line 59, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 64, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ul, li {
   list-style: none;
 }
@@ -206,7 +211,7 @@ ul, li {
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 68, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 73, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -229,81 +234,81 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 89, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 94, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 93, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 96, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 101, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 99, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 104, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 blockquote, q {
   quotes: none;
-}
-
-/* line 102, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
 }
 
 /* line 107, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 113, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
-body {
-  line-height: 1;
-}
-
-/* line 116, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 119, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
-blockquote, q {
-  quotes: none;
-}
-
-/* line 122, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 127, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 118, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 121, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 124, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
 /* line 132, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 137, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 strong:after, em:after, b:after, em:after {
   display: none;
 }
 
-/* line 136, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 141, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 strong, b {
   font-weight: 700;
   clear: both;
   display: block;
 }
 
-/* line 144, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 149, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 body {
   font: 400 16px/20px "KievitOT", sans-serif;
   color: #001C4E;
@@ -314,7 +319,7 @@ body {
   transition: 1s 0.3s linear;
 }
 
-/* line 149, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 154, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-family: "KievitOT", sans-serif;
@@ -323,84 +328,84 @@ h1, h2, h3, h4, h5, h6 {
   word-break: word-break;
 }
 
-/* line 156, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 161, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h1 {
   font-size: 35px;
 }
 
 @media (min-width: 768px) {
-  /* line 156, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+  /* line 161, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h1 {
     font-size: 60px;
   }
 }
 
-/* line 162, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 167, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h2 {
   font-size: 35px;
 }
 
 @media (min-width: 768px) {
-  /* line 162, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+  /* line 167, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h2 {
     font-size: 60px;
   }
 }
 
-/* line 168, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 173, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h3 {
   font-size: 20px;
 }
 
-/* line 171, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 176, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h4 {
   font-size: 28px;
 }
 
 @media (min-width: 768px) {
-  /* line 171, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+  /* line 176, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h4 {
     font-size: 30px;
   }
 }
 
-/* line 177, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 182, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h5 {
   font-size: 24px;
 }
 
 @media (min-width: 768px) {
-  /* line 177, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+  /* line 182, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h5 {
     font-size: 26px;
   }
 }
 
-/* line 183, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 188, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h6 {
   font-size: 22px;
 }
 
 @media (min-width: 768px) {
-  /* line 183, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+  /* line 188, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h6 {
     font-size: 24px;
   }
 }
 
-/* line 189, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 194, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p {
   font: 400 16px/24px "KievitOT", sans-serif;
   color: #001C4E;
   margin-bottom: 30px;
 }
 
-/* line 193, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 198, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p:last-child {
   margin-bottom: 0;
 }
 
-/* line 196, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 201, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p a {
   font-size: 16px;
   color: #001C4E;
@@ -412,18 +417,18 @@ p a {
   transition: all 0.3s linear;
 }
 
-/* line 201, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 206, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p a:hover {
   text-decoration: underline;
   color: #711737;
 }
 
-/* line 205, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 210, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p a:after {
   display: none;
 }
 
-/* line 210, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 215, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a {
   font: 400 15px "KievitOT", sans-serif;
   color: #001C4E;
@@ -434,53 +439,53 @@ a {
   transition: all 0.3s linear;
 }
 
-/* line 214, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 219, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a:hover {
   color: #711737;
 }
 
-/* line 218, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 223, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .pull-left {
   float: left;
 }
 
-/* line 222, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 227, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .pull-right {
   float: right;
 }
 
-/* line 225, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 230, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 228, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 233, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 231, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 236, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 235, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 240, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a.normal-link {
   font-size: 14px;
   font-weight: 700;
 }
 
-/* line 240, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 245, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .margin-tb-block {
   margin: 30px 0;
 }
 
-/* line 244, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 249, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .margin-t-block {
   margin-top: 30px;
 }
 
-/* line 248, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
+/* line 253, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .margin-b-block {
   margin-bottom: 30px;
 }
@@ -751,7 +756,7 @@ footer.common-block {
 }
 
 /* line 25, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.top-header .top-nav li:after {
+.top-header .top-nav li a:after {
   content: "|";
   display: inline-block;
   clear: inherit;
@@ -761,41 +766,56 @@ footer.common-block {
 }
 
 /* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.top-header .top-nav li:last-child:after {
+.top-header .top-nav li:last-child a:after {
   display: none;
 }
 
 /* line 38, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav li a {
   display: block;
+  text-decoration: underline;
   line-height: 40px;
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 43, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav li a:hover {
   color: #001c4e;
 }
 
-/* line 53, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 54, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .search {
+  position: relative;
   width: 282px;
   margin: 5px auto 0;
 }
 
 @media (min-width: 1300px) {
-  /* line 53, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  /* line 54, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .top-header .search {
     float: right;
   }
 }
 
-/* line 61, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 63, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .search input[type="text"] {
   width: 100%;
 }
 
-/* line 69, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 66, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.top-header .search button {
+  position: absolute;
+  right: 5px;
+  z-index: 11;
+  top: 7px;
+}
+
+/* line 71, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.top-header .search button i {
+  font-size: 24px;
+}
+
+/* line 80, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .main-header {
   background: #711737;
   position: relative;
@@ -803,24 +823,24 @@ footer.common-block {
   border-bottom: 50px solid #9D2248;
 }
 
-/* line 76, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 87, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .logo {
   position: absolute;
   margin-top: -25px;
   z-index: 11;
 }
 
-/* line 81, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 92, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .logo img, .logo svg {
   height: 150px;
 }
 
-/* line 87, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav {
   float: right;
 }
 
-/* line 91, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 102, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button {
   background: #000;
   display: none;
@@ -844,18 +864,18 @@ footer.common-block {
   transition: all .3s ease;
 }
 
-/* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 123, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button:focus {
   outline: none;
   border: none;
 }
 
-/* line 119, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 130, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button:hover, #primary-nav-button.selected {
   background: #792103;
 }
 
-/* line 123, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 134, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button:before {
   content: '\2261';
   display: block;
@@ -868,24 +888,24 @@ footer.common-block {
   color: #FFF;
 }
 
-/* line 135, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu {
+/* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu {
   position: relative;
 }
 
-/* line 139, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu li {
+/* line 150, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu li {
   float: left;
   margin-left: 25px;
 }
 
-/* line 144, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu li a {
+/* line 155, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu li a {
   position: relative;
 }
 
-/* line 147, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu li a:after {
+/* line 158, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu li a:after {
   width: 0;
   height: 0;
   border-style: solid;
@@ -899,24 +919,24 @@ footer.common-block {
 }
 
 @media (min-width: 1070px) {
-  /* line 161, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-  .menu li a:hover:after {
+  /* line 172, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  header .menu li a:hover:after {
     display: block;
   }
 }
 
-/* line 171, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu li:last-child {
+/* line 182, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu li:last-child {
   margin-right: 0;
 }
 
-/* line 175, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu .sub-menu li {
+/* line 186, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu .sub-menu li {
   width: 100%;
 }
 
-/* line 179, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu li a {
+/* line 190, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu li a {
   display: block;
   text-decoration: none;
   color: 900;
@@ -924,33 +944,33 @@ footer.common-block {
 }
 
 @media (min-width: 1070px) {
-  /* line 187, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-  .menu li a {
+  /* line 198, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  header .menu li a {
     padding: 0;
     display: inline-block;
     line-height: 50px;
     color: #FFF;
   }
-  /* line 194, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  /* line 205, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .nav ul li ul {
     margin-top: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 201, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-  .menu li:after {
+  /* line 212, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  header .menu li:after {
     margin: 0 8px;
   }
 }
 
-/* line 207, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu li.active > a, .menu li > a:hover, .menu li.selected > a {
+/* line 218, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu li.active > a, header .menu li > a:hover, header .menu li.selected > a {
   color: 900;
 }
 
-/* line 211, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu .sub-menu {
+/* line 222, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu .sub-menu {
   display: none;
   position: absolute;
   left: -5px !important;
@@ -958,17 +978,17 @@ footer.common-block {
   margin: 0;
 }
 
-/* line 219, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.menu .sub-menu.hide {
+/* line 230, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+header .menu .sub-menu.hide {
   display: none;
 }
 
-/* line 223, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 234, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav .sub-menu {
   z-index: 200;
 }
 
-/* line 228, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 239, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile {
   display: none;
   position: absolute;
@@ -981,100 +1001,100 @@ footer.common-block {
   border-top: 1px solid rgba(70, 149, 0, 0.2);
 }
 
-/* line 240, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 251, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile li {
   width: 100%;
   margin: 0;
   border-bottom: 1px solid #CCC;
 }
 
-/* line 246, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 257, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile li.selected > a {
   border-bottom: 1px solid #CCC;
 }
 
-/* line 250, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 261, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile li a {
   padding: 15px;
 }
 
-/* line 254, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 265, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu li a {
   padding-left: 25px;
 }
 
-/* line 258, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 269, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .submenu li a {
   padding-left: 25px;
 }
 
-/* line 262, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 273, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .sub-menu .sub-menu li a {
   padding-left: 25px;
 }
 
-/* line 266, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 277, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu {
   float: left;
   position: relative;
   width: 100%;
 }
 
-/* line 272, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 283, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .mobile .downarrow, .mobile .sub-menu .downarrow {
   position: absolute;
   right: 0;
   padding-right: 5%;
 }
 
-/* line 278, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 289, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .downarrow:before {
   content: '\25be';
 }
 
-/* line 282, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 293, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button.mobile {
   display: inline-block;
 }
 
-/* line 286, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 297, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li ul {
   margin-left: 0;
 }
 
-/* line 290, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 301, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li, .nav ul li ul li {
   padding: 0;
 }
 
-/* line 294, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 305, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li ul li {
   text-align: left;
   margin: 0;
 }
 
-/* line 299, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+/* line 310, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
   border: none;
 }
 
 @media (min-width: 1070px) {
-  /* line 304, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  /* line 315, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .nav
 .nav ul li ul li {
     border: none;
   }
-  /* line 309, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-  .menu .sub-menu {
+  /* line 320, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  header .menu .sub-menu {
     width: 950px !important;
   }
-  /* line 313, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-  .menu .sub-menu li {
+  /* line 324, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  header .menu .sub-menu li {
     display: inline-block;
     width: auto;
     margin-left: 30px;
   }
-  /* line 319, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  /* line 330, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
     border: none;
   }
@@ -1289,6 +1309,20 @@ footer h3 {
   display: inline-block;
 }
 
+/* line 135, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
+.partner-list {
+  margin-left: -20px;
+  margin-top: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 140, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
+.partner-list li {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
 /* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-blue {
   background: #354467;
@@ -1373,13 +1407,6 @@ footer h3 {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-  .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
-    width: 30%;
-  }
-}
-
 @media (min-width: 992px) {
   /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
@@ -1394,30 +1421,23 @@ footer h3 {
   }
 }
 
-@media (min-width: 768px) {
-  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+@media (min-width: 992px) {
+  /* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
-    width: 65%;
+    width: 50%;
     margin-left: 5%;
   }
 }
 
-@media (min-width: 992px) {
-  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-  .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
-    width: 50%;
-  }
-}
-
 @media (min-width: 1300px) {
-  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
     width: 590px;
     margin-left: 105px;
   }
 }
 
-/* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 110, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .content-wrapper .button-element, .bg-block.bg-green .container .content-wrapper .button-element, .bg-block.bg-orange .container .content-wrapper .button-element, .bg-block.bg-maroon .container .content-wrapper .button-element, .bg-block.bg-overlay .container .content-wrapper .button-element {
   margin: 40px 0 110px;
   max-width: inherit;
@@ -1425,23 +1445,23 @@ footer h3 {
   display: inline-block;
 }
 
-/* line 120, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .content-wrapper .button-element a, .bg-block.bg-green .container .content-wrapper .button-element a, .bg-block.bg-orange .container .content-wrapper .button-element a, .bg-block.bg-maroon .container .content-wrapper .button-element a, .bg-block.bg-overlay .container .content-wrapper .button-element a {
   display: inline-block;
 }
 
-/* line 133, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 128, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .news-list h1, .bg-block.bg-blue .news-list h2, .bg-block.bg-blue .news-list h3, .bg-block.bg-blue .news-list h4, .bg-block.bg-blue .news-list h5, .bg-block.bg-blue .news-list h6, .bg-block.bg-blue .news-list p, .bg-block.bg-blue .news-list a, .bg-block.bg-green .news-list h1, .bg-block.bg-green .news-list h2, .bg-block.bg-green .news-list h3, .bg-block.bg-green .news-list h4, .bg-block.bg-green .news-list h5, .bg-block.bg-green .news-list h6, .bg-block.bg-green .news-list p, .bg-block.bg-green .news-list a, .bg-block.bg-orange .news-list h1, .bg-block.bg-orange .news-list h2, .bg-block.bg-orange .news-list h3, .bg-block.bg-orange .news-list h4, .bg-block.bg-orange .news-list h5, .bg-block.bg-orange .news-list h6, .bg-block.bg-orange .news-list p, .bg-block.bg-orange .news-list a, .bg-block.bg-maroon .news-list h1, .bg-block.bg-maroon .news-list h2, .bg-block.bg-maroon .news-list h3, .bg-block.bg-maroon .news-list h4, .bg-block.bg-maroon .news-list h5, .bg-block.bg-maroon .news-list h6, .bg-block.bg-maroon .news-list p, .bg-block.bg-maroon .news-list a, .bg-block.bg-overlay .news-list h1, .bg-block.bg-overlay .news-list h2, .bg-block.bg-overlay .news-list h3, .bg-block.bg-overlay .news-list h4, .bg-block.bg-overlay .news-list h5, .bg-block.bg-overlay .news-list h6, .bg-block.bg-overlay .news-list p, .bg-block.bg-overlay .news-list a {
   color: #001C4E;
 }
 
-/* line 142, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 137, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container, .bg-block.bg-green .container, .bg-block.bg-orange .container, .bg-block.bg-maroon .container {
   padding: 75px 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 141, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue:before, .bg-block.bg-green:before, .bg-block.bg-orange:before, .bg-block.bg-maroon:before {
     position: absolute;
     right: 0;
@@ -1455,57 +1475,52 @@ footer h3 {
 }
 
 @media (min-width: 1920px) {
-  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  /* line 141, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue:before, .bg-block.bg-green:before, .bg-block.bg-orange:before, .bg-block.bg-maroon:before {
     width: 30%;
   }
 }
 
-/* line 251, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 246, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .single .svg-img {
   max-height: 1200px;
 }
 
-/* line 256, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 251, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .svg-img {
   position: absolute;
   width: 662px;
 }
 
-/* line 261, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 256, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-widget h3, .bg-widget p {
   padding-left: 30px;
 }
 
-/* line 267, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 262, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .disabled-block {
   opacity: .3;
 }
 
-/* line 270, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
-.single .icon-block img, .single .icon-block svg {
-  width: 500px;
-}
-
-/* line 274, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 269, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-maroon #Path_393, .bg-maroon #Path_434 {
   fill: #9D2248;
   opacity: 1;
 }
 
-/* line 279, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 274, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-orange #Path_393, .bg-orange #Path_430 {
   fill: #FF7F00;
   opacity: 1;
 }
 
-/* line 284, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 279, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-green #Path_393, .bg-green #Path_431 {
   fill: #469500;
   opacity: 1;
 }
 
-/* line 289, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+/* line 284, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-blue #Path_393, .bg-blue #Path_433 {
   fill: #00B9E6;
   opacity: 1;
@@ -1641,29 +1656,34 @@ footer h3 {
 }
 
 /* line 105, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+.btn-dark-green {
+  background: #2A5A00;
+}
+
+/* line 108, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-dark-blue {
   background: #001C4E;
 }
 
-/* line 109, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element, .form-element.button-element {
   width: 100%;
   position: relative;
 }
 
 @media (min-width: 768px) {
-  /* line 109, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+  /* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .button-element, .form-element.button-element {
     max-width: 205px;
   }
 }
 
-/* line 116, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 119, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element .btn, .form-element.button-element .btn {
   min-width: auto;
 }
 
-/* line 121, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 124, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow {
   width: 100%;
   display: block;
@@ -1677,7 +1697,7 @@ footer h3 {
   background: #FFF;
 }
 
-/* line 133, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 136, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after, .btn-white-shadow:before {
   position: absolute;
   content: '';
@@ -1685,7 +1705,7 @@ footer h3 {
   transition: all .5s;
 }
 
-/* line 140, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 143, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:before {
   bottom: -9px;
   height: 9px;
@@ -1696,7 +1716,7 @@ footer h3 {
   background-color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 150, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 153, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after {
   right: -9px;
   height: 100%;
@@ -1912,37 +1932,38 @@ footer h3 {
 .link-list li {
   display: block;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-/* line 5, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
-.link-list li p {
   padding: 15px 0 15px 30px;
+  color: #FFF;
 }
 
 /* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .link-list li a {
-  padding: 20px 30px;
   display: block;
   font-size: 16px;
+  position: relative;
 }
 
-/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
-.link-list li a i {
-  float: right;
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+.link-list li a:after {
+  position: absolute;
+  font-family: 'icomoon' !important;
+  content: "\e900";
+  right: 15px;
+  top: 2px;
 }
 
-/* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+/* line 21, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .link-list li:first-child {
   border-top: none;
 }
 
-/* line 22, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col {
   position: relative;
   width: calc(43% - 30px);
 }
 
-/* line 26, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+/* line 31, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col:before {
   background: url(../images/car.svg) no-repeat left top/100%;
   position: absolute;
@@ -1953,12 +1974,12 @@ footer h3 {
   top: -50px;
 }
 
-/* line 35, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+/* line 40, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col:last-child {
   margin-left: 12%;
 }
 
-/* line 37, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+/* line 42, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col:last-child:before {
   background: url(../images/car-2.svg) no-repeat right bottom/100%;
   right: 0px;
@@ -2034,24 +2055,148 @@ footer h3 {
   display: inline-block;
 }
 
-/* line 46, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
-.news-list .col .download-block a, .news-list li .download-block a {
+/* line 50, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.download-block a {
   color: #469500;
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
 }
 
-/* line 51, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
-.news-list .col .download-block a i.ico-download, .news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-download, .news-list li .download-block a i.ico-eye {
+/* line 55, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.download-block a i.ico-download, .download-block a i.ico-eye {
   font-size: 30px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 56, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
-.news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-eye {
+/* line 60, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.download-block a i.ico-eye {
   color: #001C4E;
+}
+
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-container {
+  max-width: 680px;
+  padding: 0 15px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg {
+  background: #469500;
+  padding: 15px;
+}
+
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  /* line 18, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+  .cookie .cookie-bg .cookie-bg-container .cookie-content {
+    width: 85%;
+  }
+}
+
+/* line 23, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .cookie-btn-group {
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  /* line 23, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+  .cookie .cookie-bg .cookie-bg-container .cookie-btn-group {
+    margin-top: 0;
+    width: 15%;
+  }
+}
+
+/* line 29, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul {
+  margin-left: -10px;
+}
+
+@media (min-width: 992px) {
+  /* line 29, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+  .cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul {
+    float: right;
+  }
+}
+
+/* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 40, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg .cookie-bg-container .btn-white {
+  color: #469500;
+}
+
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_cookie.scss */
+.cookie .cookie-bg p {
+  color: #FFF;
+}
+
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-skin {
+  padding: 0 !important;
+}
+
+/* line 4, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-detail {
+  display: none;
+  max-width: 1220px;
+  padding: 30px;
+}
+
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-detail h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.fancybox-detail .fancybox-content {
+  height: 566px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  background: rgba(0, 185, 230, 0.2);
+  border: 1px solid #00B9E6;
+  padding: 20px 5px 20px 20px;
+}
+
+/* line 22, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.mCSB_scrollTools .mCSB_draggerRail {
+  background: none;
+}
+
+/* line 26, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #A2A2A2;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  width: 7px;
+}
+
+/* line 32, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_fancybox-detail.scss */
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background: #A2A2A2;
 }
 
 /*# sourceMappingURL=../../dist/css/style.map */
