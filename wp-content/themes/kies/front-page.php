@@ -34,6 +34,9 @@ get_header();
 </div>
 <main>
     <div class="bg-block bg-blue margin-tb-block">
+	    <div class="svg-img">
+					<img src="dist/images/poly-small-1.svg" alt="" class="svg">
+				</div>
         <div class="container">
         	<?php
 			if( get_field('image_subContentSection') ){
@@ -165,6 +168,9 @@ get_header();
     </div>
     
 	<div class="bg-block bg-green">
+		<div class="svg-img">
+					<img src="dist/images/poly-small-2.svg" alt="" class="svg">
+				</div>
         <div class="container">
         	<div class="section-title">
 				<?php
