@@ -78,7 +78,7 @@ get_header();
 							$more_target = '';
 						}
 					?>
-                    <div class="button-element"><
+                    <div class="button-element">
                     <a href="<?php echo esc_url($more_url);?>" class="btn btn-white-shadow" <?php echo esc_attr($more_target); ?> title="<?php echo esc_attr($more_title); ?>">
                     	<?php echo esc_html($more_title); ?>
                     </a>
