@@ -133,12 +133,9 @@
 
 /*Added by Niraj for contact page */
 .contact-form {
-	h2 {
-		font-weight: 500;
-	}
 
 	label {
-		font-weight: bold;
+		font-weight: $bold;
 		padding-bottom: 10px;
 		display: block;
 	}

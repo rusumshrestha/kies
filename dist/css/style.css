@@ -681,36 +681,43 @@ footer.common-block {
 
 /* line 189, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .common-block.subscribe h1, .common-block.subscribe h2, .common-block.subscribe h3, .common-block.subscribe h4, .common-block.subscribe h5, .common-block.subscribe h6 {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
-/* line 193, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+@media (min-width: 992px) {
+  /* line 189, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+  .common-block.subscribe h1, .common-block.subscribe h2, .common-block.subscribe h3, .common-block.subscribe h4, .common-block.subscribe h5, .common-block.subscribe h6 {
+    margin-bottom: 0;
+  }
+}
+
+/* line 196, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .center-content .form-wrapper .form-element {
   margin: 0 auto;
   float: none;
 }
 
-/* line 197, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+/* line 200, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .space-area {
   margin-top: 70px;
 }
 
-/* line 200, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+/* line 203, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .negative-space-area {
   margin-top: -70px;
 }
 
-/* line 205, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+/* line 208, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .centered-list {
   margin-bottom: 30px;
 }
 
-/* line 207, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+/* line 210, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .centered-list ul {
   text-align: center;
 }
 
-/* line 209, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
+/* line 212, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .centered-list ul li {
   display: inline-block;
   margin: 0 3px;
@@ -1598,7 +1605,7 @@ footer h3 {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 31, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .form-wrapper h3 {
     float: left;
@@ -1613,16 +1620,24 @@ footer h3 {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 42, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .form-wrapper .form-element {
     float: left;
-    max-width: 280px;
-    margin-left: 30px;
+    max-width: 255px;
+    margin-left: 22px;
   }
 }
 
-/* line 60, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+@media (min-width: 1240px) {
+  /* line 42, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+  .form-wrapper .form-element {
+    margin-left: 30px;
+    max-width: 280px;
+  }
+}
+
+/* line 63, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -1634,18 +1649,18 @@ footer h3 {
   min-width: 250px;
 }
 
-/* line 70, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 73, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .bg-block a.btn-white-shadow {
   color: #001C4E;
 }
 
-/* line 73, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 76, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-blue {
   background: #001C4E;
   color: #FFF;
 }
 
-/* line 77, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 80, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-small {
   font-size: 10px;
   font-weight: 700;
@@ -1662,62 +1677,62 @@ footer h3 {
   border-radius: 5px;
 }
 
-/* line 87, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 90, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-sky-blue {
   background: #9FDCF1;
   color: #001C4E;
 }
 
-/* line 92, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 95, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-maroon {
   background: #9D2248;
 }
 
-/* line 95, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-orange {
   background: #FF7F00;
 }
 
-/* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 101, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-yellow {
   background: #FFB53A;
   color: #001C4E;
 }
 
-/* line 102, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 105, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-green {
   background: #418A00;
 }
 
-/* line 105, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 108, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-dark-green {
   background: #2A5A00;
 }
 
-/* line 108, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 111, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-dark-blue {
   background: #001C4E;
 }
 
-/* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element, .form-element.button-element {
   width: 100%;
   position: relative;
 }
 
 @media (min-width: 768px) {
-  /* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+  /* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .button-element, .form-element.button-element {
     max-width: 205px;
   }
 }
 
-/* line 119, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 122, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element .btn, .form-element.button-element .btn {
   min-width: auto;
 }
 
-/* line 124, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow {
   width: 100%;
   display: block;
@@ -1727,11 +1742,11 @@ footer h3 {
   background-color: rgba(0, 28, 78, 0.5);
   line-height: 40px;
   color: #001C4E;
-  font-weight: bold;
+  font-weight: 700;
   background: #FFF;
 }
 
-/* line 136, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 139, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after, .btn-white-shadow:before {
   position: absolute;
   content: '';
@@ -1739,7 +1754,7 @@ footer h3 {
   transition: all .5s;
 }
 
-/* line 143, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:before {
   bottom: -9px;
   height: 9px;
@@ -1750,7 +1765,7 @@ footer h3 {
   background-color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 153, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
+/* line 156, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after {
   right: -9px;
   height: 100%;
@@ -2016,24 +2031,19 @@ footer h3 {
 }
 
 /*Added by Niraj for contact page */
-/* line 136, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
-.contact-form h2 {
-  font-weight: 500;
-}
-
-/* line 140, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 137, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .contact-form label {
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 10px;
   display: block;
 }
 
-/* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 143, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .contact-form .form-element {
   margin-left: 0;
 }
 
-/* line 152, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 149, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .contentinfo-left img {
   height: 237px;
   max-width: 100%;
@@ -2041,57 +2051,57 @@ footer h3 {
   margin: 0 auto;
 }
 
-/* line 159, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 156, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .contentinfo-right {
   margin-top: 45px;
 }
 
-/* line 165, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 162, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .form-wrapper .col-right .form-element {
   max-width: 100%;
 }
 
-/* line 168, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 165, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .form-wrapper .col-right .form-element textarea {
   height: 280px;
 }
 
-/* line 178, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 175, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .form-msg {
   text-align: right;
   display: block;
   padding-bottom: 25px;
 }
 
-/* line 184, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 181, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .align-right {
   float: right;
 }
 
-/* line 188, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+/* line 185, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .confirmation-msg {
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 193, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+  /* line 190, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
   .contentinfo-left {
     width: 23%;
     float: left;
     margin-right: 75px;
   }
-  /* line 199, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+  /* line 196, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
   .contentinfo-right {
     width: 65%;
     float: left;
   }
-  /* line 204, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+  /* line 201, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
   .contact-form .col-left {
     width: 33%;
     float: left;
     margin-right: 30px;
   }
-  /* line 210, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
+  /* line 207, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
   .contact-form .col-right {
     width: 62%;
     float: left;
