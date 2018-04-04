@@ -719,14 +719,6 @@ footer.common-block {
 /* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header {
   padding: 15px 0;
-  display: none;
-}
-
-@media (min-width: 992px) {
-  /* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .top-header {
-    display: block;
-  }
 }
 
 @media (min-width: 1300px) {
@@ -736,40 +728,34 @@ footer.common-block {
   }
 }
 
-/* line 11, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 8, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .top-nav {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  /* line 11, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+@media (min-width: 1300px) {
+  /* line 8, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   .top-header .top-nav {
     float: left;
-  }
-}
-
-@media (min-width: 1300px) {
-  /* line 11, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .top-header .top-nav {
     padding-left: 210px;
   }
 }
 
-/* line 21, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .top-nav li {
   line-height: 40px;
   display: inline-block;
 }
 
 @media (min-width: 1300px) {
-  /* line 21, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   .top-header .top-nav li {
     float: left;
     display: inherit;
   }
 }
 
-/* line 30, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 25, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .top-nav li:after {
   content: "|";
   display: inline-block;
@@ -779,12 +765,12 @@ footer.common-block {
   line-height: 40px;
 }
 
-/* line 39, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 34, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .top-nav li:last-child:after {
   display: none;
 }
 
-/* line 43, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 38, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .top-nav li a {
   display: block;
   text-decoration: underline;
@@ -792,39 +778,34 @@ footer.common-block {
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 49, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 44, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .top-nav li a:hover {
   color: #001c4e;
 }
 
-/* line 59, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 54, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .search {
   position: relative;
   width: 282px;
   margin: 5px auto 0;
 }
 
-/* line 60, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-.top-header .search .form-wrapper {
-  margin-left: -30px;
-}
-
-@media (min-width: 768px) {
-  /* line 59, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+@media (min-width: 1300px) {
+  /* line 54, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   .top-header .search {
     float: right;
   }
 }
 
-/* line 71, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 63, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .search input[type="text"] {
   width: 100%;
 }
 
-/* line 74, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 66, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .search button {
   position: absolute;
-  right: 15px;
+  right: 8px;
   z-index: 11;
   top: 7px;
   background: none;
@@ -832,12 +813,19 @@ footer.common-block {
   outline: none;
 }
 
-/* line 82, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 74, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .top-header .search button i {
   font-size: 24px;
 }
 
-/* line 91, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+@media (min-width: 768px) {
+  /* line 66, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  .top-header .search button {
+    right: -15px;
+  }
+}
+
+/* line 86, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .main-header {
   background: #711737;
   position: relative;
@@ -845,38 +833,24 @@ footer.common-block {
   border-bottom: 50px solid #9D2248;
 }
 
-/* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 93, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .logo {
   position: absolute;
-  margin-top: 5px;
+  margin-top: -25px;
   z-index: 11;
 }
 
-@media (min-width: 992px) {
-  /* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .logo {
-    margin-top: -25px;
-  }
-}
-
-/* line 107, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .logo img, .logo svg {
-  height: 88px;
+  height: 150px;
 }
 
-@media (min-width: 992px) {
-  /* line 107, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .logo img, .logo svg {
-    height: 150px;
-  }
-}
-
-/* line 118, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 104, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .nav {
   float: right;
 }
 
-/* line 122, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 108, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav-button {
   background: #000;
   display: none;
@@ -900,47 +874,47 @@ footer.common-block {
   transition: all .3s ease;
 }
 
-/* line 143, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 129, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav-button:focus {
   outline: none;
   border: none;
 }
 
-/* line 150, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 136, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav-button:hover, #primary-nav-button.selected {
   background: #792103;
 }
 
-/* line 154, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 140, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav-button:before {
   content: '\2261';
   display: block;
   font-size: 50px;
   font-style: normal;
   font-weight: normal;
-  line-height: 48px;
+  line-height: 40px;
   color: inherit;
   speak: none;
   color: #FFF;
 }
 
-/* line 166, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 152, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu {
   position: relative;
 }
 
-/* line 170, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 156, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu li {
   float: left;
   margin-left: 25px;
 }
 
-/* line 175, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 161, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu li a {
   position: relative;
 }
 
-/* line 178, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 164, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu li a:after {
   width: 0;
   height: 0;
@@ -955,23 +929,23 @@ header .menu li a:after {
 }
 
 @media (min-width: 1070px) {
-  /* line 192, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 178, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   header .menu li a:hover:after {
     display: block;
   }
 }
 
-/* line 202, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 188, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu li:last-child {
   margin-right: 0;
 }
 
-/* line 206, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 192, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu .sub-menu li {
   width: 100%;
 }
 
-/* line 210, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 196, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu li a {
   display: block;
   text-decoration: none;
@@ -980,32 +954,32 @@ header .menu li a {
 }
 
 @media (min-width: 1070px) {
-  /* line 218, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 204, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   header .menu li a {
     padding: 0;
     display: inline-block;
     line-height: 50px;
     color: #FFF;
   }
-  /* line 225, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 211, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   .nav ul li ul {
     margin-top: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 232, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 218, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   header .menu li:after {
     margin: 0 8px;
   }
 }
 
-/* line 238, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 224, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu li.active > a, header .menu li > a:hover, header .menu li.selected > a {
   color: 900;
 }
 
-/* line 242, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 228, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu .sub-menu {
   display: none;
   position: absolute;
@@ -1014,17 +988,17 @@ header .menu .sub-menu {
   margin: 0;
 }
 
-/* line 250, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 236, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 header .menu .sub-menu.hide {
   display: none;
 }
 
-/* line 254, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 240, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav .sub-menu {
   z-index: 200;
 }
 
-/* line 259, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 245, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile {
   display: none;
   position: absolute;
@@ -1037,100 +1011,100 @@ header .menu .sub-menu.hide {
   border-top: 1px solid rgba(70, 149, 0, 0.2);
 }
 
-/* line 271, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 257, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile li {
   width: 100%;
   margin: 0;
   border-bottom: 1px solid #CCC;
 }
 
-/* line 277, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 263, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile li.selected > a {
   border-bottom: 1px solid #CCC;
 }
 
-/* line 281, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 267, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile li a {
   padding: 15px;
 }
 
-/* line 285, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 271, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu li a {
   padding-left: 25px;
 }
 
-/* line 289, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 275, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .submenu li a {
   padding-left: 25px;
 }
 
-/* line 293, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 279, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .sub-menu .sub-menu li a {
   padding-left: 25px;
 }
 
-/* line 297, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 283, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu {
   float: left;
   position: relative;
   width: 100%;
 }
 
-/* line 303, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 289, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .mobile .downarrow, .mobile .sub-menu .downarrow {
   position: absolute;
   right: 0;
   padding-right: 5%;
 }
 
-/* line 309, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 295, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .downarrow:before {
   content: '\25be';
 }
 
-/* line 313, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 299, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 #primary-nav-button.mobile {
   display: inline-block;
 }
 
-/* line 317, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 303, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .nav ul li ul {
   margin-left: 0;
 }
 
-/* line 321, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 307, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .nav ul li, .nav ul li ul li {
   padding: 0;
 }
 
-/* line 325, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 311, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .nav ul li ul li {
   text-align: left;
   margin: 0;
 }
 
-/* line 330, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 316, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
 .nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
   border: none;
 }
 
 @media (min-width: 1070px) {
-  /* line 335, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 321, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   .nav
 .nav ul li ul li {
     border: none;
   }
-  /* line 340, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 326, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   header .menu .sub-menu {
     width: 950px !important;
   }
-  /* line 344, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 330, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   header .menu .sub-menu li {
     display: inline-block;
     width: auto;
     margin-left: 30px;
   }
-  /* line 350, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 336, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
   .nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
     border: none;
   }

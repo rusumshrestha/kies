@@ -1,4 +1,4 @@
-/* line 58, C:/Users/Rusum/Desktop/kies-master/src/scss/helper/_variables.scss */
+/* line 58, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/helper/_variables.scss */
 .fontItalic {
   font-style: italic;
 }
@@ -39,7 +39,7 @@ return rem with respect to base
   font-style: normal;
 }
 
-/* line 50, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 50, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 [class^="ico-"], [class*=" ico-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -54,122 +54,117 @@ return rem with respect to base
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 65, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 65, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-arrow-right:before {
   content: "\e900";
 }
 
-/* line 68, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 68, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-search:before {
   content: "\e901";
 }
 
-/* line 71, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 71, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-download:before {
   content: "\e902";
 }
 
-/* line 74, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 74, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-eye:before {
   content: "\e903";
 }
 
-/* line 77, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 77, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-facebook:before {
   content: "\e904";
 }
 
-/* line 80, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 80, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-twitter:before {
   content: "\e905";
 }
 
-/* line 83, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 83, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-vimeo:before {
   content: "\e906";
 }
 
-/* line 86, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 86, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-whatsapp:before {
   content: "\e907";
 }
 
-/* line 89, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 89, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-linkedin:before {
   content: "\e908";
 }
 
-/* line 92, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 92, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-exlamation:before {
   content: "\e909";
 }
 
-/* line 95, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_typography.scss */
+/* line 95, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_typography.scss */
 .ico-close:before {
   content: "\e90a";
 }
 
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 5, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 5, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-/* line 10, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 10, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 *:after {
   clear: both;
   display: block;
   content: "";
 }
 
-/* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 21, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
-#wpadminbar:after {
-  display: none;
-}
-
-/* line 25, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 20, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 28, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 23, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 31, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 26, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 :-ms-input-placeholder {
   /* IE 10+ */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 34, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 29, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 39, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 img {
   max-width: 100%;
 }
 
-/* line 43, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a,
 a:hover, a:active, a:focus,
 object, embed,
@@ -177,7 +172,7 @@ input::-moz-focus-inner, button {
   outline: 0;
 }
 
-/* line 49, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 input[type="reset"], input[type="submit"], input[type="button"], button {
   border: none;
   cursor: pointer;
@@ -188,21 +183,21 @@ input[type="reset"], input[type="submit"], input[type="button"], button {
   transition: all 0.3s linear;
 }
 
-/* line 54, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 49, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a {
   text-decoration: none;
   outline: none;
   border: none;
 }
 
-/* line 58, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 53, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
   outline-offset: 0;
 }
 
-/* line 64, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 59, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ul, li {
   list-style: none;
 }
@@ -211,7 +206,7 @@ ul, li {
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 73, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 68, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -234,81 +229,81 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 94, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 89, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 93, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 101, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 96, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 104, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 99, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 107, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 102, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 112, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 107, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 118, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 113, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 121, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 116, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 124, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 119, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 127, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 122, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 132, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 127, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 137, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 132, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 strong:after, em:after, b:after, em:after {
   display: none;
 }
 
-/* line 141, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 136, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 strong, b {
   font-weight: 700;
   clear: both;
   display: block;
 }
 
-/* line 149, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 144, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 body {
   font: 400 16px/20px "KievitOT", sans-serif;
   color: #001C4E;
@@ -319,7 +314,7 @@ body {
   transition: 1s 0.3s linear;
 }
 
-/* line 154, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 149, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-family: "KievitOT", sans-serif;
@@ -328,84 +323,84 @@ h1, h2, h3, h4, h5, h6 {
   word-break: word-break;
 }
 
-/* line 161, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 156, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h1 {
   font-size: 35px;
 }
 
 @media (min-width: 768px) {
-  /* line 161, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+  /* line 156, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h1 {
     font-size: 60px;
   }
 }
 
-/* line 167, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 162, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h2 {
   font-size: 35px;
 }
 
 @media (min-width: 768px) {
-  /* line 167, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+  /* line 162, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h2 {
     font-size: 60px;
   }
 }
 
-/* line 173, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 168, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h3 {
   font-size: 20px;
 }
 
-/* line 176, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 171, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h4 {
   font-size: 28px;
 }
 
 @media (min-width: 768px) {
-  /* line 176, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+  /* line 171, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h4 {
     font-size: 30px;
   }
 }
 
-/* line 182, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 177, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h5 {
   font-size: 24px;
 }
 
 @media (min-width: 768px) {
-  /* line 182, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+  /* line 177, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h5 {
     font-size: 26px;
   }
 }
 
-/* line 188, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 183, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 h6 {
   font-size: 22px;
 }
 
 @media (min-width: 768px) {
-  /* line 188, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+  /* line 183, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
   h6 {
     font-size: 24px;
   }
 }
 
-/* line 194, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 189, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p {
   font: 400 16px/24px "KievitOT", sans-serif;
   color: #001C4E;
   margin-bottom: 30px;
 }
 
-/* line 198, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 193, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p:last-child {
   margin-bottom: 0;
 }
 
-/* line 201, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 196, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p a {
   font-size: 16px;
   color: #001C4E;
@@ -417,18 +412,18 @@ p a {
   transition: all 0.3s linear;
 }
 
-/* line 206, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 201, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p a:hover {
   text-decoration: underline;
   color: #711737;
 }
 
-/* line 210, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 205, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 p a:after {
   display: none;
 }
 
-/* line 215, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 210, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a {
   font: 400 15px "KievitOT", sans-serif;
   color: #001C4E;
@@ -439,53 +434,53 @@ a {
   transition: all 0.3s linear;
 }
 
-/* line 219, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 214, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a:hover {
   color: #711737;
 }
 
-/* line 223, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 218, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .pull-left {
   float: left;
 }
 
-/* line 227, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 222, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .pull-right {
   float: right;
 }
 
-/* line 230, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 225, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 233, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 228, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 236, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 231, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 240, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 235, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 a.normal-link {
   font-size: 14px;
   font-weight: 700;
 }
 
-/* line 245, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 240, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .margin-tb-block {
   margin: 30px 0;
 }
 
-/* line 249, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 244, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .margin-t-block {
   margin-top: 30px;
 }
 
-/* line 253, C:/Users/Rusum/Desktop/kies-master/src/scss/base/_reset.scss */
+/* line 248, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/base/_reset.scss */
 .margin-b-block {
   margin-bottom: 30px;
 }
@@ -511,7 +506,7 @@ a.normal-link {
 /* ==========================================================================
    1. CONTAINER SIZES
    ========================================================================== */
-/* line 23, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 23, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .container-small, .container-medium, .container {
   position: relative;
   padding: 0 15px;
@@ -522,7 +517,7 @@ a.normal-link {
 /* 1.1. CONTAINER SMALL
    ========================================================================== */
 @media (min-width: 992px) {
-  /* line 32, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 32, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .container-small {
     width: 890px;
     padding: 0 15px;
@@ -532,7 +527,7 @@ a.normal-link {
 /* 1.2. CONTAINER MEDIUM
    ========================================================================== */
 @media (min-width: 1240px) {
-  /* line 42, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 42, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .container-medium {
     width: 1070px;
   }
@@ -541,7 +536,7 @@ a.normal-link {
 /* 1.3. CONTAINER LARGE
    ========================================================================== */
 @media (min-width: 1300px) {
-  /* line 51, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 51, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .container {
     width: 1250px;
   }
@@ -549,7 +544,7 @@ a.normal-link {
 
 /* 1.4. ROW
    ========================================================================== */
-/* line 60, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 60, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .row {
   margin: 0 -15px;
 }
@@ -557,7 +552,7 @@ a.normal-link {
 /* ==========================================================================
    TWO COL , THREE COL, FOUR COL
    ========================================================================== */
-/* line 67, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 67, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .two-col, .three-col, .four-col {
   margin-left: -30px;
   margin-top: -30px;
@@ -565,20 +560,20 @@ a.normal-link {
   flex-wrap: wrap;
 }
 
-/* line 78, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 78, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .two-col .col, .three-col .col, .four-col .col {
   margin-top: 30px;
   margin-left: 30px;
   width: 100%;
 }
 
-/* line 83, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 83, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .two-col .col:last-child, .three-col .col:last-child, .four-col .col:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 78, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 78, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .two-col .col, .three-col .col, .four-col .col {
     margin-bottom: 0;
   }
@@ -587,7 +582,7 @@ a.normal-link {
 /* TWO COL
    ========================================================================== */
 @media (min-width: 640px) {
-  /* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .two-col .col {
     width: calc(50% - 30px);
     margin-bottom: 0;
@@ -595,7 +590,7 @@ a.normal-link {
 }
 
 @media (min-width: 640px) {
-  /* line 108, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 108, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   ul.two-col li {
     width: calc(50% - 30px);
     margin-bottom: 0;
@@ -605,7 +600,7 @@ a.normal-link {
 /* THREE COL
    ========================================================================== */
 @media (min-width: 768px) {
-  /* line 122, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 122, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .three-col .col {
     width: calc(33.33% - 30px);
     margin-left: 30px;
@@ -613,7 +608,7 @@ a.normal-link {
 }
 
 @media (min-width: 768px) {
-  /* line 132, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 132, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   ul.three-col li {
     width: calc(33.33% - 30px);
     margin-left: 30px;
@@ -624,7 +619,7 @@ a.normal-link {
 FOUR COL
 ========================================================================== */
 @media (min-width: 640px) {
-  /* line 146, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .four-col .col, .four-col li, ul.four-col .col, ul.four-col li {
     width: calc(50% - 30px);
     margin-left: 30px;
@@ -632,14 +627,14 @@ FOUR COL
 }
 
 @media (min-width: 1240px) {
-  /* line 146, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   .four-col .col, .four-col li, ul.four-col .col, ul.four-col li {
     width: calc(25% - 30px);
   }
 }
 
 @media (min-width: 640px) {
-  /* line 161, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 161, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   ul.four-col li {
     width: calc(50% - 30px);
     margin-left: 30px;
@@ -647,129 +642,115 @@ FOUR COL
 }
 
 @media (min-width: 1240px) {
-  /* line 161, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+  /* line 161, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
   ul.four-col li {
     width: calc(25% - 30px);
   }
 }
 
-/* line 174, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 174, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 ul.four-col, ul.three-col, ul.two-col {
   margin-top: -30px;
 }
 
-/* line 176, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 176, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 ul.four-col li, ul.three-col li, ul.two-col li {
   margin-top: 30px;
   margin-left: 30px;
 }
 
-/* line 181, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 181, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .common-block {
   padding: 75px 0;
 }
 
-/* line 184, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 184, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 footer.common-block {
   padding: 50px 0;
 }
 
-/* line 187, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 187, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .common-block.subscribe {
   padding: 30px 0;
 }
 
-/* line 189, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 189, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .common-block.subscribe h1, .common-block.subscribe h2, .common-block.subscribe h3, .common-block.subscribe h4, .common-block.subscribe h5, .common-block.subscribe h6 {
   margin-bottom: 0;
 }
 
-/* line 193, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 193, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .center-content .form-wrapper .form-element {
   margin: 0 auto;
   float: none;
 }
 
-/* line 197, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 197, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .space-area {
   margin-top: 70px;
 }
 
-/* line 200, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 200, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .negative-space-area {
   margin-top: -70px;
 }
 
-/* line 205, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 205, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .centered-list {
   margin-bottom: 30px;
 }
 
-/* line 207, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 207, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .centered-list ul {
   text-align: center;
 }
 
-/* line 209, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_layout.scss */
+/* line 209, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_layout.scss */
 .centered-list ul li {
   display: inline-block;
   margin: 0 3px;
 }
 
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header {
   padding: 15px 0;
-  display: none;
-}
-
-@media (min-width: 992px) {
-  /* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .top-header {
-    display: block;
-  }
 }
 
 @media (min-width: 1300px) {
-  /* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .top-header {
     padding: 7px 0;
   }
 }
 
-/* line 11, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  /* line 11, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+@media (min-width: 1300px) {
+  /* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .top-header .top-nav {
     float: left;
-  }
-}
-
-@media (min-width: 1300px) {
-  /* line 11, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .top-header .top-nav {
     padding-left: 210px;
   }
 }
 
-/* line 21, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav li {
   line-height: 40px;
   display: inline-block;
 }
 
 @media (min-width: 1300px) {
-  /* line 21, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .top-header .top-nav li {
     float: left;
     display: inherit;
   }
 }
 
-/* line 30, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 25, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav li:after {
   content: "|";
   display: inline-block;
@@ -779,65 +760,42 @@ footer.common-block {
   line-height: 40px;
 }
 
-/* line 39, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav li:last-child:after {
   display: none;
 }
 
-/* line 43, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav li a {
   display: block;
-  text-decoration: underline;
   line-height: 40px;
   color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 49, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 43, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .top-nav li a:hover {
   color: #001c4e;
 }
 
-/* line 59, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 53, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .search {
-  position: relative;
   width: 282px;
   margin: 5px auto 0;
 }
 
-/* line 60, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-.top-header .search .form-wrapper {
-  margin-left: -30px;
-}
-
-@media (min-width: 768px) {
-  /* line 59, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+@media (min-width: 1300px) {
+  /* line 53, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .top-header .search {
     float: right;
   }
 }
 
-/* line 71, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 61, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .search input[type="text"] {
   width: 100%;
 }
 
-/* line 74, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-.top-header .search button {
-  position: absolute;
-  right: 15px;
-  z-index: 11;
-  top: 7px;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-/* line 82, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-.top-header .search button i {
-  font-size: 24px;
-}
-
-/* line 91, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 69, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .main-header {
   background: #711737;
   position: relative;
@@ -845,38 +803,24 @@ footer.common-block {
   border-bottom: 50px solid #9D2248;
 }
 
-/* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 76, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .logo {
   position: absolute;
-  margin-top: 5px;
+  margin-top: -25px;
   z-index: 11;
 }
 
-@media (min-width: 992px) {
-  /* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .logo {
-    margin-top: -25px;
-  }
-}
-
-/* line 107, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 81, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .logo img, .logo svg {
-  height: 88px;
+  height: 150px;
 }
 
-@media (min-width: 992px) {
-  /* line 107, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  .logo img, .logo svg {
-    height: 150px;
-  }
-}
-
-/* line 118, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 87, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav {
   float: right;
 }
 
-/* line 122, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 91, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button {
   background: #000;
   display: none;
@@ -900,48 +844,48 @@ footer.common-block {
   transition: all .3s ease;
 }
 
-/* line 143, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 112, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button:focus {
   outline: none;
   border: none;
 }
 
-/* line 150, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 119, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button:hover, #primary-nav-button.selected {
   background: #792103;
 }
 
-/* line 154, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 123, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button:before {
   content: '\2261';
   display: block;
   font-size: 50px;
   font-style: normal;
   font-weight: normal;
-  line-height: 48px;
+  line-height: 40px;
   color: inherit;
   speak: none;
   color: #FFF;
 }
 
-/* line 166, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu {
+/* line 135, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu {
   position: relative;
 }
 
-/* line 170, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu li {
+/* line 139, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu li {
   float: left;
   margin-left: 25px;
 }
 
-/* line 175, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu li a {
+/* line 144, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu li a {
   position: relative;
 }
 
-/* line 178, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu li a:after {
+/* line 147, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu li a:after {
   width: 0;
   height: 0;
   border-style: solid;
@@ -955,24 +899,24 @@ header .menu li a:after {
 }
 
 @media (min-width: 1070px) {
-  /* line 192, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  header .menu li a:hover:after {
+  /* line 161, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  .menu li a:hover:after {
     display: block;
   }
 }
 
-/* line 202, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu li:last-child {
+/* line 171, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu li:last-child {
   margin-right: 0;
 }
 
-/* line 206, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu .sub-menu li {
+/* line 175, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu .sub-menu li {
   width: 100%;
 }
 
-/* line 210, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu li a {
+/* line 179, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu li a {
   display: block;
   text-decoration: none;
   color: 900;
@@ -980,33 +924,33 @@ header .menu li a {
 }
 
 @media (min-width: 1070px) {
-  /* line 218, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  header .menu li a {
+  /* line 187, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  .menu li a {
     padding: 0;
     display: inline-block;
     line-height: 50px;
     color: #FFF;
   }
-  /* line 225, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 194, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .nav ul li ul {
     margin-top: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 232, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  header .menu li:after {
+  /* line 201, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  .menu li:after {
     margin: 0 8px;
   }
 }
 
-/* line 238, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu li.active > a, header .menu li > a:hover, header .menu li.selected > a {
+/* line 207, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu li.active > a, .menu li > a:hover, .menu li.selected > a {
   color: 900;
 }
 
-/* line 242, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu .sub-menu {
+/* line 211, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu .sub-menu {
   display: none;
   position: absolute;
   left: -5px !important;
@@ -1014,17 +958,17 @@ header .menu .sub-menu {
   margin: 0;
 }
 
-/* line 250, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-header .menu .sub-menu.hide {
+/* line 219, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+.menu .sub-menu.hide {
   display: none;
 }
 
-/* line 254, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 223, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav .sub-menu {
   z-index: 200;
 }
 
-/* line 259, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 228, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile {
   display: none;
   position: absolute;
@@ -1037,112 +981,112 @@ header .menu .sub-menu.hide {
   border-top: 1px solid rgba(70, 149, 0, 0.2);
 }
 
-/* line 271, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 240, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile li {
   width: 100%;
   margin: 0;
   border-bottom: 1px solid #CCC;
 }
 
-/* line 277, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 246, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile li.selected > a {
   border-bottom: 1px solid #CCC;
 }
 
-/* line 281, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 250, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile li a {
   padding: 15px;
 }
 
-/* line 285, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 254, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu li a {
   padding-left: 25px;
 }
 
-/* line 289, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 258, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .submenu li a {
   padding-left: 25px;
 }
 
-/* line 293, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 262, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .sub-menu .sub-menu li a {
   padding-left: 25px;
 }
 
-/* line 297, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 266, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu {
   float: left;
   position: relative;
   width: 100%;
 }
 
-/* line 303, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 272, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .mobile .downarrow, .mobile .sub-menu .downarrow {
   position: absolute;
   right: 0;
   padding-right: 5%;
 }
 
-/* line 309, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 278, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav.mobile .sub-menu .downarrow:before {
   content: '\25be';
 }
 
-/* line 313, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 282, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 #primary-nav-button.mobile {
   display: inline-block;
 }
 
-/* line 317, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 286, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li ul {
   margin-left: 0;
 }
 
-/* line 321, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 290, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li, .nav ul li ul li {
   padding: 0;
 }
 
-/* line 325, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 294, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li ul li {
   text-align: left;
   margin: 0;
 }
 
-/* line 330, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+/* line 299, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
   border: none;
 }
 
 @media (min-width: 1070px) {
-  /* line 335, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 304, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .nav
 .nav ul li ul li {
     border: none;
   }
-  /* line 340, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  header .menu .sub-menu {
+  /* line 309, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  .menu .sub-menu {
     width: 950px !important;
   }
-  /* line 344, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
-  header .menu .sub-menu li {
+  /* line 313, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
+  .menu .sub-menu li {
     display: inline-block;
     width: auto;
     margin-left: 30px;
   }
-  /* line 350, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_header.scss */
+  /* line 319, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
   .nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {
     border: none;
   }
 }
 
-/* line 2, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 footer h3 {
   font-size: 14px;
   margin-bottom: 20px;
 }
 
-/* line 7, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 7, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .footer-menu {
   margin-bottom: 50px;
   margin-left: -50px;
@@ -1152,13 +1096,13 @@ footer h3 {
 }
 
 @media (min-width: 1240px) {
-  /* line 7, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 7, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .footer-menu {
     margin-bottom: 100px;
   }
 }
 
-/* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .footer-menu .foot-menu {
   margin-left: 50px;
   margin-top: 50px;
@@ -1166,7 +1110,7 @@ footer h3 {
 }
 
 @media (min-width: 480px) {
-  /* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .footer-menu .foot-menu {
     float: left;
     width: calc(33.33% - 50px);
@@ -1174,38 +1118,38 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .footer-menu .foot-menu {
     width: calc(25% - 50px);
   }
 }
 
 @media (min-width: 1240px) {
-  /* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .footer-menu .foot-menu {
     width: calc(20% - 50px);
   }
 }
 
 @media (min-width: 1300px) {
-  /* line 16, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .footer-menu .foot-menu {
     width: calc(14.285714285714286% - 50px);
   }
 }
 
-/* line 33, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 33, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .footer-menu .foot-menu .mneu a {
   font-size: 16px;
 }
 
-/* line 38, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 38, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .partner-logo {
   margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
-  /* line 42, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 42, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .bottom-footer .partner-logo {
     float: left;
     margin-bottom: 0;
@@ -1213,20 +1157,20 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 49, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 49, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .bottom-footer .bottom-footer-right {
     float: right;
   }
 }
 
-/* line 55, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 55, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .social-icon {
   text-align: center;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  /* line 55, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 55, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .social-icon {
     text-align: left;
     float: right;
@@ -1234,20 +1178,20 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 62, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 62, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .social-icon ul {
     margin-left: -10px;
   }
 }
 
-/* line 66, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 66, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .social-icon ul li {
   display: inline-block;
   margin: 0 5px;
 }
 
 @media (min-width: 768px) {
-  /* line 66, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 66, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .social-icon ul li {
     float: left;
     display: inherit;
@@ -1255,7 +1199,7 @@ footer h3 {
   }
 }
 
-/* line 75, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 75, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .social-icon ul li a {
   display: block;
   width: 30px;
@@ -1272,39 +1216,39 @@ footer h3 {
   border: 1px solid #001C4E;
 }
 
-/* line 88, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 88, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .privacy-copyright {
   clear: both;
 }
 
 @media (min-width: 768px) {
-  /* line 90, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 90, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .privacy-copyright .privacy-menu {
     float: left;
   }
 }
 
-/* line 94, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 94, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .privacy-copyright .privacy-menu ul {
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 94, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 94, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .privacy-copyright .privacy-menu ul {
     text-align: left;
     margin-left: -30px;
   }
 }
 
-/* line 101, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 101, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .privacy-copyright .privacy-menu ul li {
   display: inline-block;
   margin: 0 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 101, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 101, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .privacy-copyright .privacy-menu ul li {
     float: left;
     margin: 0 0 0 30px;
@@ -1312,12 +1256,12 @@ footer h3 {
   }
 }
 
-/* line 109, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 109, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .privacy-copyright .privacy-menu ul li a {
   display: block;
 }
 
-/* line 115, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .privacy-copyright .copyright {
   text-align: center;
   margin-top: 30px;
@@ -1326,7 +1270,7 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 115, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+  /* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
   .privacy-copyright .copyright {
     float: right;
     text-align: left;
@@ -1334,37 +1278,18 @@ footer h3 {
   }
 }
 
-/* line 125, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 125, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .privacy-copyright .copyright p {
   color: #001C4E;
 }
 
-/* line 128, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
+/* line 128, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
 .privacy-copyright .copyright strong, .privacy-copyright .copyright b {
   clear: initial;
   display: inline-block;
 }
 
-/* line 135, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
-.partner-list {
-  margin-left: -20px;
-  margin-top: -15px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* line 140, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
-.partner-list li {
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-/* line 143, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_footer.scss */
-.partner-list li img {
-  height: 50px;
-}
-
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-blue {
   background: #354467;
   background: -moz-linear-gradient(45deg, #354467 0%, #191936 100%);
@@ -1374,12 +1299,12 @@ footer h3 {
   position: relative;
 }
 
-/* line 10, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 10, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-blue .icon-block svg, .bg-blue .icon-block img {
   height: 375px;
 }
 
-/* line 18, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 18, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-green {
   background: #418A00;
   background: -moz-linear-gradient(45deg, #418A00 0%, #2A5A00 100%);
@@ -1389,12 +1314,12 @@ footer h3 {
   position: relative;
 }
 
-/* line 27, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-green .icon-block svg, .bg-green .icon-block img {
   height: 350px;
 }
 
-/* line 35, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 35, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-orange {
   background: #FC6A00;
   background: -moz-linear-gradient(45deg, #FC6A00 0%, #E45B00 100%);
@@ -1404,12 +1329,12 @@ footer h3 {
   position: relative;
 }
 
-/* line 44, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-orange .icon-block svg, .bg-orange .icon-block img {
   height: 325px;
 }
 
-/* line 52, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 52, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-maroon {
   background: #901E42;
   background: -moz-linear-gradient(45deg, #901E42 0%, #5F132E 100%);
@@ -1419,66 +1344,80 @@ footer h3 {
   position: relative;
 }
 
-/* line 61, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 61, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-maroon .icon-block svg, .bg-maroon .icon-block img {
   height: 385px;
 }
 
-/* line 68, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 68, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block {
   position: relative;
   overflow: hidden;
 }
 
-/* line 73, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 73, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue h1, .bg-block.bg-blue h2, .bg-block.bg-blue h3, .bg-block.bg-blue h4, .bg-block.bg-blue h5, .bg-block.bg-blue h6, .bg-block.bg-blue p, .bg-block.bg-blue a, .bg-block.bg-green h1, .bg-block.bg-green h2, .bg-block.bg-green h3, .bg-block.bg-green h4, .bg-block.bg-green h5, .bg-block.bg-green h6, .bg-block.bg-green p, .bg-block.bg-green a, .bg-block.bg-orange h1, .bg-block.bg-orange h2, .bg-block.bg-orange h3, .bg-block.bg-orange h4, .bg-block.bg-orange h5, .bg-block.bg-orange h6, .bg-block.bg-orange p, .bg-block.bg-orange a, .bg-block.bg-maroon h1, .bg-block.bg-maroon h2, .bg-block.bg-maroon h3, .bg-block.bg-maroon h4, .bg-block.bg-maroon h5, .bg-block.bg-maroon h6, .bg-block.bg-maroon p, .bg-block.bg-maroon a, .bg-block.bg-overlay h1, .bg-block.bg-overlay h2, .bg-block.bg-overlay h3, .bg-block.bg-overlay h4, .bg-block.bg-overlay h5, .bg-block.bg-overlay h6, .bg-block.bg-overlay p, .bg-block.bg-overlay a {
   color: #FFF;
 }
 
-/* line 77, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 77, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container, .bg-block.bg-green .container, .bg-block.bg-orange .container, .bg-block.bg-maroon .container, .bg-block.bg-overlay .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-/* line 82, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
   text-align: center;
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
+    width: 30%;
+  }
+}
+
 @media (min-width: 992px) {
-  /* line 82, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+  /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
     width: 45%;
   }
 }
 
 @media (min-width: 1300px) {
-  /* line 82, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+  /* line 82, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .icon-block, .bg-block.bg-green .container .icon-block, .bg-block.bg-orange .container .icon-block, .bg-block.bg-maroon .container .icon-block, .bg-block.bg-overlay .container .icon-block {
     width: 525px;
   }
 }
 
-@media (min-width: 992px) {
-  /* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+@media (min-width: 768px) {
+  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
-    width: 50%;
+    width: 65%;
     margin-left: 5%;
   }
 }
 
+@media (min-width: 992px) {
+  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+  .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1300px) {
-  /* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+  /* line 100, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue .container .content-wrapper, .bg-block.bg-green .container .content-wrapper, .bg-block.bg-orange .container .content-wrapper, .bg-block.bg-maroon .container .content-wrapper, .bg-block.bg-overlay .container .content-wrapper {
     width: 590px;
     margin-left: 105px;
   }
 }
 
-/* line 110, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 115, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .content-wrapper .button-element, .bg-block.bg-green .container .content-wrapper .button-element, .bg-block.bg-orange .container .content-wrapper .button-element, .bg-block.bg-maroon .container .content-wrapper .button-element, .bg-block.bg-overlay .container .content-wrapper .button-element {
   margin: 40px 0 110px;
   max-width: inherit;
@@ -1486,23 +1425,23 @@ footer h3 {
   display: inline-block;
 }
 
-/* line 115, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 120, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container .content-wrapper .button-element a, .bg-block.bg-green .container .content-wrapper .button-element a, .bg-block.bg-orange .container .content-wrapper .button-element a, .bg-block.bg-maroon .container .content-wrapper .button-element a, .bg-block.bg-overlay .container .content-wrapper .button-element a {
   display: inline-block;
 }
 
-/* line 128, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 133, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .news-list h1, .bg-block.bg-blue .news-list h2, .bg-block.bg-blue .news-list h3, .bg-block.bg-blue .news-list h4, .bg-block.bg-blue .news-list h5, .bg-block.bg-blue .news-list h6, .bg-block.bg-blue .news-list p, .bg-block.bg-blue .news-list a, .bg-block.bg-green .news-list h1, .bg-block.bg-green .news-list h2, .bg-block.bg-green .news-list h3, .bg-block.bg-green .news-list h4, .bg-block.bg-green .news-list h5, .bg-block.bg-green .news-list h6, .bg-block.bg-green .news-list p, .bg-block.bg-green .news-list a, .bg-block.bg-orange .news-list h1, .bg-block.bg-orange .news-list h2, .bg-block.bg-orange .news-list h3, .bg-block.bg-orange .news-list h4, .bg-block.bg-orange .news-list h5, .bg-block.bg-orange .news-list h6, .bg-block.bg-orange .news-list p, .bg-block.bg-orange .news-list a, .bg-block.bg-maroon .news-list h1, .bg-block.bg-maroon .news-list h2, .bg-block.bg-maroon .news-list h3, .bg-block.bg-maroon .news-list h4, .bg-block.bg-maroon .news-list h5, .bg-block.bg-maroon .news-list h6, .bg-block.bg-maroon .news-list p, .bg-block.bg-maroon .news-list a, .bg-block.bg-overlay .news-list h1, .bg-block.bg-overlay .news-list h2, .bg-block.bg-overlay .news-list h3, .bg-block.bg-overlay .news-list h4, .bg-block.bg-overlay .news-list h5, .bg-block.bg-overlay .news-list h6, .bg-block.bg-overlay .news-list p, .bg-block.bg-overlay .news-list a {
   color: #001C4E;
 }
 
-/* line 137, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 142, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-block.bg-blue .container, .bg-block.bg-green .container, .bg-block.bg-orange .container, .bg-block.bg-maroon .container {
   padding: 75px 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 141, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue:before, .bg-block.bg-green:before, .bg-block.bg-orange:before, .bg-block.bg-maroon:before {
     position: absolute;
     right: 0;
@@ -1516,58 +1455,63 @@ footer h3 {
 }
 
 @media (min-width: 1920px) {
-  /* line 141, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+  /* line 146, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
   .bg-block.bg-blue:before, .bg-block.bg-green:before, .bg-block.bg-orange:before, .bg-block.bg-maroon:before {
     width: 30%;
   }
 }
 
-/* line 246, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 251, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .single .svg-img {
   max-height: 1200px;
 }
 
-/* line 251, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 256, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .svg-img {
   position: absolute;
   width: 662px;
 }
 
-/* line 256, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 261, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-widget h3, .bg-widget p {
   padding-left: 30px;
 }
 
-/* line 262, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 267, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .disabled-block {
   opacity: .3;
 }
 
-/* line 269, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 270, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
+.single .icon-block img, .single .icon-block svg {
+  width: 500px;
+}
+
+/* line 274, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-maroon #Path_393, .bg-maroon #Path_434 {
   fill: #9D2248;
   opacity: 1;
 }
 
-/* line 274, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 279, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-orange #Path_393, .bg-orange #Path_430 {
   fill: #FF7F00;
   opacity: 1;
 }
 
-/* line 279, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 284, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-green #Path_393, .bg-green #Path_431 {
   fill: #469500;
   opacity: 1;
 }
 
-/* line 284, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_background.scss */
+/* line 289, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
 .bg-blue #Path_393, .bg-blue #Path_433 {
   fill: #00B9E6;
   opacity: 1;
 }
 
-/* line 2, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .form-wrapper input[type="text"], .form-wrapper input[type="password"], .form-wrapper input[type="email"], .form-wrapper input[type="number"], .form-wrapper input[type="color"], .form-wrapper input[type="date"], .form-wrapper input[type="datetime-local"], .form-wrapper input[type="month"], .form-wrapper input[type="range"], .form-wrapper input[type="search"], .form-wrapper input[type="tel"], .form-wrapper input[type="url"], .form-wrapper input[type="week"], .form-wrapper select, .form-wrapper textarea {
   background-color: #FFF;
   border: 1px solid #78B2C6;
@@ -1590,7 +1534,7 @@ footer h3 {
   border-radius: 3px;
 }
 
-/* line 19, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 19, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .form-wrapper input[type="text"]:focus, .form-wrapper input[type="password"]:focus, .form-wrapper input[type="email"]:focus, .form-wrapper input[type="number"]:focus, .form-wrapper input[type="color"]:focus, .form-wrapper input[type="date"]:focus, .form-wrapper input[type="datetime-local"]:focus, .form-wrapper input[type="month"]:focus, .form-wrapper input[type="range"]:focus, .form-wrapper input[type="search"]:focus, .form-wrapper input[type="tel"]:focus, .form-wrapper input[type="url"]:focus, .form-wrapper input[type="week"]:focus, .form-wrapper select:focus, .form-wrapper textarea:focus {
   border: 1px solid #001C4E;
   box-shadow: none;
@@ -1599,21 +1543,21 @@ footer h3 {
   outline: none;
 }
 
-/* line 31, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 31, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .form-wrapper h3 {
   color: #FFF;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  /* line 31, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+  /* line 31, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .form-wrapper h3 {
     float: left;
     width: 175px;
   }
 }
 
-/* line 42, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 42, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .form-wrapper .form-element {
   margin: 0 0 10px 0px;
   position: relative;
@@ -1621,7 +1565,7 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 42, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+  /* line 42, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .form-wrapper .form-element {
     float: left;
     max-width: 280px;
@@ -1629,7 +1573,7 @@ footer h3 {
   }
 }
 
-/* line 60, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 60, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -1641,18 +1585,18 @@ footer h3 {
   min-width: 250px;
 }
 
-/* line 70, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 70, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .bg-block a.btn-white-shadow {
   color: #001C4E;
 }
 
-/* line 73, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 73, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-blue {
   background: #001C4E;
   color: #FFF;
 }
 
-/* line 77, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 77, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-small {
   font-size: 10px;
   font-weight: 700;
@@ -1669,62 +1613,57 @@ footer h3 {
   border-radius: 5px;
 }
 
-/* line 87, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 87, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-sky-blue {
   background: #9FDCF1;
   color: #001C4E;
 }
 
-/* line 92, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 92, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-maroon {
   background: #9D2248;
 }
 
-/* line 95, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 95, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-orange {
   background: #FF7F00;
 }
 
-/* line 98, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 98, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-yellow {
   background: #FFB53A;
   color: #001C4E;
 }
 
-/* line 102, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 102, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-green {
   background: #418A00;
 }
 
-/* line 105, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
-.btn-dark-green {
-  background: #2A5A00;
-}
-
-/* line 108, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 105, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-dark-blue {
   background: #001C4E;
 }
 
-/* line 112, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 109, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element, .form-element.button-element {
   width: 100%;
   position: relative;
 }
 
 @media (min-width: 768px) {
-  /* line 112, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+  /* line 109, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
   .button-element, .form-element.button-element {
     max-width: 205px;
   }
 }
 
-/* line 119, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 116, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .button-element .btn, .form-element.button-element .btn {
   min-width: auto;
 }
 
-/* line 124, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 121, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow {
   width: 100%;
   display: block;
@@ -1738,7 +1677,7 @@ footer h3 {
   background: #FFF;
 }
 
-/* line 136, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 133, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after, .btn-white-shadow:before {
   position: absolute;
   content: '';
@@ -1746,7 +1685,7 @@ footer h3 {
   transition: all .5s;
 }
 
-/* line 143, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 140, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:before {
   bottom: -9px;
   height: 9px;
@@ -1757,7 +1696,7 @@ footer h3 {
   background-color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 153, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_form.scss */
+/* line 150, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_form.scss */
 .btn-white-shadow:after {
   right: -9px;
   height: 100%;
@@ -1768,7 +1707,7 @@ footer h3 {
   background-color: rgba(0, 28, 78, 0.5);
 }
 
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
 .banner-image, .bg-img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1777,27 +1716,27 @@ footer h3 {
   position: relative;
 }
 
-/* line 8, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
 .banner-image .banner-content, .bg-img .banner-content {
   height: 400px;
   background: rgba(255, 255, 255, 0.8);
   padding: 30px;
 }
 
-/* line 9, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
 .banner-image .banner-content h2, .bg-img .banner-content h2 {
   margin-bottom: 30px;
   font-size: 26px;
   font-weight: black;
 }
 
-/* line 13, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
 .banner-image .banner-content h2 span, .bg-img .banner-content h2 span {
   font-weight: bold;
 }
 
 @media (min-width: 768px) {
-  /* line 8, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+  /* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
   .banner-image .banner-content, .bg-img .banner-content {
     width: 450px;
     float: right;
@@ -1806,19 +1745,19 @@ footer h3 {
   }
 }
 
-/* line 27, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
 .banner-image .container, .bg-img .container {
   padding: 45px 15px;
 }
 
 @media (min-width: 768px) {
-  /* line 27, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+  /* line 27, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
   .banner-image .container, .bg-img .container {
     padding: 0 15px;
   }
 }
 
-/* line 35, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+/* line 35, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
 .bg-img.bg-overlay:after {
   background-color: rgba(113, 23, 55, 0.8);
   position: absolute;
@@ -1828,24 +1767,24 @@ footer h3 {
   bottom: 0;
 }
 
-/* line 43, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banner.scss */
+/* line 43, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banner.scss */
 .bg-img.bg-overlay .container, .bg-img.bg-overlay .container-medium, .bg-img.bg-overlay .container-small {
   position: relative;
   z-index: 1;
 }
 
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_section-title.scss */
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-title {
   margin-bottom: 50px;
   width: 100%;
 }
 
-/* line 4, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_section-title.scss */
+/* line 4, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
   margin-bottom: 30px;
 }
 
-/* line 6, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_section-title.scss */
+/* line 6, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-title h1 span, .section-title h2 span, .section-title h3 span, .section-title h4 span, .section-title h5 span, .section-title h6 span {
   font-size: 16px;
   font-weight: 700;
@@ -1853,46 +1792,46 @@ footer h3 {
   margin-top: 10px;
 }
 
-/* line 13, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_section-title.scss */
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-title p {
   margin-top: 30px;
   max-width: 700px;
   margin: 0 auto;
 }
 
-/* line 19, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_section-title.scss */
+/* line 19, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .section-link {
   margin-top: 40px;
   width: 100%;
 }
 
-/* line 24, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_section-title.scss */
+/* line 24, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_section-title.scss */
 .bg-green.bg-block .btn {
   color: #469500;
 }
 
-/* line 2, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banden.scss */
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .banden h3 {
   padding-left: 30px;
   margin-top: 30px;
 }
 
-/* line 6, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banden.scss */
+/* line 6, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .banden .icon-block {
   padding-left: 30px;
 }
 
-/* line 8, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_banden.scss */
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_banden.scss */
 .banden .icon-block svg, .banden .icon-block img {
   height: 85px;
 }
 
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block {
   text-align: center;
 }
 
-/* line 4, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 4, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col {
   color: #FFF;
   position: relative;
@@ -1905,24 +1844,24 @@ footer h3 {
   border-radius: 7px;
 }
 
-/* line 9, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col h1, .campiagn-block .col h2, .campiagn-block .col h3, .campiagn-block .col h4, .campiagn-block .col h5, .campiagn-block .col h6, .campiagn-block .col p, .campiagn-block .col a {
   color: #FFF;
 }
 
-/* line 12, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col h1, .campiagn-block .col h2, .campiagn-block .col h3, .campiagn-block .col h4, .campiagn-block .col h5, .campiagn-block .col h6 {
   padding: 30px 30px 0;
   font-size: 20px;
   line-height: 24px;
 }
 
-/* line 17, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 17, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col img, .campiagn-block .col svg {
   height: 150px;
 }
 
-/* line 20, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 20, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col a {
   margin-top: 60px;
   text-align: left;
@@ -1931,12 +1870,12 @@ footer h3 {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* line 26, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 26, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col a i {
   float: right;
 }
 
-/* line 31, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 31, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col.bg-blue:before, .campiagn-block .col.bg-green:before, .campiagn-block .col.bg-orange:before, .campiagn-block .col.bg-maroon:before {
   position: absolute;
   content: "";
@@ -1949,62 +1888,61 @@ footer h3 {
   z-index: -1;
 }
 
-/* line 44, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col.bg-blue:before {
   background: url(../images/poly-small-1.svg) no-repeat left top/81%;
 }
 
-/* line 49, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 49, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col.bg-green:before {
   background: url(../images/poly-small-2.svg) no-repeat left top/81%;
 }
 
-/* line 54, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 54, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col.bg-orange:before {
   background: url(../images/poly-small-3.svg) no-repeat left top/81%;
 }
 
-/* line 59, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_campiagn-list.scss */
+/* line 59, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_campiagn-list.scss */
 .campiagn-block .col.bg-maroon:before {
   background: url(../images/poly-small-4.svg) no-repeat left top/81%;
 }
 
-/* line 2, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
+/* line 2, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .link-list li {
   display: block;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 15px 0 15px 30px;
-  color: #FFF;
 }
 
-/* line 8, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
+/* line 5, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+.link-list li p {
+  padding: 15px 0 15px 30px;
+}
+
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .link-list li a {
+  padding: 20px 30px;
   display: block;
   font-size: 16px;
-  position: relative;
 }
 
-/* line 13, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
-.link-list li a:after {
-  position: absolute;
-  font-family: 'icomoon' !important;
-  content: "\e900";
-  right: 15px;
-  top: 2px;
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
+.link-list li a i {
+  float: right;
 }
 
-/* line 21, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
+/* line 16, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .link-list li:first-child {
   border-top: none;
 }
 
-/* line 27, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
+/* line 22, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col {
   position: relative;
   width: calc(43% - 30px);
 }
 
-/* line 31, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
+/* line 26, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col:before {
   background: url(../images/car.svg) no-repeat left top/100%;
   position: absolute;
@@ -2015,12 +1953,12 @@ footer h3 {
   top: -50px;
 }
 
-/* line 40, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
+/* line 35, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col:last-child {
   margin-left: 12%;
 }
 
-/* line 42, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_link-list.scss */
+/* line 37, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_link-list.scss */
 .bg-widget .col:last-child:before {
   background: url(../images/car-2.svg) no-repeat right bottom/100%;
   right: 0px;
@@ -2028,40 +1966,40 @@ footer h3 {
   height: auto;
 }
 
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list {
   color: #001C4E;
 }
 
-/* line 3, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 3, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list h3, .news-list p, .news-list a {
   color: #001C4E;
 }
 
-/* line 6, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 6, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list h3, .news-list p {
   margin: 20px 0;
 }
 
-/* line 9, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list h3 {
   min-height: 60px;
 }
 
-/* line 12, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 12, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list h3, .news-list h3 a {
   font-size: 15px;
   line-height: 20px;
   font-weight: 700;
 }
 
-/* line 17, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 17, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list p {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 21, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 21, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col, .news-list li {
   background: #FFF;
   -webkit-border-radius: 7px;
@@ -2073,171 +2011,47 @@ footer h3 {
   padding: 30px;
 }
 
-/* line 27, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .img-block img, .news-list li .img-block img {
   width: 100%;
 }
 
-/* line 32, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 32, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .news-info .date, .news-list .col .news-info .file-format, .news-list li .news-info .date, .news-list li .news-info .file-format {
   float: right;
   font-size: 12px;
 }
 
-/* line 36, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 36, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .news-info .file-format, .news-list li .news-info .file-format {
   float: left;
   font-weight: 700;
 }
 
-/* line 41, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
+/* line 41, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
 .news-list .col .btn, .news-list li .btn {
   margin-bottom: 20px;
   display: inline-block;
 }
 
-/* line 50, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
-.download-block a {
+/* line 46, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.news-list .col .download-block a, .news-list li .download-block a {
   color: #469500;
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
 }
 
-/* line 55, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
-.download-block a i.ico-download, .download-block a i.ico-eye {
+/* line 51, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.news-list .col .download-block a i.ico-download, .news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-download, .news-list li .download-block a i.ico-eye {
   font-size: 30px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 60, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_news-list.scss */
-.download-block a i.ico-eye {
+/* line 56, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_news-list.scss */
+.news-list .col .download-block a i.ico-eye, .news-list li .download-block a i.ico-eye {
   color: #001C4E;
-}
-
-/* line 2, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-container {
-  max-width: 680px;
-  padding: 0 15px;
-  margin: 50px auto;
-  text-align: center;
-  line-height: 24px;
-}
-
-/* line 9, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-bg {
-  background: #469500;
-  padding: 15px;
-}
-
-/* line 12, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-bg .cookie-bg-container {
-  max-width: 1220px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-@media (min-width: 992px) {
-  /* line 18, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-  .cookie .cookie-bg .cookie-bg-container .cookie-content {
-    width: 85%;
-  }
-}
-
-/* line 23, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-bg .cookie-bg-container .cookie-btn-group {
-  margin-top: 30px;
-}
-
-@media (min-width: 992px) {
-  /* line 23, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-  .cookie .cookie-bg .cookie-bg-container .cookie-btn-group {
-    margin-top: 0;
-    width: 15%;
-  }
-}
-
-/* line 29, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul {
-  margin-left: -10px;
-}
-
-@media (min-width: 992px) {
-  /* line 29, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-  .cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul {
-    float: right;
-  }
-}
-
-/* line 34, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-bg .cookie-bg-container .cookie-btn-group ul li {
-  float: left;
-  margin-left: 10px;
-}
-
-/* line 40, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-bg .cookie-bg-container .btn-white {
-  color: #469500;
-}
-
-/* line 44, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_cookie.scss */
-.cookie .cookie-bg p {
-  color: #FFF;
-}
-
-/* line 1, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_fancybox-detail.scss */
-.fancybox-skin {
-  padding: 0 !important;
-}
-
-/* line 4, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_fancybox-detail.scss */
-.fancybox-detail {
-  display: none;
-  max-width: 1220px;
-  padding: 30px;
-}
-
-/* line 8, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_fancybox-detail.scss */
-.fancybox-detail h3 {
-  font-size: 15px;
-  margin-bottom: 20px;
-}
-
-/* line 12, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_fancybox-detail.scss */
-.fancybox-detail .fancybox-content {
-  height: 566px;
-  margin-bottom: 20px;
-  overflow-y: scroll;
-  background: rgba(0, 185, 230, 0.2);
-  border: 1px solid #00B9E6;
-  padding: 20px 5px 20px 20px;
-}
-
-/* line 22, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_fancybox-detail.scss */
-.mCSB_scrollTools .mCSB_draggerRail {
-  background: none;
-}
-
-/* line 26, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_fancybox-detail.scss */
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background: #A2A2A2;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  width: 7px;
-}
-
-/* line 32, C:/Users/Rusum/Desktop/kies-master/src/scss/layout/_fancybox-detail.scss */
-.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-  background: #A2A2A2;
 }
 
 /*# sourceMappingURL=../../dist/css/style.map */
