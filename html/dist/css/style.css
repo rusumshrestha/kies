@@ -756,7 +756,7 @@ footer.common-block {
 }
 
 /* line 25, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.top-header .top-nav li a:after {
+.top-header .top-nav li:after {
   content: "|";
   display: inline-block;
   clear: inherit;
@@ -766,7 +766,7 @@ footer.common-block {
 }
 
 /* line 34, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
-.top-header .top-nav li:last-child a:after {
+.top-header .top-nav li:last-child:after {
   display: none;
 }
 
@@ -805,7 +805,7 @@ footer.common-block {
 /* line 66, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_header.scss */
 .top-header .search button {
   position: absolute;
-  right: 5px;
+  right: -15px;
   z-index: 11;
   top: 7px;
 }
@@ -1321,6 +1321,11 @@ footer h3 {
 .partner-list li {
   margin-left: 20px;
   margin-top: 15px;
+}
+
+/* line 143, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_footer.scss */
+.partner-list li img {
+  height: 50px;
 }
 
 /* line 1, /Applications/XAMPP/xamppfiles/htdocs/kies/src/scss/layout/_background.scss */
