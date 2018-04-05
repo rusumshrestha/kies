@@ -10,7 +10,7 @@
  */
 
 ?>
-
+<?php get_template_part( 'template-parts/part', 'footer-newsletter' ); ?>
 <footer class="common-block">
     <div class="container">
         <div class="footer-menu">

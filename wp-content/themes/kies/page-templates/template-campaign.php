@@ -87,9 +87,6 @@ if( is_array($get_campaign) && ! empty( $get_campaign ) ){
 	}
 }
 ?>
-<?php
-	get_template_part( 'template-parts/part', 'footer-newsletter' );
-?>
 </main>
 <?php
 get_footer();

@@ -363,90 +363,9 @@ get_header();
         </div>
     </div>
     
-    <div class="common-block bg-block campiagn-block" style="background-color: rgba(0,185,230,.3);">
-				<div class="container">
-                	<?php
-					if( get_field( 'section_title_campaign' ) ){
-					?>
-					<div class="section-title text-center">
-						<h2><?php the_field( 'section_title_campaign' ); ?></h2>
-					</div>
-					<?php } ?>
-                    <?php
-					$get_campaign = get_terms( array(
-						'taxonomy' => 'campaign',
-						'hide_empty' => false,
-					) );
-					if( is_array( $get_campaign ) ){
-					?>
-                        <div class="four-col campiagn-list">
-                        	<?php
-							foreach( $get_campaign as $campaign ){
-								$campaign_img = get_field('image_campaign', $campaign->taxonomy . '_' . $campaign->term_id);
-							?>
-                                <div class="col <?php the_field( 'chooseColor_campaign', $campaign->taxonomy . '_' . $campaign->term_id ); ?>">
-                                    <div class="section-title">
-                                        <h3><?php echo $campaign->name; ?></h3>
-                                        <p><?php the_field( 'subTitle_campaign', $campaign->taxonomy . '_' . $campaign->term_id ); ?></p>
-                                    </div>
-                                    <div class="img-block">
-                                    	<?php
-										if( is_array( $campaign_img ) ){
-										?>
-                                        <img src="<?php echo $campaign_img['url'];?>" alt="<?php echo $campaign->name; ?>">
-                                        <?php } ?>
-                                    </div>
-                                    <div class="link-block">
-                                        <a href="<?php echo get_term_link( $campaign ); ?>" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                            
-                            <?php /*?><div class="col bg-green">
-                                <div class="section-title">
-                                    <h3>ZOMERBANDEN CAMPAGNE</h3>
-                                    <p>maart — september</p>
-                                </div>
-                                <div class="img-block">
-                                    <img src="<?php echo get_template_directory_uri();?>/dist/images/zomerbanden.svg" alt="">
-                                </div>
-                                <div class="link-block">
-                                    <a href="#" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col bg-orange">
-                                <div class="section-title">
-                                    <h3>VEILIGHEID CAMPAGNE</h3>
-                                    <p>doorlopende campagne</p>
-                                </div>
-                                <div class="img-block">
-                                    <img src="<?php echo get_template_directory_uri();?>/dist/images/veilgeid.svg" alt="">
-                                </div>
-                                <div class="link-block">
-                                    <a href="#" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col bg-maroon">
-                                <div class="section-title">
-                                    <h3>BANDENSPANNING CAMPAGNE</h3>
-                                    <p>doorlopende campagne</p>
-                                </div>
-                                <div class="img-block">
-                                    <img src="<?php echo get_template_directory_uri();?>/dist/images/bandenspanning.svg" alt="">
-                                </div>
-                                <div class="link-block">
-                                    <a href="#" title="BEKIJK DEZE CAMPAGNE">BEKIJK DEZE CAMPAGNE <i class="ico ico-arrow-right"></i></a>
-                                </div>
-                            </div><?php */?>
-                            
-                        </div>
-                    <?php } ?>
-				</div>
-			</div>
-
-	<?php
-		get_template_part( 'template-parts/part', 'footer-newsletter' );
-	?>
+    
+	<?php get_template_part( 'template-parts/part', 'common-campaign' ); ?>
+   
 </main>
 
 <?php

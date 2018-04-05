@@ -13,47 +13,73 @@
  */
 
 get_header();
+
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
+<main>
+    <div class="common-block bg-block bg-img"   style="background-color: rgba(0,185,230,.15);">
+        <div class="container">
+            <div class="section-title text-center">
+            	<?php
+				$page_for_posts = get_option( 'page_for_posts' ); 
+				if( get_field( 'title_news', $page_for_posts ) ){
 				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+                <h2><?php the_field( 'title_news', $page_for_posts ); ?></h2>
+                <?php } ?>
+                <?php the_field( 'description_news', $page_for_posts ); ?>
+            </div>
+            <?php
+			global $wp_query;
+			if ( have_posts() ) {
+			?>
+            <ul class="four-col news-list">
+            	<?php
+				while ( have_posts() ) {
+					the_post();
+					
+				?>
+                <li>
+                    <div class="news-info">
+                        <div class="date"><?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date;?></div>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+                        <?php
+                        $get_news_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumb-444x250' );
+                        if( is_array($get_news_image) && ! empty($get_news_image[0]) ){
+                            $news_img = $get_news_image[0];
+                        } else {
+                            $news_img = get_template_directory_uri() . '/dist/images/blank-img.png';
+                        }
+                        ?>
+                        <div class="img-block"><img src="<?php echo esc_url($news_img); ?>" alt="<?php the_title(); ?>"></div>
+                        <?php
+                        if ( ! has_excerpt() ) {
+                              echo content( get_the_content(), 20 );
+                        } else { 
+                              echo content( get_the_excerpt(), 20 );
+                        }
+                        ?>
+                        <a href="<?php the_permalink(); ?>" class="normal-link" title="<?php the_title(); ?>">LEES VERDER</a>
+                    </div>
+                </li>
+                <?php
+				}
+				?>
+            </ul>
+            
 				<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+                if( $wp_query->max_num_pages > 1 ){
+                ?>
+                <div class="section-link text-center">
+                    <a href="#" class="btn btn-blue" data-page="1" title="ALLE DOWNLOADS">MEER NIEUWS LADEN</a>
+                </div>
+                <?php
+                }
+                ?>
+            <?php } ?>
+        </div>
+    </div>
+</main>
 
 <?php
-get_sidebar();
 get_footer();
