@@ -32,7 +32,7 @@
 		color: $white;
 		margin-bottom: 20px;
 
-		@include breakpoint(small) {
+		@include breakpoint(medium) {
 			float: left;
 			width: 175px;
 		}
@@ -44,10 +44,14 @@
 		position: relative;
 		width: 100%;
 
-		@include breakpoint(small) {
+		@include breakpoint(medium) {
 			float: left;
-			max-width: 280px;
+			max-width: 255px;
+			margin-left: 22px;
+		}
+		@include breakpoint(large) {
 			margin-left: 30px;
+			max-width: 280px;
 		}
 
 	}
@@ -55,7 +59,6 @@
 	
 
 }
-
 
 .btn{
 	display: inline-block;
@@ -130,7 +133,7 @@
 	background-color: rgba($text-color, 0.5);
 	line-height: 40px;
 	color: $text-color;
-	font-weight: bold;
+	font-weight: $bold;
 	background: $white;
 
 	&:after, &:before {

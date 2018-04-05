@@ -1,12 +1,212 @@
-.banden{
-	h3{
+.banden {
+	h3 {
 		padding-left: 30px;
 		margin-top: 30px;
 	}
-	.icon-block{
+
+	.icon-block {
 		padding-left: 30px;
-		svg,img{
+
+		svg, img {
 			height: 85px;
 		}
+
 	}
+
+}
+
+.content-image {
+	text-align: center;
+	margin-bottom: 15px;
+
+	@include breakpoint(x-small) {
+		float: left;
+		width: 22%;
+		margin: 0 7% 0 0;
+	}
+
+}
+
+@include breakpoint(x-small) {
+	.content-block {
+		float: left;
+		width: 70%;
+	}
+
+}
+
+.section-block {
+	padding-bottom: 30px;
+
+	@include breakpoint(medium) {
+		padding-bottom: 75px;
+	}
+
+}
+
+.container-vsm {
+	clear: both;
+
+	@include breakpoint(medium) {
+		margin-left: 310px;
+	}
+
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+.title-sm {
+	font-weight: 100;
+	margin-bottom: 15px;
+
+	@include breakpoint(medium) {
+		font-size: 34px;
+		margin-bottom: 35px;
+	}
+
+}
+
+.title-xs {
+	font-weight: 100;
+	margin-bottom: 15px;
+
+	@include breakpoint(medium) {
+		font-weight: 100;
+		font-size: 26px;
+		margin-bottom: 35px;
+	}
+
+}
+
+.social-share {
+	text-align: center;
+	padding-top: 55px;
+
+	h3 {
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	ul {
+		margin-left: -10px;
+
+		li {
+			display: inline-block;
+			margin: 0 0 0 10px;
+
+			a {
+				display: block;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				font-size: 24px;
+				-webkit-border-radius: 50%;
+				-khtml-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+				border-radius: 50%;
+				border: 1px solid #c4eff9;
+			}
+
+		}
+
+	}
+
+}
+
+/*Added by Niraj for contact page */
+.contact-form {
+
+	label {
+		font-weight: $bold;
+		padding-bottom: 10px;
+		display: block;
+	}
+
+	.form-element {
+		margin-left: 0;
+	}
+
+}
+
+.contentinfo-left img {
+	height: 237px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.contentinfo-right {
+	margin-top: 45px;
+}
+
+.form-wrapper {
+	.col-right {
+		.form-element {
+			max-width: 100%;
+
+			textarea {
+				height: 280px;
+			}
+
+		}
+
+	}
+
+}
+
+.form-msg {
+	text-align: right;
+	display: block;
+	padding-bottom: 25px;
+}
+
+.align-right {
+	float: right;
+}
+
+.confirmation-msg {
+	text-align: center;
+}
+
+@media (min-width:768px) {
+	.contentinfo-left {
+		width: 23%;
+		float: left;
+		margin-right: 75px;
+	}
+
+	.contentinfo-right {
+		width: 65%;
+		float: left;
+	}
+
+	.contact-form .col-left {
+		width: 33%;
+		float: left;
+		margin-right: 30px;
+	}
+
+	.contact-form .col-right {
+		width: 62%;
+		float: left;
+	}
+
 }
