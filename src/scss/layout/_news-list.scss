@@ -18,7 +18,6 @@
 		font-size: 14px;
 		line-height: 20px;
 	}
-	.col,li{
 		background: $white;
 		// @include border(all,1px,solid,$border-color);
 		@include border-radius(7px);
@@ -43,7 +42,7 @@
 			display: inline-block;
 		}
 		
-	}
+
 }
 
 .download-block{
@@ -62,3 +61,16 @@
 				}
 			}
 		}
+
+.campiagn-block .news-list {
+	text-align: left;
+}
+
+.single {
+	h1,h2,h3,h4,h5,h6{
+		margin:0 0 30px;
+	}
+	.videoWrapper, img{
+		margin:0 0 030px;
+	}
+}
