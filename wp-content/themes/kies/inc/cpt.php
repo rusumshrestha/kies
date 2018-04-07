@@ -74,9 +74,9 @@ function registerTaxonomy() {
 
 	foreach($postTaxonomies as $postTaxonomy){
 	register_taxonomy($postTaxonomy['slug'], $postTaxonomy['post_type'], array(
-		// Hierarchical taxonomy (like categories)
 		'hierarchical' => true,
-		// This array of options controls the labels displayed in the WordPress Admin UI
+		'show_admin_column' => true,
+		'show_ui'           => true,
 		'labels' => array(
 			'name' => _x( $postTaxonomy['name'], $postTaxonomy['name'] ),
 			'singular_name' => _x( $postTaxonomy['singular_name'], $postTaxonomy['singular_name'] ),
@@ -91,11 +91,11 @@ function registerTaxonomy() {
 			'menu_name' => __( $postTaxonomy['name'] ),
 		),
 
-		// Control the slugs used for this taxonomy
 		'rewrite' => array(
-			'slug' => $postTaxonomy['slug'], // This controls the base slug that will display before each term
-			'with_front' => false, // Don't display the category base before "/locations/"
-			'hierarchical' => true // This will allow URL's like "/locations/boston/cambridge/"
+			'slug' => $postTaxonomy['slug'],
+			'with_front' => false,
+			'hierarchical' => true,
+			
 		),
 	));
 	}

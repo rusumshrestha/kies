@@ -71,7 +71,9 @@ get_header();
                 if( $wp_query->max_num_pages > 1 ){
                 ?>
                 <div class="section-link text-center">
-                    <a href="#" class="btn btn-blue" data-page="1" title="ALLE DOWNLOADS">MEER NIEUWS LADEN</a>
+                    <a href="#" class="btn btn-blue load-more" data-page="1" title="ALLE DOWNLOADS">MEER NIEUWS LADEN
+                    	
+                     </a><span class="load-more-gif" style="display:none;"><img src="<?php echo get_template_directory_uri();?>/dist/images/load.gif" /></span>
                 </div>
                 <?php
                 }

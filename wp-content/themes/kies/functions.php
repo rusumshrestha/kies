@@ -178,7 +178,6 @@ add_action( 'widgets_init', 'kies_widgets_init' );
  */
 function kies_scripts() {
 	wp_enqueue_style( 'kies-font', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800' );
-	wp_enqueue_style( 'kies-range-slider', get_template_directory_uri() .'/dist/css/rangeslider.css' );
 	wp_enqueue_style( 'kies-main', get_template_directory_uri() .'/dist/css/style.css' );
 	wp_enqueue_style( 'kies-style', get_stylesheet_uri() );
 	
@@ -190,6 +189,14 @@ function kies_scripts() {
 	}
 	wp_enqueue_script( 'kies-jquery', get_template_directory_uri() . '/dist/js/jquery.js', array(), '20151215', true );
 	wp_enqueue_script( 'kies-app', get_template_directory_uri() . '/dist/js/app.js', array(), '20151215', true );
+	wp_enqueue_script( 'kies-main-js', get_template_directory_uri() . '/dist/js/main.js', array(), '20151215', true );
+	
+	wp_localize_script('kies-main-js', 'kiesObject',
+		array(
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'ajax_nonce' => wp_create_nonce( 'kies_nonce' ),
+		)
+	);
 }
 add_action( 'wp_enqueue_scripts', 'kies_scripts' );
 
@@ -283,6 +290,26 @@ function get_latest_post($postType, $postPerPage) {
 	return $query->posts;
 }
 
+function get_post_by_term($postType, $postPerPage, $taxonomy, $term) {
+	global $paged;
+	$args = array(
+		'post_type' => $postType,
+		'orderby' => 'post_date',
+		'order' => 'ASC',
+		'post_status' => 'publish',
+		'posts_per_page' => $postPerPage,
+		'tax_query' => array(
+				array(
+					'taxonomy' => $taxonomy,
+					'field'    => 'term_id',
+					'terms'    => $term,
+				),
+			),
+		);
+	$query = new WP_Query( $args );
+	return $query->posts;
+}
+
 function file_size_convert($bytes){
     $bytes = floatval($bytes);
         $arBytes = array(
@@ -321,4 +348,139 @@ function file_size_convert($bytes){
         }
     }
     return $result;
+}
+
+
+add_action( 'wp_ajax_newsLoadMore', 'news_load_more_function' );
+add_action( 'wp_ajax_nopriv_newsLoadMore', 'news_load_more_function' );
+function news_load_more_function() {
+	global $paged;
+	$paged = absint( $_POST['page'] )+1;
+	check_ajax_referer( 'kies_nonce', 'security' );
+	
+	$args = array(
+			'post_type' => 'post',
+			'orderby' => 'post_date',
+			'order' => 'ASC',
+			'post_status' => 'publish',
+			'paged' => $paged,
+		);
+
+	$news_more = new WP_Query( $args );
+	$total_page = $news_more->max_num_pages;
+	$last_page = '';
+	$html = '';
+	if($paged == $total_page){
+		$last_page = 'last-page';
+	}
+	if ( $news_more > have_posts() ) {
+		while ( $news_more -> have_posts() ) {
+			$news_more -> the_post();
+			
+			$post_date = get_the_date( 'd/m/Y' );
+			$get_news_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumb-444x250' );
+			if( is_array($get_news_image) && ! empty($get_news_image[0]) ){
+				$news_img = $get_news_image[0];
+			} else {
+				$news_img = get_template_directory_uri() . '/dist/images/blank-img.png';
+			}
+			if ( ! has_excerpt() ) {
+				$content = content( get_the_content(), 20 );
+			} else {
+				$content = content( get_the_excerpt(), 20 );
+			}
+						
+			$html .= '
+			<li>
+                    <div class="news-info '. $last_page .'">
+                        <div class="date">'. $post_date .'</div>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="'. get_the_permalink() .'" title="'. get_the_title() . '">' . get_the_title() .'</a></h3>
+                        <div class="img-block"><img src="'. esc_url($news_img) .'" alt="'. get_the_title() .'"></div>
+                        '. $content .'
+                        <a href="'. get_the_permalink() .'" class="normal-link" title="'. get_the_title() .'">LEES VERDER</a>
+                    </div>
+                </li>
+			';
+		}
+		
+		
+	} else {
+		$html .= 'no news found';
+	}
+	
+	
+	echo $html;
+	
+	die();
+}
+
+
+
+add_action( 'wp_ajax_downloadLoadMore', 'download_load_more_function' );
+add_action( 'wp_ajax_nopriv_downloadLoadMore', 'download_load_more_function' );
+function download_load_more_function() {
+	pr($_POST);
+	die();
+	global $paged;
+	$paged = absint( $_POST['page'] )+1;
+	check_ajax_referer( 'kies_nonce', 'security' );
+	
+	$args = array(
+			'post_type' => 'post',
+			'orderby' => 'post_date',
+			'order' => 'ASC',
+			'post_status' => 'publish',
+			'paged' => $paged,
+		);
+
+	$news_more = new WP_Query( $args );
+	$total_page = $news_more->max_num_pages;
+	$last_page = '';
+	$html = '';
+	if($paged == $total_page){
+		$last_page = 'last-page';
+	}
+	if ( $news_more > have_posts() ) {
+		while ( $news_more -> have_posts() ) {
+			$news_more -> the_post();
+			
+			$post_date = get_the_date( 'd/m/Y' );
+			$get_news_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumb-444x250' );
+			if( is_array($get_news_image) && ! empty($get_news_image[0]) ){
+				$news_img = $get_news_image[0];
+			} else {
+				$news_img = get_template_directory_uri() . '/dist/images/blank-img.png';
+			}
+			if ( ! has_excerpt() ) {
+				$content = content( get_the_content(), 20 );
+			} else {
+				$content = content( get_the_excerpt(), 20 );
+			}
+						
+			$html .= '
+			<li>
+                    <div class="news-info '. $last_page .'">
+                        <div class="date">'. $post_date .'</div>
+                    </div>
+                    <div class="news-content">
+                        <h3><a href="'. get_the_permalink() .'" title="'. get_the_title() . '">' . get_the_title() .'</a></h3>
+                        <div class="img-block"><img src="'. esc_url($news_img) .'" alt="'. get_the_title() .'"></div>
+                        '. $content .'
+                        <a href="'. get_the_permalink() .'" class="normal-link" title="'. get_the_title() .'">LEES VERDER</a>
+                    </div>
+                </li>
+			';
+		}
+		
+		
+	} else {
+		$html .= 'no news found';
+	}
+	
+	
+	echo $html;
+	
+	die();
 }
