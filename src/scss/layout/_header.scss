@@ -160,7 +160,7 @@
 }
 
 header .menu {
-	position: relative;
+	// position: relative;
 }
 
 header .menu li {
@@ -250,8 +250,16 @@ header .menu .sub-menu.hide {
 #primary-nav .sub-menu {
 	// min-width: 150px;
 	z-index: 200;
+	
 }
 
+@media (min-width: 1070px) {
+	#primary-nav .sub-menu {
+		left: 175px !important;
+	}
+}
+
+		
 #primary-nav.mobile {
 	display: none;
 	position: absolute;
@@ -279,7 +287,10 @@ header .menu .sub-menu.hide {
 }
 
 #primary-nav.mobile .sub-menu li a {
-	padding-left: 25px;
+	padding-left: 30px;
+	@include breakpoint(1070px){
+		padding-left: 15px;
+	}
 }
 
 #primary-nav.mobile .sub-menu .submenu li a {
@@ -340,7 +351,7 @@ header .menu .sub-menu.hide {
 	header .menu .sub-menu li {
 		display: inline-block;
 		width: auto;
-		margin-left: 30px;
+		margin-left: 20px;
 	}
 
 	.nav ul li ul li:last-child, #primary-nav.mobile li li:last-child {

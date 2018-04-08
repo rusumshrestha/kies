@@ -179,7 +179,10 @@ ul.four-col,ul.three-col,ul.two-col{
    }
 }
 .common-block {
-   padding: 75px 0 ;
+   padding: 35px 0 ;
+   @include breakpoint(x-small){
+      padding: 75px 0 ;
+   }
 }
 footer.common-block{
       padding: 50px 0;
