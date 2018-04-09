@@ -421,62 +421,167 @@ function news_load_more_function() {
 add_action( 'wp_ajax_downloadLoadMore', 'download_load_more_function' );
 add_action( 'wp_ajax_nopriv_downloadLoadMore', 'download_load_more_function' );
 function download_load_more_function() {
-	pr($_POST);
-	die();
+	
 	global $paged;
 	$paged = absint( $_POST['page'] )+1;
 	check_ajax_referer( 'kies_nonce', 'security' );
 	
 	$args = array(
-			'post_type' => 'post',
-			'orderby' => 'post_date',
-			'order' => 'ASC',
-			'post_status' => 'publish',
-			'paged' => $paged,
+		'post_type' => $postType,
+		'orderby' => 'post_date',
+		'order' => 'ASC',
+		'post_status' => 'publish',
+		'posts_per_page' => 4,
+		'paged' => $paged,
+		'tax_query' => array(
+				array(
+					'taxonomy' => 'download-category',
+					'field'    => 'term_id',
+					'terms'    => $_POST['term_id'],
+				),
+			),
 		);
-
-	$news_more = new WP_Query( $args );
-	$total_page = $news_more->max_num_pages;
+	$download_more = new WP_Query( $args );
+	$total_page = $download_more->max_num_pages;
 	$last_page = '';
 	$html = '';
 	if($paged == $total_page){
 		$last_page = 'last-page';
 	}
-	if ( $news_more > have_posts() ) {
-		while ( $news_more -> have_posts() ) {
-			$news_more -> the_post();
+	if ( $download_more > have_posts() ) {
+		while ( $download_more -> have_posts() ) {
+			$download_more -> the_post();
 			
+			if( get_field('download_typ_download') == 'Video' ){
+				$file_type = 'video';
+			} else{
+				$file_detail = get_field('upload_file_download');
+				$file_url = $file_detail['url'];
+				$file_name = $file_detail['filename'];
+				$file_ext = explode( '.', $file_name );
+				$file_ext = '.'.$file_ext[1];
+				$file_size = filesize( get_attached_file( $file_detail['ID'] ) );
+				$file_sizes = file_size_convert($file_size);
+			}
 			$post_date = get_the_date( 'd/m/Y' );
-			$get_news_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumb-444x250' );
-			if( is_array($get_news_image) && ! empty($get_news_image[0]) ){
-				$news_img = $get_news_image[0];
+			$get_download_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumb-444x250' );	
+			if( is_array($get_download_image) && ! empty($get_download_image[0]) ){
+				$download_img = $get_download_image[0];
 			} else {
-				$news_img = get_template_directory_uri() . '/dist/images/blank-img.png';
-			}
+				$download_img = get_template_directory_uri() . '/dist/images/blank-img.png';
+			}	
 			if ( ! has_excerpt() ) {
-				$content = content( get_the_content(), 20 );
-			} else {
-				$content = content( get_the_excerpt(), 20 );
+				  $content = content( get_the_content(), 20 );
+			} else { 
+				  $content = content( get_the_excerpt(), 20 );
 			}
-						
 			$html .= '
-			<li>
-                    <div class="news-info '. $last_page .'">
-                        <div class="date">'. $post_date .'</div>
-                    </div>
-                    <div class="news-content">
-                        <h3><a href="'. get_the_permalink() .'" title="'. get_the_title() . '">' . get_the_title() .'</a></h3>
-                        <div class="img-block"><img src="'. esc_url($news_img) .'" alt="'. get_the_title() .'"></div>
-                        '. $content .'
-                        <a href="'. get_the_permalink() .'" class="normal-link" title="'. get_the_title() .'">LEES VERDER</a>
-                    </div>
-                </li>
+			<div class="col '. $last_page .'">
+						<div class="news-info">
+							<div class="file-format">FILETYPE ('. $file_ext .')</div>
+							<div class="date">'. $post_date .'</div>
+						</div>
+						<div class="news-content">
+							<h3><a href="'. get_the_permalink() .'" title="'. get_the_title() .'">'. get_the_title() .'</a></h3>
+							
+							<div class="img-block"><img src="'. esc_url($download_img) .'" alt="'. get_the_title() .'"></div>
+							'. $content .'
+							<a href="'. get_the_permalink() .'" class="btn btn-small btn-sky-blue" title="'. get_the_title() .'">BESTE BAND</a>
+						</div>
+						<div class="download-block">
+							<a href="'. $file_url .'" target="_blank" class="pull-left"><i class="ico ico-download"></i>DOWNLOAD '. $file_ext .' ('. $file_sizes .')</a>
+							<a href="#" title="View" class="pull-right"><i class="ico ico-eye"></i></a>
+						</div>
+					</div>
 			';
 		}
 		
 		
 	} else {
-		$html .= 'no news found';
+		$html .= 'no download found';
+	}
+	
+	
+	echo $html;
+	
+	die();
+}
+
+add_action( 'wp_ajax_downloadSearch', 'download_search_function' );
+add_action( 'wp_ajax_nopriv_downloadSearch', 'download_search_function' );
+function download_search_function() {
+
+	global $paged;
+	$paged = absint( $_POST['page'] )+1;
+	check_ajax_referer( 'kies_nonce', 'security' );
+	
+	$args = array(
+		'post_type' => 'download',
+		'orderby' => 'post_date',
+		'order' => 'ASC',
+		'post_status' => 'publish',
+		's' => $_POST['search_input'],
+		'posts_per_page' => $_POST['per_page'],
+		'paged' => $paged,
+		);
+	$download_search = new WP_Query( $args );
+	$total_page = $download_search->max_num_pages;
+	$last_page = '';
+	$html = '';
+	if($paged == $total_page){
+		$last_page = 'last-page';
+	}
+	if ( $download_search > have_posts() ) {
+		while ( $download_search -> have_posts() ) {
+			$download_search -> the_post();
+			
+			if( get_field('download_typ_download') == 'Video' ){
+				$file_type = 'video';
+			} else{
+				$file_detail = get_field('upload_file_download');
+				$file_url = $file_detail['url'];
+				$file_name = $file_detail['filename'];
+				$file_ext = explode( '.', $file_name );
+				$file_ext = '.'.$file_ext[1];
+				$file_size = filesize( get_attached_file( $file_detail['ID'] ) );
+				$file_sizes = file_size_convert($file_size);
+			}
+			$post_date = get_the_date( 'd/m/Y' );
+			$get_download_image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumb-444x250' );	
+			if( is_array($get_download_image) && ! empty($get_download_image[0]) ){
+				$download_img = $get_download_image[0];
+			} else {
+				$download_img = get_template_directory_uri() . '/dist/images/blank-img.png';
+			}	
+			if ( ! has_excerpt() ) {
+				  $content = content( get_the_content(), 20 );
+			} else { 
+				  $content = content( get_the_excerpt(), 20 );
+			}
+			$html .= '
+			<div class="col '. $last_page .'">
+						<div class="news-info">
+							<div class="file-format">FILETYPE ('. $file_ext .')</div>
+							<div class="date">'. $post_date .'</div>
+						</div>
+						<div class="news-content">
+							<h3><a href="'. get_the_permalink() .'" title="'. get_the_title() .'">'. get_the_title() .'</a></h3>
+							
+							<div class="img-block"><img src="'. esc_url($download_img) .'" alt="'. get_the_title() .'"></div>
+							'. $content .'
+							<a href="'. get_the_permalink() .'" class="btn btn-small btn-sky-blue" title="'. get_the_title() .'">BESTE BAND</a>
+						</div>
+						<div class="download-block">
+							<a href="'. $file_url .'" target="_blank" class="pull-left"><i class="ico ico-download"></i>DOWNLOAD '. $file_ext .' ('. $file_sizes .')</a>
+							<a href="#" title="View" class="pull-right"><i class="ico ico-eye"></i></a>
+						</div>
+					</div>
+			';
+		}
+		
+		
+	} else {
+		$html .= 'no download found';
 	}
 	
 	

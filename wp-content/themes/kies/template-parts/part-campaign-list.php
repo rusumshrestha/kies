@@ -5,7 +5,7 @@ $get_campaign = get_terms( array(
 ) );
 if( is_array( $get_campaign ) ){
 ?>
-	<div class="four-col campiagn-list">
+	<div class="four-col">
 		<?php
 		foreach( $get_campaign as $campaign ){
 			$campaign_img = get_field('image_campaign', $campaign->taxonomy . '_' . $campaign->term_id);

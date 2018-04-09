@@ -31,13 +31,13 @@ get_header();
 			global $wp_query;
 			if ( have_posts() ) {
 			?>
-            <ul class="four-col news-list">
+            <ul class="four-col">
             	<?php
 				while ( have_posts() ) {
 					the_post();
 					
 				?>
-                <li>
+                <li class="news-list">
                     <div class="news-info">
                         <div class="date"><?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date;?></div>
                     </div>

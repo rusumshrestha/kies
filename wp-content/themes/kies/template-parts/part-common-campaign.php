@@ -26,8 +26,8 @@
             <h2><?php echo esc_html( $section_title ); ?></h2>
         </div>
         <?php } ?>
-        
-        
+
         <?php include(locate_template('template-parts/part-campaign-list.php')); ?>
+
     </div>
 </div>

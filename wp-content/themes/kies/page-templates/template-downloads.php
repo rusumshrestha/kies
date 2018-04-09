@@ -29,8 +29,8 @@ while ( have_posts() ) {
             </div>
             <div class="search center-content">
                 <div class="form-wrapper">
-                    <form action="#">
-                        <div class="form-element"><input type="text" placeholder="Waar ben je naar op zoek?"></div>
+                    <form action="#" class="download-search">
+                        <div class="form-element"><input type="text" data-page="1" data-per-page="<?php the_field('search_result_per_page_downloads');?>" class="download-input" placeholder="Waar ben je naar op zoek?"></div>
                     </form>
                 </div>
             </div>
@@ -67,6 +67,18 @@ while ( have_posts() ) {
         <?php
 		}
 		?>
+        <div class="search-wrap" style="display:none;">
+        	<div class="section-title text-center">
+                <h2></h2>
+            </div>
+            <div class="four-col">
+            
+            </div>
+            <div class="section-link text-center">
+                <a href="#" class="btn btn-blue load-more-search" data-page="1"><?php the_field('search_moreBtnTxt_downloads'); ?></a><span class="load-more-gif" style="display:none;"><img src="<?php echo get_template_directory_uri();?>/dist/images/load.gif" /></span>
+            </div>
+            
+        </div>
         <?php
 		$get_download_category = get_terms( array(
 			'taxonomy' => 'download-category',
@@ -80,7 +92,7 @@ while ( have_posts() ) {
                 <h2><?php echo $download_category->name; ?></h2>
                 <p><?php echo $download_category->description; ?></p>
             </div>
-            <div class="four-col news-list">
+            <div class="four-col">
             <?php
 			$get_download = get_post_by_term('download', 4, $download_category->taxonomy, $download_category->term_id);
 			if( is_array($get_download) ){
@@ -133,70 +145,6 @@ while ( have_posts() ) {
 				wp_reset_postdata();
 			}
 			?>
-                <?php /*?><div class="col">
-                    <div class="news-info">
-                        <div class="file-format">FILETYPE (.EXT)</div>
-                        <div class="date">8/2/2017</div>
-                    </div>
-                    <div class="news-content">
-                        <h3><a href="#" title="TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD">TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD</a></h3>
-                        <div class="img-block"><img src="dist/images/blank-img.png" alt=""></div>
-                        <p>Ruimte voor een omschrijving van drie regels. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam.</p>
-                        <a href="#" class="btn btn-small btn-sky-blue" title="BESTE BAND">BESTE BAND</a>
-                    </div>
-                    <div class="download-block">
-                        <a href="#" title="DOWNLOAD .EXT (8,6 MB)" class="pull-left"><i class="ico ico-download"></i>DOWNLOAD .EXT (8,6 MB)</a>
-                        <a href="#" title="View" class="pull-right"><i class="ico ico-eye"></i></a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="news-info">
-                        <div class="file-format">FILETYPE (.EXT)</div>
-                        <div class="date">8/2/2017</div>
-                    </div>
-                    <div class="news-content">
-                        <h3><a href="#" title="TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD">TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD</a></h3>
-                        <div class="img-block"><img src="dist/images/blank-img.png" alt=""></div>
-                        <p>Ruimte voor een omschrijving van drie regels. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam.</p>
-                        <a href="#" class="btn btn-small btn-sky-blue" title="BESTE BAND">BESTE BAND</a>
-                    </div>
-                    <div class="download-block">
-                        <a href="#" title="DOWNLOAD .EXT (8,6 MB)" class="pull-left"><i class="ico ico-download"></i>DOWNLOAD .EXT (8,6 MB)</a>
-                        <a href="#" title="View" class="pull-right"><i class="ico ico-eye"></i></a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="news-info">
-                        <div class="file-format">FILETYPE (.EXT)</div>
-                        <div class="date">8/2/2017</div>
-                    </div>
-                    <div class="news-content">
-                        <h3><a href="#" title="TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD">TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD</a></h3>
-                        <div class="img-block"><img src="dist/images/blank-img.png" alt=""></div>
-                        <p>Ruimte voor een omschrijving van drie regels. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam.</p>
-                        <a href="#" class="btn btn-small btn-sky-blue" title="BESTE BAND">BESTE BAND</a>
-                    </div>
-                    <div class="download-block">
-                        <a href="#" title="DOWNLOAD .EXT (8,6 MB)" class="pull-left"><i class="ico ico-download"></i>DOWNLOAD .EXT (8,6 MB)</a>
-                        <a href="#" title="View" class="pull-right"><i class="ico ico-eye"></i></a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="news-info">
-                        <div class="file-format">FILETYPE (.EXT)</div>
-                        <div class="date">8/2/2017</div>
-                    </div>
-                    <div class="news-content">
-                        <h3><a href="#" title="TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD">TITEL VAN HET KAARTJE OVER MAXIMAAL DRIE REGELS VERDEELD</a></h3>
-                        <div class="img-block"><img src="dist/images/blank-img.png" alt=""></div>
-                        <p>Ruimte voor een omschrijving van drie regels. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam.</p>
-                        <a href="#" class="btn btn-small btn-sky-blue" title="BESTE BAND">BESTE BAND</a>
-                    </div>
-                    <div class="download-block">
-                        <a href="#" title="DOWNLOAD .EXT (8,6 MB)" class="pull-left"><i class="ico ico-download"></i>DOWNLOAD .EXT (8,6 MB)</a>
-                        <a href="#" title="View" class="pull-right"><i class="ico ico-eye"></i></a>
-                    </div>
-                </div><?php */?>
             </div>
             <div class="section-link text-center">
                 <a href="#" class="btn btn-blue load-more" data-page="1" data-id="<?php echo $download_category->term_id; ?>" title="ALLE <?php echo $download_category->name; ?>">ALLE <?php echo $download_category->name; ?></a><span class="load-more-gif" style="display:none;"><img src="<?php echo get_template_directory_uri();?>/dist/images/load.gif" /></span>
@@ -206,6 +154,7 @@ while ( have_posts() ) {
 			}
 		}
 		?>
+        
     </div>
 </div>
 
