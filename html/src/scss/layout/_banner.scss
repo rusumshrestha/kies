@@ -14,7 +14,7 @@
 				font-weight: bold;
 			}
 		}
-		height: 400px;
+		min-height: 400px;
 		background: rgba($white,.8);
 		padding: 30px;
 		@include breakpoint(small){
@@ -24,12 +24,7 @@
 		background: $white;
 		}
 	}
-	.container{
-		padding:45px 15px;
-		@include breakpoint(small){
-			padding:0 15px;
-		}
-	}
+	
 }
 .bg-img.bg-overlay{
 	&:after{
@@ -43,5 +38,13 @@
 	.container,.container-medium, .container-small{
 		position: relative;
 		z-index: 1;
+	}
+}
+.banner-image{
+	.container{
+		padding:45px 15px;
+		@include breakpoint(small){
+			padding:0 15px;
+		}
 	}
 }

@@ -390,8 +390,9 @@ function news_load_more_function() {
 				$content = content( get_the_excerpt(), 20 );
 			}
 						
+						
 			$html .= '
-			<li>
+			<li class="news-list">
                     <div class="news-info '. $last_page .'">
                         <div class="date">'. $post_date .'</div>
                     </div>
@@ -476,7 +477,7 @@ function download_load_more_function() {
 				  $content = content( get_the_excerpt(), 20 );
 			}
 			$html .= '
-			<div class="col '. $last_page .'">
+			<div class="col news-list '. $last_page .'">
 						<div class="news-info">
 							<div class="file-format">FILETYPE ('. $file_ext .')</div>
 							<div class="date">'. $post_date .'</div>
@@ -559,7 +560,7 @@ function download_search_function() {
 				  $content = content( get_the_excerpt(), 20 );
 			}
 			$html .= '
-			<div class="col '. $last_page .'">
+			<div class="col news-list '. $last_page .'">
 						<div class="news-info">
 							<div class="file-format">FILETYPE ('. $file_ext .')</div>
 							<div class="date">'. $post_date .'</div>

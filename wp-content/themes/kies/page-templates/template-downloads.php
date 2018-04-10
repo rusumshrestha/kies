@@ -110,7 +110,7 @@ while ( have_posts() ) {
 						$file_sizes = file_size_convert($file_size);
 					}
 			?>
-					<div class="col">
+					<div class="col news-list">
 						<div class="news-info">
 							<div class="file-format">FILETYPE (<?php echo $file_ext; ?>)</div>
 							<div class="date"><?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date;?></div>

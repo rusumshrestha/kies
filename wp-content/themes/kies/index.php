@@ -31,7 +31,7 @@ get_header();
 			global $wp_query;
 			if ( have_posts() ) {
 			?>
-            <ul class="four-col">
+            <ul class="four-col new-list-wrap">
             	<?php
 				while ( have_posts() ) {
 					the_post();

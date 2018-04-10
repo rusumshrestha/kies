@@ -11,6 +11,14 @@ function pjnCreatePostType(){
 		  'plural_name'  	=> 'Downloads',
 		  'post_type'    	=> 'download',
 		  'supports'		=> array( 'title', 'editor', 'excerpt', 'thumbnail'),
+		  'has_single'		=> false
+		),
+		array(
+		  'slug'         	=> 'news',
+		  'singular_name'  	=> 'News',
+		  'plural_name'  	=> 'News',
+		  'post_type'    	=> 'news',
+		  'supports'		=> array( 'title', 'editor', 'excerpt', 'thumbnail'),
 		  'has_single'		=> true
 		),
 	

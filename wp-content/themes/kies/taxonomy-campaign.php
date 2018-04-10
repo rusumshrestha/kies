@@ -57,7 +57,7 @@ if( $campaign_color == 'bg-blue' ){
         </div>
         <?php if ( have_posts() ) { ?>
         <div class="container">
-            <ul class="four-col news-list">
+            <ul class="four-col">
             	<?php
 				while ( have_posts() ) {
 					the_post();
@@ -73,7 +73,7 @@ if( $campaign_color == 'bg-blue' ){
 						$file_sizes = file_size_convert($file_size);
 					}
 				?>
-                    <li>
+                    <li class="news-list">
                         <div class="news-info">
                             <div class="file-format">FILETYPE (<?php echo $file_ext; ?>)</div>
                             <div class="date"><?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date;?></div>

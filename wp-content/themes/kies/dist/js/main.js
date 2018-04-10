@@ -3,7 +3,7 @@ $(document).ready(function(e) {
 	if( $('body').hasClass('blog') ){
 		$('a.load-more').on('click', this, function(e){
 			e.preventDefault();
-			var page_id = $(this).attr('data-page');
+			var page_id = $('a.load-more').attr('data-page');
 			$.ajax({
 				url: kiesObject.ajaxurl + '?action=newsLoadMore',
 				xhrFields: {
@@ -17,9 +17,10 @@ $(document).ready(function(e) {
 				},
 				success: function (data) {
 					$('.load-more-gif').hide();
+					var page_id = $('a.load-more').attr('data-page');
 					var is_last = data.search("last-page");
 					var newHtml = $.parseHTML(data);
-					$('ul.news-list').append(newHtml);
+					$('ul.new-list-wrap').append(newHtml);
 					page_id = parseInt(page_id)+1;
 					$('a.load-more').attr('data-page', page_id);
 					
@@ -122,5 +123,16 @@ $(document).ready(function(e) {
 				}
 			});
 		}
+	}
+	
+	if( $('body').hasClass('page-template-template-contact') ){
+		$('.gform_body ul li.wrap-left').wrapAll('<div class="col-left"></div>');
+		$('.gform_body ul li.wrap-right').wrapAll('<div class="col-right"></div>');
+		
+		$('.gform_footer input[type="submit"]').wrap('<div class="button-element align-right"></div>');
+		$('.gform_footer input[type="submit"]').addClass('btn');
+		$('.gform_footer input[type="submit"]').addClass('btn-white');
+		$('.gform_footer input[type="submit"]').addClass('btn-white-shadow');
+		
 	}
 });

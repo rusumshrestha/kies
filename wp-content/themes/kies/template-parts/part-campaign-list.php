@@ -17,7 +17,7 @@ if( is_array( $get_campaign ) ){
 				}
 			}
 		?>
-			<div class="col <?php the_field( 'chooseColor_campaign', $campaign->taxonomy . '_' . $campaign->term_id ); ?> <?php echo esc_attr( $disable_class ); ?>">
+			<div class="col campiagn-list <?php the_field( 'chooseColor_campaign', $campaign->taxonomy . '_' . $campaign->term_id ); ?> <?php echo esc_attr( $disable_class ); ?>">
 				<div class="section-title">
 					<h3><?php echo $campaign->name; ?></h3>
 					<p><?php the_field( 'subTitle_campaign', $campaign->taxonomy . '_' . $campaign->term_id ); ?></p>
