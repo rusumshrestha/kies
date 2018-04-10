@@ -75,7 +75,7 @@ while ( have_posts() ) {
             
             </div>
             <div class="section-link text-center">
-                <a href="#" class="btn btn-blue load-more-search" data-page="1"><?php the_field('search_moreBtnTxt_downloads'); ?></a><span class="load-more-gif" style="display:none;"><img src="<?php echo get_template_directory_uri();?>/dist/images/load.gif" /></span>
+                <a href="#" class="btn btn-blue load-more-search" data-page="1"><?php the_field('search_moreBtnTxt_downloads'); ?></a><div class="loading-pulse load-more-gif"></div>
             </div>
             
         </div>
@@ -147,7 +147,7 @@ while ( have_posts() ) {
 			?>
             </div>
             <div class="section-link text-center">
-                <a href="#" class="btn btn-blue load-more" data-page="1" data-id="<?php echo $download_category->term_id; ?>" title="ALLE <?php echo $download_category->name; ?>">ALLE <?php echo $download_category->name; ?></a><span class="load-more-gif" style="display:none;"><img src="<?php echo get_template_directory_uri();?>/dist/images/load.gif" /></span>
+                <a href="<?php echo get_term_link( $download_category )?>" class="btn btn-blue load-more" data-page="1" data-id="<?php echo $download_category->term_id; ?>" title="ALLE <?php echo $download_category->name; ?>">ALLE <?php echo $download_category->name; ?></a>
             </div>
         </div>
         <?php

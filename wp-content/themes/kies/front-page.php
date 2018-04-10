@@ -184,10 +184,10 @@ get_header();
                 } 
                 ?>
             </div>
-            <div class="four-col news-list">
+            <div class="four-col">
             	<?php
 				if( get_field('postToShow_newsSection') == 'latest' ){
-					$get_news = get_latest_post('post', 4);
+					$get_news = get_latest_post('news', 4);
 				} else {
 					$get_news = get_field('choosePost_newsSection');
 				}
@@ -195,7 +195,7 @@ get_header();
 					foreach( $get_news as $post ){
 						setup_postdata( $post ); 
 						?>
-						<div class="col">
+						<div class="col news-list">
 							<div class="news-info">
 								<div class="date"><?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date;?></div>
 							</div>

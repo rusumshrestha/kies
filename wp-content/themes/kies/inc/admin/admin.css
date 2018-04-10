@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+#toplevel_page_theme-option ul.wp-submenu{
+	display:none;
+}

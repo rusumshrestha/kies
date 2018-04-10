@@ -1,6 +1,33 @@
 var $ = jQuery;
 $(document).ready(function(e) {
-	if( $('body').hasClass('blog') ){
+	
+	if( $('body').find('iframe') ){
+		$('iframe').wrap('<div class="videoWrapper"></div>');
+	}
+	var outerWidth = $('#primary-nav ul').width();
+	$('#primary-nav ul#menu-main-menu li ul.sub-menu' ).each(function(index, element) {
+		// $(this).hover(function(e) {
+			//var totalWidth = $(this).width();
+			//console.log(totalWidth);
+			/*var outerWidth = $('#primary-nav ul').width();
+			$(this).css('width', '100% !important');
+			if( totalWidth > outerWidth ){
+			$(this).find('ul.sub-menu').css('right', 0);
+			} else {
+			$(this).find('ul.sub-menu').css('left', 0);
+			}*/
+		 //});
+		// ul.sub-menu
+        /*var totalWidth = $(this).width();
+		var outerWidth = $('#primary-nav ul').width();
+		$(this).css('width', '100% !important');
+		if( totalWidth > outerWidth ){
+			$(this).css('right', 0);
+		} else {
+			$(this).css('left', 0);
+		}*/
+    });
+	if( $('body').hasClass('post-type-archive-news') ){
 		$('a.load-more').on('click', this, function(e){
 			e.preventDefault();
 			var page_id = $('a.load-more').attr('data-page');
@@ -35,7 +62,7 @@ $(document).ready(function(e) {
 	}
 	
 	if( $('body').hasClass('page-template-template-downloads') ){
-		$('a.load-more').on('click', this, function(e){
+		/*$('a.load-more').on('click', this, function(e){
 			e.preventDefault();
 			var page_id = $(this).attr('data-page');
 			var id = $(this).attr('data-id');
@@ -66,7 +93,7 @@ $(document).ready(function(e) {
 					}
 				}
 			});
-		});
+		});*/
 		
 		$('form.download-search').on('submit', this, function(e){
 			e.preventDefault();
@@ -128,11 +155,6 @@ $(document).ready(function(e) {
 	if( $('body').hasClass('page-template-template-contact') ){
 		$('.gform_body ul li.wrap-left').wrapAll('<div class="col-left"></div>');
 		$('.gform_body ul li.wrap-right').wrapAll('<div class="col-right"></div>');
-		
-		$('.gform_footer input[type="submit"]').wrap('<div class="button-element align-right"></div>');
-		$('.gform_footer input[type="submit"]').addClass('btn');
-		$('.gform_footer input[type="submit"]').addClass('btn-white');
-		$('.gform_footer input[type="submit"]').addClass('btn-white-shadow');
 		
 	}
 });

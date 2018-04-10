@@ -188,6 +188,7 @@ function kies_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	wp_enqueue_script( 'kies-jquery', get_template_directory_uri() . '/dist/js/jquery.js', array(), '20151215', true );
+	//wp_enqueue_script( 'jquery-migrate', 'https://code.jquery.com/jquery-migrate-3.0.1.min.js', array('kies-jquery'), '20151215', false );
 	wp_enqueue_script( 'kies-app', get_template_directory_uri() . '/dist/js/app.js', array(), '20151215', true );
 	wp_enqueue_script( 'kies-main-js', get_template_directory_uri() . '/dist/js/main.js', array(), '20151215', true );
 	
@@ -223,6 +224,17 @@ require get_template_directory() . '/inc/cpt.php';
 /**
  * Load Jetpack compatibility file.
  */
+add_action('admin_head', 'my_custom_themeoptioncss');
+
+function my_custom_themeoptioncss() {
+  echo '<link rel="stylesheet" href="'.get_template_directory_uri().'/inc/admin/admin.css" type="text/css" media="all" />';
+}
+
+add_action('admin_footer', 'my_custom_themeoptionjs');
+
+function my_custom_themeoptionjs() {
+ echo '<script type="text/javascript" src="'.get_template_directory_uri().'/inc/admin/admin.js"></script>';
+}
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
@@ -245,6 +257,16 @@ if( function_exists('acf_add_options_page') ) {
 		'icon_url' 		=> false,
 		'redirect'		=> false
 		));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'News Setting',
+		'menu_title'	=> 'News Setting',
+		'menu_slug' 	=> 'news-setting',
+		'capability'	=> 'edit_posts',
+		'parent_slug' 	=> 'theme-option',
+		'position' 		=> false,
+		'icon_url' 		=> false,
+		'redirect'		=> false
+		));	
 }
 
 function kies_svg_mime_types($mimes) {
@@ -359,7 +381,7 @@ function news_load_more_function() {
 	check_ajax_referer( 'kies_nonce', 'security' );
 	
 	$args = array(
-			'post_type' => 'post',
+			'post_type' => 'news',
 			'orderby' => 'post_date',
 			'order' => 'ASC',
 			'post_status' => 'publish',
@@ -590,3 +612,54 @@ function download_search_function() {
 	
 	die();
 }
+
+
+add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
+function form_submit_button( $button, $form ) {
+	
+    return "<div class='button-element align-right'><button type='submit' class='btn btn-white btn-white-shadow' id='gform_submit_button_{$form['id']}'>". $form['button']['text'] ."</button></div>";
+	
+}
+
+add_action('admin_menu' , 'news_menu'); 
+
+function news_menu() {
+    add_submenu_page('edit.php?post_type=news', 'News Settings', 'News Settings', 'edit_posts', basename(__FILE__), 'my_acf_add_local_field_groups');
+} 
+
+function admin_news_function() { 
+    ?>
+    <div class="wrap">
+        <h1><?php _e( 'Books Shortcode Reference', 'textdomain' ); ?></h1>
+        <p><?php _e( 'Helpful stuff here', 'textdomain' ); ?></p>
+    </div>
+    <?php
+}
+
+function my_acf_add_local_field_groups() {
+	
+	acf_add_local_field_group(array(
+		'key' => 'group_1',
+		'title' => 'My Group',
+		'fields' => array (
+			array (
+				'key' => 'field_1',
+				'label' => 'Sub Title',
+				'name' => 'sub_title',
+				'type' => 'text',
+			)
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+				),
+			),
+		),
+	));
+	
+}
+
+add_action('acf/init', 'my_acf_add_local_field_groups');

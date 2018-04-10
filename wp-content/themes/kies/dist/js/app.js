@@ -4,6 +4,8 @@
  */
 
 jQuery(function($) {
+	
+	
   $.fn.responsivenav = function(args) {
     // Default settings
     var defaults = {
@@ -101,6 +103,16 @@ jQuery(function($) {
                            };
             var $menuleft = $istopheader ? 0 : $dims.w;
             $menuleft = ( $offsets.left + $menuleft + $dims.subulw > $(window).width() ) ? ( $istopheader ? -$dims.subulw + $dims.w : -$dims.w ) : $menuleft;
+			/*var totalWidth = $dims.subulw;
+			console.log($dims);
+			var outerWidth = $('#primary-nav ul').width();
+		//$targetul.css('width', '100% !important');
+		if( totalWidth > outerWidth ){
+			$targetul.css('right', 0);
+		} else {
+			$targetul.css('left', 0);
+		}*/
+		
             $targetul.css({ left:$menuleft+'px', 
                            width:$dims.subulw+'px' 
                           });

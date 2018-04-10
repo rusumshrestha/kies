@@ -20,12 +20,11 @@ get_header();
         <div class="container">
             <div class="section-title text-center">
             	<?php
-				$page_for_posts = get_option( 'page_for_posts' ); 
-				if( get_field( 'title_news', $page_for_posts ) ){
+				if( get_field( 'title_news', 'option' ) ){
 				?>
-                <h2><?php the_field( 'title_news', $page_for_posts ); ?></h2>
+                <h2><?php the_field( 'title_news', 'option' ); ?></h2>
                 <?php } ?>
-                <?php the_field( 'description_news', $page_for_posts ); ?>
+                <?php the_field( 'description_news', 'option' ); ?>
             </div>
             <?php
 			global $wp_query;

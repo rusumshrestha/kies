@@ -14,7 +14,7 @@ function pjnCreatePostType(){
 		  'has_single'		=> false
 		),
 		array(
-		  'slug'         	=> 'news',
+		  'slug'         	=> 'nieuws',
 		  'singular_name'  	=> 'News',
 		  'plural_name'  	=> 'News',
 		  'post_type'    	=> 'news',

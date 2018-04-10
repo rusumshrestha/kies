@@ -3,20 +3,11 @@
     	<?php 
 		$disable_class = '';
 		$get_current_term = get_queried_object();
-		if( is_tax() ){
-			$front_page_id = get_option( 'page_on_front' );
-			if( get_field( 'section_title_campaign', $front_page_id ) ){
-				$section_title = get_field( 'section_title_campaign', $front_page_id );
-			} else {
-				$section_title = '';
-			}
-			
+		$front_page_id = get_option( 'page_on_front' );
+		if( get_field( 'section_title_campaign', $front_page_id ) ){
+			$section_title = get_field( 'section_title_campaign', $front_page_id );
 		} else {
-			if( get_field( 'section_title_campaign' ) ){
-				$section_title = get_field( 'section_title_campaign' );
-			} else {
-				$section_title = '';
-			}
+			$section_title = '';
 		}
 		?>
         <?php
